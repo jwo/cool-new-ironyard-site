@@ -10,6 +10,7 @@ var $ = require('gulp-load-plugins')();
 gulp.task('templates', function() {
   return gulp.src('app/templates/*.jade')
     .pipe($.jade({
+      basedir: "app/templates",
       pretty: true
     }))
     .pipe(gulp.dest('.tmp'));
@@ -51,7 +52,7 @@ gulp.task('html', ['styles', 'scripts', 'templates'], function () {
 });
 
 gulp.task('images', function () {
-    return gulp.src('app/images/**/*')
+    return gulp.src(['app/images/**/*', 'app/bower_components/ghost-shield/dist/images/**/*'])
         .pipe($.cache($.imagemin({
             optimizationLevel: 3,
             progressive: true,
@@ -84,6 +85,8 @@ gulp.task('connect', function () {
     var app = connect()
         .use(require('connect-livereload')({ port: 35729 }))
         .use(connect.static('app'))
+        // look in ghost shield too! XD
+        .use(connect.static('app/bower_components/ghost-shield/dist'))
         .use(connect.static('.tmp'))
         .use(connect.directory('app'));
 
@@ -94,7 +97,7 @@ gulp.task('connect', function () {
         });
 });
 
-gulp.task('serve', ['connect', 'styles', 'templates'], function () {
+gulp.task('serve', ['connect', 'styles', 'templates', 'images'], function () {
     require('opn')('http://localhost:9000');
 });
 

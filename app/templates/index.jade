@@ -1,48 +1,29 @@
-doctype html
-html
-  head
-    meta(charset="utf-8")
-    title cool new ironyard site
-    meta(name="description" content="")
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    // Place favicon.ico and apple-touch-icon.png in the root directory
-
-    // build:css styles/vendor.css
-    // bower:css
-    link(rel="stylesheet" href="bower_components/ghost-shield/dist/stylesheets/ghost-shield.css")
-    // endbower
-    // endbuild
-
-    // build:css({.tmp,app}) styles/main.css
-    link(rel="stylesheet" href="styles/main.css")
-    // endbuild
-
-    // build:js scripts/vendor/modernizr.js
-    script(src="bower_components/modernizr/modernizr.js")
-    // endbuild
-  
-
-  //- Your cool stuff here.
-  body
-    h1 cool
-
-  //- This is the end of your cool stuff.
-
-  // Google Analytics: change UA-XXXXX-X to be your site's ID.
-  script.
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='//www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-XXXXX-X');ga('send','pageview');
-
-  // build:js scripts/vendor.js
-  // bower:js
-  script(src="bower_components/jquery/dist/jquery.js")
-  // endbower
-  // endbuild
-
-  // build:js scripts/main.js
-  script(src="scripts/main.js")
-  // endbuild
+extends /layouts/main
+block content
+  .container-fluid
+    .header.yellow-bg
+      .logo
+        img(src="images/iron-yard-logo.svg")
+      .nav
+        .primary-nav
+          ul
+            li
+            li 
+              a(href="#") Locations
+            li 
+              a(href="#") Events
+            li 
+              a(href="#") Academy
+            li 
+              a(href="#") Accelerator
+        
+        .secondary-nav
+          ul
+            li 
+              a(href="#") Jobs
+            li
+              a(href="#") About
+            li
+              a(href="#") News
+            li
+              a(href="#") Blog
