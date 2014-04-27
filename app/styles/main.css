@@ -11,6 +11,11 @@
   height: 0; 
 }
 
+.header {
+  background: url(http://theironyard.com/images/pattern.png?1393883957);
+  background-color: #39474E;
+}
+
 .section-header {
   text-align:center;
 }
@@ -18,4 +23,13 @@
 .photo-bio {
   margin: 10px auto;
   display: block;
+}
+
+.sub-nav {
+padding-top:1px;
+
+}
+
+.sub-nav h2 {
+  margin-top: 18px;
 }
