@@ -1,19 +1,14 @@
+/*CONTAINER STYLES*/
+
 .wrapper {
   max-width:960px;
 }
 
+/*PAGE HEADER STYLES*/
+
 .header {
   background: url(http://theironyard.com/images/pattern.png?1393883957);
   background-color: #39474E;
-}
-
-.section-header {
-  text-align:center;
-}
-
-.photo-bio {
-  margin: 10px auto;
-  display: block;
 }
 
 .sub-nav {
@@ -37,8 +32,36 @@ padding-top:1px;
   height: 0; 
 }
 
-@media (max-width: 960px) {
-  .sub-nav {
+/*PAGE CONTEN STYLES*/
+
+.section-header {
+  text-align:center;
+}
+
+.photo-bio {
+  margin: 10px auto;
+  display: block;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 990px) {
+  .wrapper {
     padding-left: 30px;
     padding-right: 30px;
   }
+
+@media (max-width:490px)  {
+    .sub-nav h2 {
+    margin-bottom:12px;
+    margin-top:12px;
+    font-size:30px;
+  }
+
+  .sub-nav ul li {
+    font-size:18px;
+    display:block;
+    margin-right: 200px;
+    margin-bottom: 0px;
+  }
+} 
