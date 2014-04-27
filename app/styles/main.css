@@ -12,9 +12,13 @@
 }
 
 .sub-nav {
-padding-top:1px;
-
+  padding-top:1px;
 }
+
+.sub-nav ul {
+  margin-bottom:-22px;
+}
+
 
 .sub-nav h2 {
   margin-top: 18px;
@@ -56,6 +60,10 @@ padding-top:1px;
     margin-bottom:12px;
     margin-top:12px;
     font-size:30px;
+  }
+
+  .sub-nav ul {
+    margin-bottom: -16px;
   }
 
   .sub-nav ul li {
