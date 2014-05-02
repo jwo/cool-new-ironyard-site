@@ -1,0 +1,40 @@
+mixin navigation(meta)  
+  .container-fluid(class="#{meta.color}-bg")
+    .header
+      .wrapper
+        .logo
+          img(src="/images/iron-yard-logo.svg")
+        .nav
+          .primary-nav
+            ul
+              li
+              li 
+                a(href="#") Locations
+              li 
+                a(href="#") Events
+              li
+                a(href="#") Academy
+              li 
+                a(href="#") Accelerator
+          
+          .secondary-nav
+            ul
+              li 
+                a(href="#") Jobs
+              li
+                a(href="#") About
+              li
+                a(href="#") News
+              li
+                a(href="#") Blog
+
+    .row.sub-nav.yellow-bg
+      .wrapper 
+        h2= meta.title
+        ul
+          each link in meta.links
+            li 
+              a(href=link.url)= link.title
+          
+
+        .gray-dark-triangle 
