@@ -8,7 +8,7 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 
 gulp.task('templates', function() {
-  return gulp.src('app/templates/*.jade')
+  return gulp.src('app/templates/pages/**/*.jade')
     .pipe($.jade({
       basedir: "app/templates",
       pretty: true
@@ -93,12 +93,12 @@ gulp.task('connect', function () {
     require('http').createServer(app)
         .listen(9000)
         .on('listening', function () {
-            console.log('Started connect web server on http://localhost:9000');
+            console.log('Started connect web server on http://0.0.0.0:9000');
         });
 });
 
 gulp.task('serve', ['connect', 'styles', 'templates', 'images'], function () {
-    require('opn')('http://localhost:9000');
+    require('opn')('http://0.0.0.0:9000');
 });
 
 // inject bower components
