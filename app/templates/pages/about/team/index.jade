@@ -1,0 +1,65 @@
+extends /layouts/main
+block content
+  +navigation({
+    color: 'yellow',
+    title: 'Our Team',
+    links: [
+      {title: "Leadership", url: "#leadership"},
+      {title: "Accelerator", url: "#accelerator"},
+      {title: "Instructors", url: "#instructors"}
+    ]
+  })
+  
+  //- li 
+  //-   a(href="#leadership") Leadership
+  //- li
+  //-   a(href="#accelerators") Accelerator
+  //- li
+  //-   a(href="#instructors") Instructors
+
+  .main
+    .wrapper
+      h1.section-headline Leadership
+      hr
+      .two-col-bio
+        .row
+          .col-md-5
+            .bio-left-col
+              img.photo-bio(src="http://theironyard.com/images/about/team-peter.jpg")
+              h4 Chief Executive Officer
+          .col-md-7
+            h2 Peter Barth
+            p 
+              | Peter went to Vanderbilt University and studied computer engineering, which naturally led to him becoming an options executive on Wall Street. After the financial markets had worn out their welcome, he packed his family up, moved to Indianapolis and returned to his hacker roots as a software developer and CTO for SinglePoint, Inc. After several other successful startup exits, he moved his family to Greenville, SC, where he helped start NEXT and build the NEXT Innovation Center and founded The Iron Yard. He currently serves as our CEO and is sometimes referred to as “The Iron Barth.”
+            ul.links
+              li <a href="#"> @PeterBarth</a>
+              li <a href="#"> LinkedIn</a>
+             
+      .two-col-bio        
+        .row
+          .col-md-5
+            .bio-left-col
+              img.photo-bio(src="http://theironyard.com/images/about/team-eric.jpg")
+              h4 Chief Marketing Officer
+          .col-md-7
+            h2 Eric Dodds
+            p 
+              | Eric was born and raised in Upstate SC, where he spent his early years hiking, mountain biking and dirt bike riding with his dad. Somehow he ended up at Clemson University, where he tutored calculus, studied marketing and matriculated summa cum laude. (We hear there was a lot of wake boarding, too.) After school Eric worked at a nationally renowned marketing shop, where he developed content, managed accounts and built strategies for companies like Best Buy and Doubleday. He crossed paths with Peter as The Iron Yard was being born and jumped ship to join as a partner and head of marketing.
+            ul.links
+              li <a href="#"> @EricDodds</a>
+              li <a href="#"> LinkedIn</a>        
+   
+      .two-col-bio        
+        .row
+          .col-md-5
+            .bio-left-col
+              img.photo-bio(src="http://theironyard.com/images/about/team-mason.jpg")
+              h4 Chief Technology Officer
+          .col-md-7
+            h2 Mason Stewart
+            p.
+              Mason was born and raised in Jackson, MS (better known as The Dirty South). He grew up in the woods and, as a result, likes animals, trees and beer. A hacker from the start, he began hacking on software in his early teens. Upon moving back to the USA after four years in Japan, at age 24 he ended a multi-year fast from programming and hit the ground running. Like any good college graduate with a degree in philosophy, he has worked for small, boutique web shops, startups in San Francisco and everywhere in between. Mason serves as our CTO and head of all things pedagogical. 
+            ul.links
+              li: a(href="https://twitter.com/masondesu") @masondesu
+              li: a(href="http://github.com/masondesu") GitHub
+
