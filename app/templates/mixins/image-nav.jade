@@ -1,5 +1,5 @@
-mixin location-nav(meta)  
-  .container-fluid(class="#{meta.color}-bg")
+mixin image-nav(meta)  
+  .container-fluid.nav-relative(class="#{meta.color}-bg")
     .header
       .wrapper
         .logo
@@ -27,3 +27,5 @@ mixin location-nav(meta)
                 a(href="#") News
               li
                 a(href="#") Blog
+
+  .image-header(style="background-image:url(#{meta.image})")
