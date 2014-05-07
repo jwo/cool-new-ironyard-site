@@ -1,40 +1,41 @@
 mixin navigation(meta)  
   .container-fluid(class="#{meta.color}-bg")
-    .header
-      .wrapper
-        .logo
-          img(src="/images/iron-yard-logo.svg")
-        .nav
-          .primary-nav
-            ul
-              li
+    .header-dimmer
+      .container
+        .header
+          .logo
+            img(src="/images/iron-yard-logo.svg")
+          .nav
+            .primary-nav
+              ul
+                li 
+                  a(href="#") Locations
+                li 
+                  a(href="#") Events
+                li
+                  a(href="#") Academy
+                li 
+                  a(href="#") Accelerator
+            
+            .secondary-nav
+              ul
+                li 
+                  a(href="#") Jobs
+                li
+                  a(href="#") About
+                li
+                  a(href="#") News
+                li
+                  a(href="#") Blog
+    
+    .container
+      .sub-nav
+        .col-xs-12 
+          h2= meta.title
+          ul
+            each link in meta.links
               li 
-                a(href="#") Locations
-              li 
-                a(href="#") Events
-              li
-                a(href="#") Academy
-              li 
-                a(href="#") Accelerator
-          
-          .secondary-nav
-            ul
-              li 
-                a(href="#") Jobs
-              li
-                a(href="#") About
-              li
-                a(href="#") News
-              li
-                a(href="#") Blog
+                a(href=link.url)= link.title
+            
 
-    .row.sub-nav.yellow-bg
-      .wrapper 
-        h2= meta.title
-        ul
-          each link in meta.links
-            li 
-              a(href=link.url)= link.title
-          
-
-        .gray-dark-triangle 
+          .triangle(class="#{meta.color}-triangle")

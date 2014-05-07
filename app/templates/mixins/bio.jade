@@ -1,0 +1,16 @@
+mixin bio(people)
+  each person in people
+    .bio
+      .bio-left
+        img.photo-bio(src=person.photo)
+        a.btn.btn-contact(href="mailto:#{person.email}")
+          img(src="http://theironyard.com/images/email.png")
+          p Say hello
+      .bio-right
+        h2= person.name
+        h4= person.title
+        p= person.description 
+        ul.links
+          each link in person.links
+            li 
+              a(href=link.url)= link.title
