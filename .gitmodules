@@ -1,0 +1,3 @@
+[submodule "ghost-shield"]
+	path = ghost-shield
+	url = git@github.com:masondesu/ghost-shield.git
