@@ -38,5 +38,7 @@ mixin navigation(meta)
                 li 
                   a(href=link.url)= link.title
               
-
-            .triangle(class="#{meta.color}-triangle")
+            if meta.cutout
+              .triangle-cutout
+            else
+              .triangle(class="#{meta.color}-triangle")
