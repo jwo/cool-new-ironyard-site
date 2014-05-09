@@ -26,7 +26,7 @@ block content
             p(style="font-size:16px; margin-top:3px") 411 University Ridge, Suite 2 <br>
               | Greenville, SC 29601 <br>
               | Inside the NEXT Innovation Center
-            img.photo-mentor(src="http://scbiznews.s3.amazonaws.com/1306167315-Next-Innovation-Center-Greenville.jpg")
+            img.photo(src="http://scbiznews.s3.amazonaws.com/1306167315-Next-Innovation-Center-Greenville.jpg")
 
       .horizontal-section.gray-light-bg
         .container
@@ -55,43 +55,43 @@ block content
 
       .container  
         .row
-          .col-sm-7
+          .col-sm-7.mobile-container
             h2 Meet Our Greenville Team
-              .row
-                div(style="display:inline-block; padding:10px; text-align:center")
-                  div(style="box-shadow: 0px 0px 3px 1px rgba(149, 147, 147, 0.72); padding: 5px")
-                    img.photo-mentor(src="/images/about/team-peter.jpg")
-                  h3 Peter Barth
-                  h4 CEO
-                div(style="display:inline-block; padding:10px; text-align:center")
-                  div(style="box-shadow: 0px 0px 3px 1px rgba(149, 147, 147, 0.72); padding: 5px")
-                    img.photo-mentor(src="/images/about/team-eric.jpg")
-                  h3 Eric Dodds
-                  h4 CMO
-                div(style="display:inline-block; padding:10px; text-align:center")
-                  div(style="box-shadow: 0px 0px 3px 1px rgba(149, 147, 147, 0.72); padding: 5px")
-                    img.photo-mentor(src="/images/about/team-mason.jpg")
-                  h3 Mason Stewart
-                  h4 CTO,<br> Lead Instructor  
-                div(style="display:inline-block; padding:10px; text-align:center")
-                  div(style="box-shadow: 0px 0px 3px 1px rgba(149, 147, 147, 0.72); padding: 5px")
-                    img.photo-mentor(src="/images/about/team-marty.jpg")
-                  h3 Marty Bauer
-                  h4 Managing Director,<br> Accelerator
+            .row
+              .photo-list
+                .photo-container
+                  img.photo-mentor(src="/images/about/team-peter.jpg")
+                h3 Peter Barth
+                h4 CEO
+              .photo-list
+                .photo-container
+                  img.photo-mentor(src="/images/about/team-eric.jpg")
+                h3 Eric Dodds
+                h4 CMO
+              .photo-list
+                .photo-container
+                  img.photo-mentor(src="/images/about/team-mason.jpg")
+                h3 Mason Stewart
+                h4 CTO,<br> Lead Instructor  
+              .photo-list
+                .photo-container
+                  img.photo-mentor(src="/images/about/team-marty.jpg")
+                h3 Marty Bauer
+                h4 Managing Director,<br> Accelerator
 
-          .col-sm-5
+          .col-sm-5.mobile-container
             h2 Connect
             hr
-            ul 
+            ul.no-style-type
               li: h4
-                a We're Hiring!
-              li: a The Blog
-              li: a #theironyardgreenville
-              li: a greenville@theironyard.com
+                a.green-text We're Hiring!
+              li: a.green-text The Blog
+              li: a.green-text #theironyardgreenville
+              li: a.green-text greenville@theironyard.com
 
-            img.photo(src="/images/locations/greenville-city1.png")
-            img.photo(src="/images/locations/greenville-city2.png")
-            img.photo(src="/images/locations/greenville-city3.png")
+            img.photo-medium(src="/images/locations/greenville-city1.png")
+            img.photo-medium(src="/images/locations/greenville-city2.png")
+            img.photo-medium(src="/images/locations/greenville-city3.png")
 
 
 
