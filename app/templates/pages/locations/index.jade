@@ -1,0 +1,12 @@
+extends /layouts/main
+block content
+  +navigation({
+    title: 'Locations',
+    color: 'green',
+    image: '/images/locations/map.jpg',
+    cutout: true,
+    links: [
+      {title: "Okay", url: "#leadership"},
+      {title: "Sure", url: "#leadership"},
+    ]
+  })
