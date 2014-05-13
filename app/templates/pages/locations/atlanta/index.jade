@@ -1,1 +1,95 @@
-index.jade
+extends /layouts/main
+block content
+  +navigation({
+    title: 'Atlanta, GA',
+    color: 'green',
+    image: '/images/locations/atlanta/atlanta.jpg',
+    cutout: true,
+    links: [
+      {title: "Wow", url: "#leadership"},
+      {title: "Cool", url: "#leadership"},
+    ]
+  })
+  .container-fluid(style="padding:0")
+    .main
+      .container
+
+        .row(style="margin:20px 0")
+          .col-sm-8
+            h1 Cool Headline
+            p 
+              | Atlanta is more than one of the biggiest cities in the Southeast; it's one of the top ten largest metro areas in the United States. Along with a thriving creative culture, Atlanta's tech scene is making national news as talented entrepreneurs, designers, developers, and investors launch products and companies.
+              | <br><br> We're excited to be a part of Atlanta's story by providing those growing businesses with the highest quality development talent possible.
+          .col-sm-4
+            h2 Address
+            p(style="font-size:16px; margin-top:3px") The Iron Yard - Atlanta <br>
+              | 3423 Piedmont Road, NE <br>
+              | Atlanta, GA 30305
+            
+
+      .horizontal-section.gray-light-bg
+        .container
+            .row
+              .col-md-6
+                img.photo(src="/images/locations/greenville/greenville-academy.jpg")
+              .col-sm-6
+                h4 The Academy
+                p We offer an intensive Front End Engineering course and other, shorter-format design and development classes in Greenville. Our program goes far beyond tactical skills and teaches you to think like a software engineer.
+                a(href="#" class="btn") Learn More
+
+      .callout-box
+        h2 Events
+        p Here is a very cool place to put some events! The copy on the screenshot I was given is bad so this is what you get! Somebody please change this, okay? Thank you Have a great day!!!
+
+      .container  
+        .row
+          .col-sm-7.mobile-container
+            h2 Meet Our Atlanta Team
+            .row.left-column
+              .photo-list
+                .photo-container
+                  img.photo-mentor(src="/images/about/team-john.jpg")
+                h3 John Saddington
+                h4 Chief Strategy Officer
+              .photo-list
+                .photo-container
+                  img.photo-mentor(src="/images/about/sarah-lodato.jpg")
+                h3 Sarah Lodato
+                h4 Campus Director
+              .photo-list
+                .photo-container
+                  img.photo-mentor(src="/images/about/team-jo.jpg")
+                h3 Jo Albright
+                h4 iOS Instructor 
+              .photo-list
+                .photo-container
+                  img.photo-mentor(src="/images/about/shelby-switzer.jpg")
+                h3 Shelby Switzer
+                h4 Ruby Instructor
+
+          .col-sm-5.mobile-container
+            h2 Connect
+            hr
+            ul.no-style-type
+              li: h4
+                a.green-text We're Hiring!
+              li: a.green-text(href="http://atlanta.theironyard.com") The Blog
+              li: a.green-text(href="https://twitter.com/search?q=%23tiyatlanta&src=typd") #tiyatlanta
+              li: a.green-text(href="mailto:atlanta@theironyard.com") atlanta@theironyard.com
+
+            img.photo-medium(src="/images/locations/atlanta/atlanta-city1.jpg")
+            img.photo-medium(src="/images/locations/atlanta/atlanta-city2.jpg")
+            img.photo-medium(src="/images/locations/atlanta/atlanta-city3.jpg")
+
+
+      .horizontal-section.gray-light-bg(style="margin:40px 0 0 0")
+        .container
+          .row
+            .col-md-7
+              h3(style="margin-top:0") City Highlights
+              p  Someone write something cool about Atlanta here. There are some really good places to eat burgers and fries. I love burgers and fries.
+            .col-md-5
+              h4 Recent posts from the blog
+              ul.no-style-type.recent
+                li: a.green-text example blog post
+                li: a.green-text example blog post 
