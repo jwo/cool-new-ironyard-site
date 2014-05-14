@@ -31,14 +31,18 @@ mixin navigation(meta)
     div(class="#{meta.image ? 'image-header' : ''}", style="#{meta.image ? 'background-image:url('+meta.image+')' : ''}")
       .container
         .sub-nav
-          .col-xs-12 
+          .col-xs-12
+          if meta.links 
             h2= meta.title
             ul
               each link in meta.links
                 li 
                   a(href=link.url)= link.title
+          else
+            h2(style="margin-bottom:20px")= meta.title
+
               
-            if meta.cutout
-              .triangle-cutout
-            else
-              .triangle(class="#{meta.color}-triangle")
+          if meta.cutout
+            .triangle-cutout
+          else
+            .triangle(class="#{meta.color}-triangle")
