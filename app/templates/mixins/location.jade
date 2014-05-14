@@ -1,0 +1,17 @@
+mixin location(locations)
+  each location in locations
+    .row
+      .col-md-9
+        h2.green-text(style="margin:0px")= location.city
+        p(style="font-size:18px")= location.description
+      .col-md-3
+        btn-container
+          a(href="/locations/#{location.link}").btn Learn more
+  
+      .col-xs-12
+        ul.no-style-type(style="margin-top:20px")
+          each program in location.programs
+            li(style="display:inline-block; width:270px"): h4 <img src="/images/locations/icons/#{program.icon}" style="height:24px"> #{program.title} 
+  
+      if location.hr
+        hr 

@@ -1,12 +1,42 @@
+include /mixins/location
 extends /layouts/main
 block content
   +navigation({
     title: 'Locations',
-    color: 'green',
-    image: '/images/locations/map.jpg',
-    cutout: true,
-    links: [
-      {title: "Okay", url: "#leadership"},
-      {title: "Sure", url: "#leadership"},
-    ]
+    color: 'green'
   })
+
+  .container(style="margin-top:30px")
+
+    +location( 
+      [
+        {
+          city: "Asheville, NC",
+          description: " Known around the nation as a getaway for adventure seekers and artists, Asheville has built a vibrant tech scene in Western NC. We’re excited about working with local leaders to launch a Green Tech accelerator in the heart of the action (and the mountains).",
+          link: "asheville",
+          programs: [
+            {title:"Accelerator", icon:"accelerator-icon.png"},
+            {title:"CoWorking Space", icon:"cowork-icon.png"},
+            {title:"Kids Classes", icon:"kids-icon.png"}
+          ],
+          hr: true
+        },
+        {
+          city: "Asheville, NC",
+          description: "very cool",
+          link: "asheville",
+          programs: [
+            {title:"Accelerator", icon:"accelerator-icon.png"},
+            {title:"CoWorking Space", icon:"cowork-icon.png"},
+            {title:"Kids Classes", icon:"kids-icon.png"}
+          ],
+          hr: true
+        },
+
+      ]
+    )
+
+
+
+          
+
