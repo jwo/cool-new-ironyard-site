@@ -1,0 +1,66 @@
+extends /layouts/main
+block content
+  +navigation({
+    title: 'Columbia, SC',
+    color: 'green',
+    image: '/images/locations/columbia/columbia.jpg',
+    cutout: true,
+    links: [
+      {title: "Wow", url: "#leadership"},
+      {title: "Cool", url: "#leadership"}
+    ]
+  })
+
+  .container-fluid(style="padding:0")
+    .main
+      .container
+
+        .row		
+          .col-sm-8
+            h1 Something About Capital Design 
+            p 
+              | Serving as the capital of our home state, Columbia embodies what can be accomplished when merging business with tech. We are excited to partner with the amazing team at <a class="green-text" href="http://unmatchedstyle.com/">Unmatched Style</a> as we continue to grow the tech scene in Columbia and beyond. <br><br>
+              | With UMS we are combining resources to continue to deliver amazing co-working spaces throughout the Southeast like that of <a class="green-text" href="http://soco-work.com/">SOCO</a>. Great startups benefit from creative and collaborative environments for professionals to spark innovation amongst one another and The Unmatched Style team is a proven, local innovator. We can’t wait to get going!
+          .col-sm-4.mobile-container
+            h2 Connect
+            hr
+            ul.no-style-type
+              li: h4
+                a.green-text(href="/jobs") We're Hiring in Columbia!
+              li: a.green-text(href="http://blog.theironyard.com") The Blog
+              li: a.green-text(href="mailto:hello@theironyard.com") hello@theironyard.com
+            
+
+      .horizontal-section.gray-light-bg
+        .container
+            .row
+              .col-md-6
+                img.photo(src="/images/locations/greenville/greenville-academy.jpg")
+              .col-sm-6
+                h4 Academy
+                p We are launching an intensive and fully immersive Web Design course in Columbia. Our grads get jobs with amazing local companies as well as awesome shops around the country.
+                a(href="/accelerator" class="btn") Learn More
+      
+      .horizontal-section      
+        .container
+          .row
+            .col-md-6
+              img.photo(src="/images/locations/greenville/greenville-cowork.jpg")
+            .col-md-6
+              h4 CoWorking Spaces
+              p 
+                | Innovate and collaborate at SOCO where you will join a community of collaborators and brainstorming partners. With a full kitchen, free wi-fi, complimentary coffee and drinks, and secure 24-hour access, SOCO will feel just like home.
+
+      .horizontal-section.gray-light-bg      
+        .container
+          .row
+            .col-md-6
+              img.photo(src="/images/locations/kids-classes.jpg")
+            .col-md-6
+              h4 Kids Classes
+              p 
+                | We believe in investing in the local tech economy for the long-run, and that means impacting the next generation.<br><br>
+                | Students in our intensive courses are required to volunteer, teach and run our Kids programs as a part of their involvement in the Academy.
+              a(href="/academy").btn(style="text-align:center") Learn More   
+
+
