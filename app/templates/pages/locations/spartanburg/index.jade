@@ -1,0 +1,125 @@
+extends /layouts/main
+block content
+  +navigation({
+    title: 'Spartanburg, SC',
+    color: 'green',
+    image: '/images/locations/greenville/greenville.jpg',
+    cutout: true,
+    links: [
+      {title: "Wow", url: "#leadership"},
+      {title: "Cool", url: "#leadership"},
+    ]
+  })
+
+  .container-fluid(style="padding:0")
+    .main
+      .container
+
+        .row(style="margin:20px 0")
+          .col-sm-8
+            h1 Where It All Started
+            p 
+              | Nestled in the foothills of the Blue Ridge Mountains, Greenville combines traditional southern charm, stunning natural beauty, and nationally-respected tech and design communities to create one of America's hottest emerging destinations and fastest-growing cities.
+              |<br><br>Greenville is also the birthplace of The Iron yard. The home to our HQ, our Greenville location paved the way for our first accelerator program, first intensive Academy courses, and first kids classes. 
+          .col-sm-4
+            h2 Address
+            p(style="font-size:16px; margin-top:3px") 411 University Ridge, Suite 2 <br>
+              | Greenville, SC 29601 <br>
+              | Inside the NEXT Innovation Center
+            img.photo(src="http://scbiznews.s3.amazonaws.com/1306167315-Next-Innovation-Center-Greenville.jpg")
+
+      .horizontal-section.gray-light-bg
+        .container
+            .row
+              .col-md-6
+                img.photo(src="/images/locations/greenville/greenville-academy.jpg")
+              .col-sm-6
+                h4 The Academy
+                p We offer an intensive Front End Engineering course and other, shorter-format design and development classes in Greenville. Our program goes far beyond tactical skills and teaches you to think like a software engineer.
+                a(href="/academy" class="btn") Learn More
+      
+      .horizontal-section      
+        .container
+          .row
+            .col-md-6
+              img.photo(src="/images/locations/greenville/greenville-accelerator.jpg")
+            .col-md-6
+              h4 Accelerator
+              p 
+                | We're looking for talented teams with great ideas in big markets, primarily focused in web and mobile technology. Whether you're looking to bootstrap your startup or seeking venture financing, we will provide you with the healthiest possible start to improve your chances for success and sustainability.
+              a(href="/accelerator").btn(style="text-align:center") Learn More   
+
+      .horizontal-section.gray-light-bg      
+        .container
+          .row
+            .col-md-6
+              img.photo(src="/images/locations/greenville/greenville-cowork.jpg")
+            .col-md-6
+              h4 CoWorking Spaces
+              p 
+                | We have two phenomenal CoWorking spaces in Greenville. NEXT is adjacent to our Academy classroom space, and Railside is a stand-alone location.
+              a(href="/cowork").btn(style="text-align:center") Learn More   
+        
+      .container  
+        .row
+          .col-sm-7.mobile-container
+            h2 Meet Our Greenville Team
+            .row.left-column
+              .photo-list
+                .photo-container
+                  img.photo-mentor(src="/images/about/team-peter.jpg")
+                h3 Peter Barth
+                h4 CEO
+              .photo-list
+                .photo-container
+                  img.photo-mentor(src="/images/about/team-eric.jpg")
+                h3 Eric Dodds
+                h4 CMO
+              .photo-list
+                .photo-container
+                  img.photo-mentor(src="/images/about/team-mason.jpg")
+                h3 Mason Stewart
+                h4 CTO,<br> Lead Instructor  
+              .photo-list
+                .photo-container
+                  img.photo-mentor(src="/images/about/team-marty.jpg")
+                h3 Marty Bauer
+                h4 Managing Director,<br> Accelerator
+              .photo-list
+                .photo-container
+                  img.photo-mentor(src="/images/about/roy-schmidt.png")
+                h3 Roy Schmidt
+                h4 Campus Director
+              .photo-list
+                .photo-container
+                  img.photo-mentor(src="/images/about/team-tamburro.jpg")
+                h3 Joe Tamburro
+                h4 Teaching Assistant 
+    
+
+          .col-sm-5.mobile-container
+            h2 Connect
+            hr
+            ul.no-style-type
+              li: h4
+                a.green-text(href="/jobs") We're Hiring!
+              li: a.green-text(href="http://greenville.theironyard.com") The Blog
+              li: a.green-text(href="https://twitter.com/search?q=%23tiygreenville&src=typd") #tiygreenville
+              li: a.green-text(href="mailto:greenville@theironyard.com") greenville@theironyard.com
+
+            img.photo-medium(src="/images/locations/greenville/greenville-city1.png")
+            img.photo-medium(src="/images/locations/greenville/greenville-city2.png")
+            img.photo-medium(src="/images/locations/greenville/greenville-city3.png")
+
+
+      .horizontal-section.gray-light-bg(style="margin:40px 0 0 0")
+        .container
+          .row
+            .col-md-7
+              h3(style="margin-top:0") City Highlights
+              p  Greenville offers a plethora of things guaranteed to keep all types of enthusiasts busy. Whether you want to take a leisurely bike ride down the Swamp Rabbit Trail, catch a show at The Peace Center, or sample some of the amazing cuisine the local restaurants have to offer, this town does not disappoint. 
+            .col-md-5
+              h4 Recent posts from the blog
+              ul.no-style-type.recent
+                li: a.green-text example blog post
+                li: a.green-text example blog post 
