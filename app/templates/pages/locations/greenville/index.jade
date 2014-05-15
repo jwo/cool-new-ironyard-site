@@ -47,7 +47,7 @@ block content
               h4 Accelerator
               p 
                 | We're looking for talented teams with great ideas in big markets, primarily focused in web and mobile technology. Whether you're looking to bootstrap your startup or seeking venture financing, we will provide you with the healthiest possible start to improve your chances for success and sustainability.
-              a(href="/accelerator").btn(style="text-align:center") Learn More   
+              a.btn(href="/accelerator" style="text-align:center") Learn More   
 
       .horizontal-section.gray-light-bg      
         .container
@@ -58,7 +58,7 @@ block content
               h4 CoWorking Spaces
               p 
                 | We have two phenomenal CoWorking spaces in Greenville. NEXT is adjacent to our Academy classroom space, and Railside is a stand-alone location.
-              a(href="/cowork").btn(style="text-align:center") Learn More
+              a.btn(href="/cowork" style="text-align:center") Learn More
 
       .horizontal-section      
         .container
@@ -69,7 +69,7 @@ block content
               h4 Kids Classes
               p 
                 | We teach kids programming classes for free! Your kids can learn the fundamentals of programming with Scratch or build a website of their very own!
-              a(href="/academy/#kids").btn(style="text-align:center") Learn More   
+              a.btn(href="/academy/#kids" style="text-align:center") Learn More   
         
       .container  
         .row
@@ -132,6 +132,6 @@ block content
             .col-md-5
               h4 Recent posts from the blog
               ul.no-style-type.recent
-                li: a.green-text example blog post
-                li: a.green-text example blog post 
 
+block scripts
+  +blogFeed('greenville')
