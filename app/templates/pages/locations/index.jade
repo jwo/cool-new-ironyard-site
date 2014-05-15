@@ -3,7 +3,11 @@ extends /layouts/main
 block content
   +navigation({
     title: 'Locations',
-    color: 'green'
+    color: 'green',
+    links: [
+      {title: "What We Offer", url: "#programs  "},
+      {title: "Connect", url: "#connect"},
+    ]
   })
 
   .container(style="margin-top:30px")
