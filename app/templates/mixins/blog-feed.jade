@@ -1,0 +1,6 @@
+mixin blogFeed (cityName)
+  script
+    :js
+      $(function(){
+        wpFeed("http://#{cityName}.theironyard.com/feed/", $(".recent"));
+      })
