@@ -2,7 +2,8 @@ mixin location(locations)
   each location in locations
     .row
       .col-md-9
-        h2.green-text(style="margin:0px")= location.city
+        a(href=location.url)  
+          h2.green-text(style="margin:0px")= location.city
         p(style="font-size:18px")= location.description
       .col-md-3
         .btn-container
