@@ -17,7 +17,7 @@ block content
 
         .row(style="margin:20px 0")
           .col-sm-8
-            h1 Insert Cool Headline
+            h1 The Iron Yard In Charleston
             p 
               | Long known for welcoming ships carrying goods that would make their way to the rest of our country, Charleston has been a hub of activity since the beginning. Staying true to roots in commerce, the city has transformed itself into a modern-day port for technology companies who build products used all around the world.
               |<br><br>We couldn’t be more excited to jump into an already thriving tech economy and help build it through our code education programs.
@@ -28,13 +28,19 @@ block content
             p(style="font-size:16px; margin-top:3px") The Iron Yard - Charleston <br>
               | 510 Mill Street <br>
               | Mount Pleasant, SC 29464
+            a(href="https://www.google.com/maps/dir//510+Mill+St,+Mt+Pleasant,+SC+29464/@32.7930009,-79.8801018,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x88fe70fcdb2e5d7d:0xbc89fd22f08eade6!2m2!1d-79.877956!2d32.7930009" class="btn")
+              | Directions  
             
 
-      .horizontal-section.gray-light-bg
+      .horizontal-section.gray-light-bg#programs
         .container
             .row
               .col-md-6
                 img.photo(src="/images/locations/greenville/greenville-academy.jpg")
+                ul.no-style-type(style="text-align:center; margin-top:12px")
+                  li(style="display:inline-block;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:18px"> <strong>Front End Engineering</strong>
+                  li(style="display:inline-block;"): a(href="/academy/rails-engineering").green-text <img src="/images/locations/icons/rails-icon.png" style="height:18px"> <strong>Ruby On Rails</strong>
+                  li(style="display:inline-block;"): a(href="/academy/mobile-engineering").green-text  <img src="/images/locations/icons/mobile-icon.png" style="height:18px"> <strong>iOS Development</strong>  
               .col-sm-6
                 h4 The Academy
                 p We offer all of our intensive Academy courses in Charleston. Our grads get jobs with amazing local companies as well as awesome shops around the country.
@@ -58,21 +64,21 @@ block content
             .row.left-column
               .photo-list
                 .photo-container
-                  img.photo-mentor(src="/images/about/sally-kingston.jpg")
+                  a(href="/about/team#sally"): img.photo-mentor(src="/images/about/sally-kingston.jpg")
                 h3 Sally Kingston
                 h4 Campus Director
               .photo-list
                 .photo-container
-                  img.photo-mentor(src="/images/about/team-nick.jpg")
+                  a(href="/about/team#nick"): img.photo-mentor(src="/images/about/team-nick.jpg")
                 h3 Nick Bucciarelli
                 h4 Ruby Instructor
               .photo-list
                 .photo-container
-                  img.photo-mentor(src="/images/about/team-calvin.jpg")
+                  a(href="/about/team#calvin"): img.photo-mentor(src="/images/about/team-calvin.jpg")
                 h3 Calvin Webster
                 h4 JavaScript Instructor  
 
-          .col-sm-5.mobile-container
+          .col-sm-5.mobile-container#connect
             h2 Connect
             hr
             ul.no-style-type

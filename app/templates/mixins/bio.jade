@@ -1,6 +1,6 @@
 mixin bio(people)
   each person in people
-    .bio
+    .bio(id=person.id)
       .bio-left
         img.photo-bio(src=person.photo)
         a.btn.btn-contact(href="mailto:#{person.email}")

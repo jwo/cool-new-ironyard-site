@@ -4,11 +4,7 @@ block content
     title: 'Durham, NC',
     color: 'green',
     image: '/images/locations/durham/durham.jpg',
-    cutout: true,
-    links: [
-      {title: "What We Offer", url: "#programs  "},
-      {title: "Connect", url: "#connect"},
-    ]
+    cutout: true
   })
 
   .container-fluid(style="padding:0")
@@ -37,9 +33,13 @@ block content
             .row
               .col-md-6
                 img.photo(src="/images/locations/greenville/greenville-academy.jpg")
+                ul.no-style-type(style="text-align:center; margin-top:12px")
+                  li(style="display:inline-block;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:18px"> <strong>Front End Engineering</strong>
+                  li(style="display:inline-block;"): a(href="/academy/rails-engineering").green-text <img src="/images/locations/icons/rails-icon.png" style="height:18px"> <strong>Ruby On Rails</strong>
+                  li(style="display:inline-block;"): a(href="/academy/mobile-engineering").green-text  <img src="/images/locations/icons/mobile-icon.png" style="height:18px"> <strong>iOS Development</strong>  
               .col-sm-6
                 h4 Academy
-                p We offer all of our intensive Academy courses in Durham. Our grads get jobs with amazing local companies as well as awesome shops around the country.
+                p We will offer all of our intensive Academy courses in Durham. Our grads get jobs with amazing local companies as well as awesome shops around the country.
                 a(href="/academy" class="btn") Learn More
       
 
