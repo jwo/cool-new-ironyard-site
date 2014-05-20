@@ -6,7 +6,7 @@ block content
     image: '/images/locations/greenville/greenville.jpg',
     cutout: true,
     links: [
-      {title: "What We Offer", url: "#programs  "},
+      {title: "What We Offer", url: "#programs"},
       {title: "Connect", url: "#connect"},
     ]
   })
@@ -26,13 +26,16 @@ block content
             p(style="font-size:16px; margin-top:3px") 411 University Ridge, Suite 2 <br>
               | Greenville, SC 29601 <br>
               | Inside the NEXT Innovation Center
-            a(href="#" class="btn") Directions
+            a(href="https://www.google.com/maps/dir//411+University+Ridge,+Greenville,+SC+29601/@34.84028,-82.398386,17z/data=!4m13!1m4!3m3!1s0x8858302de6a1f221:0xa6e871a61fb5dba0!2s411+University+Ridge!3b1!4m7!1m0!1m5!1m1!1s0x8858302de6a1f221:0xa6e871a61fb5dba0!2m2!1d-82.398386!2d34.84028" class="btn")
+              | Directions
 
-      .horizontal-section.gray-light-bg
+      .horizontal-section.gray-light-bg#programs
         .container
             .row
               .col-md-6
                 img.photo(src="/images/locations/greenville/greenville-academy.jpg")
+                ul.no-style-type(style="text-align:center; margin-top:12px")
+                  li(style="display:inline-block;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:18px"> <strong>Front End Engineering</strong>
               .col-sm-6
                 h4 The Academy
                 p We offer an intensive Front End Engineering course and other, shorter-format design and development classes in Greenville. Our program goes far beyond tactical skills and teaches you to think like a software engineer.
@@ -108,7 +111,7 @@ block content
                 h4 Teaching Assistant 
     
 
-          .col-sm-5.mobile-container
+          .col-sm-5.mobile-container#connect
             h2 Connect
             hr
             ul.no-style-type

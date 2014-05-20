@@ -25,16 +25,21 @@ block content
             p(style="font-size:16px; margin-top:3px") The Iron Yard - Atlanta <br>
               | 3423 Piedmont Road, NE <br>
               | Atlanta, GA 30305
-            a(href="#" class="btn") Directions
+            a(href="https://www.google.com/maps/place/3423+Piedmont+Rd+NE/@33.848688,-84.373329,17z/data=!3m1!4b1!4m2!3m1!1s0x88f50f5fbb41183d:0xa1050a42309a6014" class="btn") 
+              | Directions
             
 
-      .horizontal-section.gray-light-bg
+      .horizontal-section.gray-light-bg#programs
         .container
           .row
             .col-md-6
               img.photo(src="/images/locations/atlanta/atlanta-academy.jpg")
-            .col-sm-6
-              h4 The Academy
+              ul.no-style-type(style="text-align:center; margin-top:12px")
+                li(style="display:inline-block;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:18px"> <strong>Front End Engineering</strong>
+                li(style="display:inline-block;"): a(href="/academy/rails-engineering").green-text <img src="/images/locations/icons/rails-icon.png" style="height:18px"> <strong>Ruby On Rails</strong>
+                li(style="display:inline-block;"): a(href="/academy/mobile-engineering").green-text  <img src="/images/locations/icons/mobile-icon.png" style="height:18px"> <strong>iOS Development</strong>  
+            .col-md-6
+              h4 The Academy          
               p We offer all of our intensive Academy courses in Atlanta. Our grads get jobs with amazing local companies as well as awesome shops around the country.
               a(href="/academy" class="btn") Learn More
 
@@ -43,7 +48,7 @@ block content
           .row 
             .col-md-6
               img.photo(src="/images/locations/atlanta/atlanta-kids-classes.jpg")
-            .col-sm-6
+            .col-md-6
               h4 Free kids classes 
               p We believe in investing in the local tech economy for the long-run, and that means impacting the next generation. We teach fun and educational programming classes to kids in the Atlanta area. Sign up for our mailing list to get more information on classes and schedules. 
               a(href="http://eepurl.com/UZ_7T" class="btn") Mailing list
@@ -74,7 +79,7 @@ block content
                 h3 Shelby Switzer
                 h4 Ruby Instructor
 
-          .col-sm-5.mobile-container
+          .col-sm-5.mobile-container#connect
             h2 Connect
             hr
             ul.no-style-type
