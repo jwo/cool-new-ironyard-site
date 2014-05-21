@@ -1,0 +1,24 @@
+extends /layouts/main
+block content
+  +navigation({
+    title: 'Mentors',
+    color: 'turquoise'
+  })
+
+
+  .container(style="margin-top:40px")
+    .row
+      .col-md-3.col-sm-4.mentor-box(style="text-align:center")
+        img(src="/images/accelerator/mentors/kristian_andersen.png")
+        .content
+          h4 Kristian Anderson
+          p Founder of Gravity Adventures
+          ul.no-style-type(style="border-top:1px solid #777; border-bottom: 1px solid #777")
+            li(display="inline-block") okay
+            li(display="inline-block") cool  
+      .col-md-3.col-sm-4
+        img(src="/images/accelerator/mentors/brett_arp.png")
+      .col-md-3.col-sm-4
+        img(src="/images/accelerator/mentors/brett_arp.png")
+      .col-md-3.col-sm-4
+        img(src="/images/accelerator/mentors/brett_arp.png")
