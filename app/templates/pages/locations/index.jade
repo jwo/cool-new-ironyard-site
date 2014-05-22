@@ -1,0 +1,149 @@
+include /mixins/location
+extends /layouts/main
+block content
+  +navigation({
+    title: 'Locations',
+    color: 'green'
+  })
+
+  .container(style="margin-top:30px")
+
+    //- The last location in this list should always have hr set to false and all others should be true
+    +location( 
+      [
+        {
+          city: "Asheville, NC",
+          url: "/locations/asheville",
+          description: " Known around the nation as a getaway for adventure seekers and artists, Asheville has built a vibrant tech scene in Western NC. We’re excited about working with local leaders to launch a Green Tech accelerator in the heart of the action (and the mountains).",
+          link: "asheville",
+          programs: [
+            {title:"Green Tech Accelerator", icon:"accelerator-icon.png"},
+            {title:"CoWorking Space", icon:"cowork-icon.png"},
+            {title:"Kids Classes", icon:"kids-icon.png"}
+          ],
+          hr: true
+        },
+        {
+          city: "Atlanta, GA",
+          url: "/locations/atlanta",
+          description: "One of the busiest cities in the Southeast, we’re excited to plant roots in a big city full of amazing tech startups and thriving creative culture.",
+          link: "atlanta",
+          programs: [
+            {title:"iOS Engineering", icon:"mobile-icon.png"},
+            {title:"Rails Engineering", icon:"rails-icon.png"},
+            {title:"Front End Engineering", icon:"js-icon.png"},
+            {title:"Kids Classes", icon:"kids-icon.png"}
+          ],
+          hr: true
+        },
+        {
+          city: "Austin, TX",
+          url: "/locations/austin",
+          description: "We came to SXSW, ate the BBQ, met a few startups and were hooked. We can’t wait to set up shop in Austin, train developers and keep things as weird as possible.",
+          link: "austin",
+          programs: [
+            {title:"Front End Engineering", icon:"js-icon.png"},
+            {title:"Rails Engineering", icon:"rails-icon.png"},
+            {title:"Kids Classes", icon:"kids-icon.png"}
+          ],
+          hr: true
+        },
+        {
+          city: "Charleston, SC",
+          url: "/locations/charleston",
+          description: "One of the most historic places in South Carolina, The Holy City is also turning into a hub of serious technology companies. We’re privileged to partner with them and launch Silicon Harbor’s first intensive code education program.",
+          link: "charleston",
+          programs: [
+            {title:"Rails Engineering", icon:"rails-icon.png"},
+            {title:"Front End Engineering", icon:"js-icon.png"},
+            {title:"Kids Classes", icon:"kids-icon.png"}
+          ],
+          hr: true
+        },
+        {
+          city: "Columbia, SC",
+          url: "/locations/columbia",
+          description: "The Capitol of The Palmetto state has produced nationally-renowned designers and events, attracting people from all over the country. We are excited to launch our first Web Design course in Columbia and support a growing network of events in partnership with Unmatched Style.",
+          link: "columbia",
+          programs: [
+            {title:"Web Design", icon:"web-design-icon.png"},
+            {title:"CoWorking Space", icon:"cowork-icon.png"},
+            {title:"Kids Classes", icon:"kids-icon.png"}
+
+          ],
+          hr: true
+        },
+        {
+          city: "Durham, NC",
+          url: "/locations/durham",
+          description: "We’re currently laying foundations and hiring a team for The Iron Yard Academy in the Research Triangle. Stay tuned for news and launch dates later this year.",
+          link: "durham",
+          programs: [
+            {title:"iOS Engineering", icon:"mobile-icon.png"},
+            {title:"Rails Engineering", icon:"rails-icon.png"},
+            {title:"Front End Engineering", icon:"js-icon.png"},
+            {title:"Kids Classes", icon:"kids-icon.png"}
+          ],
+          hr: true
+        },
+        {
+          city: "Greenville, SC",
+          url: "/locations/greenville",
+          description: "A sure up-and-comer in the Southeast, Greenville is also the birthplace of The Iron Yard. It’s home to our HQ and paved the way for our first accelerator program, first intensive Academy courses, and first kids classes.",
+          link: "greenville",
+          programs: [
+            {title:"Front End Engineering", icon:"js-icon.png"},
+            {title:"CoWorking Space", icon:"cowork-icon.png"},
+            {title:"Accelerator", icon:"accelerator-icon.png"},
+            {title:"Kids Classes", icon:"kids-icon.png"}
+          ],
+          hr: true
+        },
+        {
+          city: "Houston, TX",
+          url: "/locations/houston",
+          description: "Houston has always been a hub of innovation, spawning technological behemoths like the Johnson Space Center and an exploding healthcare economy. With an up-and-coming tech scene for both enterprise and startup software, The Iron Yard is excited to play a role in the continued growth of all things creative in Houston.",
+          link: "houston",
+          programs: [
+            {title:"iOS Engineering", icon:"mobile-icon.png"},
+            {title:"Rails Engineering", icon:"rails-icon.png"},
+            {title:"Front End Engineering", icon:"js-icon.png"},
+            {title:"CoWorking Space", icon:"cowork-icon.png"},
+            {title:"Kids Classes", icon:"kids-icon.png"}
+          ],
+          hr: true
+        },
+        {
+          city: "Spartanburg, SC",
+          url: "/locations/spartanburg",
+          description: "Spartanburg is where we launched our second location and Digital Health Accelerator. Its leaders are fully committed to the next wave of its development as a medical innovation hub, and the success of our most recent class is proof that we’re on the right track.",
+          link: "spartanburg",
+          programs: [
+            {title:"CoWorking Space", icon:"cowork-icon.png"},
+            {title:"Health Accelerator", icon:"accelerator-icon.png"},
+            {title:"Kids Classes", icon:"kids-icon.png"}
+          ],
+          hr: true
+        },
+        {
+          city: "Tampa, FL",
+          url: "/locations/tampa",
+          description: "We’re currently laying foundations and hiring a team for The Iron Yard Academy in Tampa (check out our jobs page to apply). Stay tuned for news and launch dates later this year.",
+          link: "tampa",
+          programs: [
+            {title:"iOS Engineering", icon:"mobile-icon.png"},
+            {title:"Rails Engineering", icon:"rails-icon.png"},
+            {title:"Front End Engineering", icon:"js-icon.png"},
+            {title:"Kids Classes", icon:"kids-icon.png"}
+          ],
+          hr: false
+        }
+
+
+      ]
+    )
+
+
+
+          
+

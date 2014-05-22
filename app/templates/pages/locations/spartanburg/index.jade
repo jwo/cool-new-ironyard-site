@@ -1,0 +1,111 @@
+extends /layouts/main
+block content
+  +navigation({
+    title: 'Spartanburg, SC',
+    color: 'green',
+    image: '/images/locations/spartanburg/spartanburg.jpg',
+    cutout: true,
+    links: [
+      {title: "What We Offer", url: "#programs"},
+      {title: "Connect", url: "#connect"},
+    ]
+  })
+
+  .container-fluid(style="padding:0")
+    .main
+      .container
+
+        .row(style="margin:20px 0")
+          .col-sm-8.left-column
+            h1 The Iron Yard in Spartanburg
+            p 
+              | Originally known for its revolutionary roots, Spartanburg is reviving what once was one of the nation’s busiest railway hubs. Art, music and a generally creative culture combine with connections to some top players in the healthcare industry to make Spartanburg an amazing place for Digital Health companies to plant and grow.
+          .col-sm-4
+            h2 Address
+            p(style="font-size:16px; margin-top:3px") The Iron Yard - Spartanburg <br>
+              | 151 South Daniel Morgan Ave. <br>
+              | Spartanburg, SC 29306
+            a(href="https://www.google.com/maps/dir//151+S+Daniel+Morgan+Ave,+Spartanburg,+SC+29306/@34.9335409,-81.933973,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x885775f57deab8b1:0x2bba4856065d579a!2m2!1d-81.933963!2d34.947007" class="btn") 
+              | Directions
+
+      .horizontal-section.gray-light-bg#programs
+        .container
+          .row
+            .col-md-6
+              img.photo(src="/images/locations/spartanburg/spartanburg-accelerator.jpg")
+            .col-sm-6
+              h4 Digital Health Accelerator
+              p 
+                | From wellness apps to enterprise software, we're helping startups build the future of health.
+              a(href="/accelerator" class="btn") Learn More
+
+      .horizontal-section      
+        .container
+          .row
+            .col-md-6
+              img.photo(src="/images/locations/spartanburg/spartanburg-cowork.jpg")
+            .col-md-6
+              h4 CoWorking Spaces
+              p 
+                | Located in the same building as our Health Accelerator, the Mill houses an incredible collection of startups and creative professionals. As an added bonus, it's just one block away from an amazing craft brewery.
+              a(href="/cowork").btn(style="text-align:center") Learn More   
+        
+      .horizontal-section.gray-light-bg
+        .container
+          .row
+            .col-md-6
+              img.photo(src="/images/locations/spartanburg/spartanburg-kids-classes.jpg")
+            .col-sm-6
+              h4 Kids Classes
+              p 
+                | Classes now available! Be sure to sign up for our newsletter for exciting news and announcements.
+              a.green-text(href="http://eepurl.com/Me9IL") Email us for more information.<br><br> 
+              a(href="mailto:spartanburg@theironyard.com" class="btn") Email
+
+      .container  
+        .row
+          .col-sm-7.mobile-container
+            h2 Meet Our Greenville Team
+            .row.left-column
+              .photo-list
+                .photo-container
+                  a(href="/about/team#peter"): img.photo-mentor(src="/images/about/team-peter.jpg")
+                h3 Peter Barth
+                h4 CEO
+              .photo-list
+                .photo-container
+                  a(href="/about/team#marty"): img.photo-mentor(src="/images/about/team-marty.jpg")
+                h3 Marty Bauer
+                h4 Managing Director,<br> Accelerator
+              .photo-list
+                .photo-container
+                  a(href="/about/team#jeff"): img.photo-mentor(src="/images/about/jeff-boeh.jpg")
+                h3 Jeff Boeh
+                h4 Campus Director
+           
+
+          .col-sm-5.mobile-containers#connect
+            h2 Connect
+            hr
+            ul.no-style-type
+              li: a.green-text(href="http://spartanburg.theironyard.com") The Blog
+              li: a.green-text(href="https://twitter.com/search?q=%23tiyspartanburge&src=typd") #tiyspartanburg
+              li: a.green-text(href="mailto:spartanburg@theironyard.com") spartanburg@theironyard.com
+
+            img.photo-medium(src="/images/locations/spartanburg/spartanburg-city1.jpg")
+            img.photo-medium(src="/images/locations/spartanburg/spartanburg-city2.jpg")
+            //- img.photo-medium(src="/images/locations/spartanburg/spartanburg-city3.jpg")
+
+
+      .horizontal-section.gray-light-bg(style="margin:40px 0 0 0")
+        .container
+          .row
+            .col-md-7
+              h3(style="margin-top:0") City Highlights
+              p Convention South Magazine named Spartanburg one of 20 top cities in the south for music and meetings. Parts jazz, rock, bluegrass and classic, all steeped in Southern Roots.
+            .col-md-5
+              h4 Recent posts from the blog
+              ul.no-style-type.recent
+
+block scripts
+  +blogFeed('spartanburg')

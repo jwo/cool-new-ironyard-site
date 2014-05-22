@@ -1,0 +1,113 @@
+extends /layouts/main
+block content
+  +navigation({
+    title: 'Atlanta, GA',
+    color: 'green',
+    image: '/images/locations/atlanta/atlanta.jpg',
+    cutout: true,
+    links: [
+      {title: "What We Offer", url: "#programs"},
+      {title: "Connect", url: "#connect"},
+    ]
+  })
+  .container-fluid(style="padding:0")
+    .main
+      .container
+
+        .row(style="margin:20px 0")
+          .col-sm-8
+            h1 The Iron Yard in Atlanta
+            p 
+              | Atlanta is more than one of the biggiest cities in the Southeast; it's one of the top ten largest metro areas in the United States. Along with a thriving creative culture, Atlanta's tech scene is making national news as talented entrepreneurs, designers, developers, and investors launch products and companies.
+              | <br><br> We're excited to be a part of Atlanta's story by providing those growing businesses with the highest quality development talent possible.
+          .col-sm-4
+            h2 Address
+            p(style="font-size:16px; margin-top:3px") The Iron Yard - Atlanta <br>
+              | 3423 Piedmont Road, NE <br>
+              | Atlanta, GA 30305
+            a(href="https://www.google.com/maps/place/3423+Piedmont+Rd+NE/@33.848688,-84.373329,17z/data=!3m1!4b1!4m2!3m1!1s0x88f50f5fbb41183d:0xa1050a42309a6014" class="btn") 
+              | Directions
+            
+
+      .horizontal-section.gray-light-bg#programs
+        .container
+          .row
+            .col-md-6
+              img.photo(src="/images/locations/atlanta/atlanta-academy.jpg")
+            .col-md-6
+              h4 The Academy          
+              p We offer all of our intensive Academy courses in Atlanta. Our grads get jobs with amazing local companies as well as awesome shops around the country.
+              ul.no-style-type(style="margin-top:12px")
+                li(style="display:inline-block; padding-right: 10px;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:18px"> <strong>Front End Engineering</strong>
+                li(style="display:inline-block; padding-right: 10px;"): a(href="/academy/rails-engineering").green-text <img src="/images/locations/icons/rails-icon.png" style="height:18px"> <strong>Ruby On Rails</strong>
+                li(style="display:inline-block; padding-right: 10px;"): a(href="/academy/mobile-engineering").green-text  <img src="/images/locations/icons/mobile-icon.png" style="height:18px"> <strong>iOS Development</strong>  
+              a(href="/academy" class="btn") Learn More
+
+      .horizontal-section
+        .container
+          .row 
+            .col-md-6
+              img.photo(src="/images/locations/atlanta/atlanta-kids-classes.jpg")
+            .col-md-6
+              h4 Free kids classes 
+              p We believe in investing in the local tech economy for the long-run, and that means impacting the next generation. We teach fun and educational programming classes to kids in the Atlanta area. Sign up for our mailing list to get more information on classes and schedules. 
+              a(href="http://eepurl.com/UZ_7T" class="btn") Mailing list
+
+      .container  
+        .row
+          .col-sm-7.mobile-container
+            h2 Meet Our Atlanta Team
+            .row.left-column
+              .photo-list
+                .photo-container
+                  a(href="/about/team#john"): img.photo-mentor(src="/images/about/team-john.jpg")
+                h3 John Saddington
+                h4 Chief Strategy Officer
+              .photo-list
+                .photo-container
+                  a(href="/about/team#sarah"): img.photo-mentor(src="/images/about/sarah-lodato.jpg")
+                h3 Sarah Lodato
+                h4 Campus Director
+              .photo-list
+                .photo-container
+                  a(href="/about/team#jo"): img.photo-mentor(src="/images/about/team-jo.jpg")
+                h3 Jo Albright
+                h4 iOS Instructor 
+              .photo-list
+                .photo-container
+                  a(href="/about/team#shelby"): img.photo-mentor(src="/images/about/shelby-switzer.jpg")
+                h3 Shelby Switzer
+                h4 Ruby Instructor
+
+          .col-sm-5.mobile-container#connect
+            h2 Connect
+            hr
+            ul.no-style-type
+              li: h4
+                a.green-text(href="/jobs") We're Hiring In Atlanta!
+              li: a.green-text(href="http://atlanta.theironyard.com") The Blog
+              li: a.green-text(href="https://twitter.com/search?q=%23tiyatlanta&src=typd") #tiyatlanta
+              li: a.green-text(href="mailto:atlanta@theironyard.com") atlanta@theironyard.com
+
+            img.photo-medium(src="/images/locations/atlanta/atlanta-city1.jpg")
+            img.photo-medium(src="/images/locations/atlanta/atlanta-city2.jpg")
+
+      .horizontal-section.gray-light-bg(style="margin:40px 0 0 0")
+        .container
+          .row
+            .col-md-7
+              h3(style="margin-top:0") City Highlights
+              p 
+                | Growing from names like “Terminus” during the 19th century to “the city too busy to hate” during the Civil Rights era, Atlanta has a history of overcoming challenges with the fervor of a phoenix, rising from the ashes of the South’s torrid past into a bustling metropolis nestled at the end of the Appalachian trail. The city of Coca-Cola, the Turner Broadcasting System, and a budding film industry, Atlanta is now considered the capital of the New South. Join us by way of the largest airport in the world, and we’ll treat you to some of the best farm-to-table restaurants in the country. Here are a few of our favorite things: 
+              ul
+                li: a(href="http://www.oaklandcemetery.com/") Oakland Cemetery
+                li: a(href="http://www.vicsandwich.com/#info") Victory Sandwich Bar
+                li: a(href="http://www.thekingcenter.org/") The King Center
+                li: a(href="http://octanecoffee.com/") Octane Coffee
+
+            .col-md-5
+              h4 Recent posts from the blog
+              ul.no-style-type.recent
+
+block scripts
+  +blogFeed('atlanta')

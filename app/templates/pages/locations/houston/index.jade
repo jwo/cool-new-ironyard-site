@@ -1,0 +1,106 @@
+extends /layouts/main
+block content
+  +navigation({
+    title: 'Houston, TX',
+    color: 'green',
+    image: '/images/locations/houston/houston.jpg',
+    cutout: true,
+    links: [
+      {title: "What We Offer", url: "#programs"},
+      {title: "Connect", url: "#connect"},
+    ]
+  })
+
+  .container-fluid(style="padding:0")
+    .main
+      .container
+
+        .row		
+          .col-sm-8
+            h1 The Iron Yard in Houston
+            p 
+              | Houston is home to many amazing enterprise, startup and healthcare software companies. We’re excited to meet the demand for high quality developers that will help businesses across the ecosystem build amazing digital product
+          .col-sm-4
+            h2 Address
+            p(style="font-size:16px; margin-top:3px") The Iron Yard - Houston <br>
+              | 1121 Delano St <br>
+              | Houston, TX 77003
+              | Located in START Houston
+            a(href="https://www.google.com/maps/place/START+houston/@29.746296,-95.350416,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x95fe297caf7ffa1d" class="btn")
+              | Directions  
+            
+
+      .horizontal-section.gray-light-bg#programs
+        .container
+            .row
+              .col-md-6
+                img.photo(src="/images/locations/houston/houston-academy.jpg")
+              .col-sm-6
+                h4 The Academy
+                p We offer two intensive Academy courses in Houston. Our grads get jobs with amazing local companies as well as awesome shops around the country.
+                ul.no-style-type(style="margin-top:12px")
+                  li(style="display:inline-block; padding-right: 10px;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:18px"> <strong>Front End Engineering</strong>
+                  li(style="display:inline-block; padding-right: 10px;"): a(href="/academy/rails-engineering").green-text <img src="/images/locations/icons/rails-icon.png" style="height:18px"> <strong>Ruby On Rails</strong>
+                a(href="/academy" class="btn") Learn More
+      
+
+      .horizontal-section    
+        .container
+          .row
+            .col-md-6
+              img.photo(src="/images/locations/houston/houston-kids-classes.jpg")
+            .col-md-6
+              h4 Kids Classes
+              p 
+                | We will launch kids classes in Houston in later this year. Sign up for our mailing list to learn more.
+              a(href="http://eepurl.com/RByUH" class="btn") Mailing list
+
+      .container  
+        .row
+          .col-sm-7.mobile-container
+            h2 Meet Our Houston Team
+            .row.left-column
+              .photo-list
+                .photo-container
+                  a(href="/about/team#rich"): img.photo-mentor(src="/images/about/rich-winley.jpg")
+                h3 Rich Winley
+                h4 Campus Director
+              .photo-list
+                .photo-container
+                  a(href="/about/team#jesse"): img.photo-mentor(src="/images/about/jesse-wolgamott.jpg")
+                h3 Jesse Wolgamott
+                h4 Ruby Instructor
+              .photo-list
+                .photo-container
+                  a(href="/about/team#matt"): img.photo-mentor(src="/images/about/matt-keas.jpg")
+                h3 Matt Keas
+                h4 JavaScript Instructor  
+
+          .col-sm-5.mobile-container#connect
+            h2 Connect
+            hr
+            ul.no-style-type
+              li: h4
+                a.green-text(href="/jobs") We're Hiring!
+              li: a.green-text(href="http://houston.theironyard.com") The Houston Blog
+              li: a.green-text(href="https://twitter.com/search?q=%23tiyCharleston&src=typd") #tiyHouston
+              li: a.green-text(href="mailto:houston@theironyard.com") houston@theironyard.com
+              li: a.green-text(href="http://eepurl.com/RByUH") Houston Newsletter
+
+            img.photo-medium(src="/images/locations/houston/houston-city1.jpg")
+            //- img.photo-medium(src="/images/locations/houston/houston-city2.jpg")
+            img.photo-medium(src="/images/locations/houston/houston-city3.jpg")
+
+
+      .horizontal-section.gray-light-bg(style="margin:40px 0 0 0")
+        .container
+          .row
+            .col-md-7
+              h3(style="margin-top:0") City Highlights
+              p America's fourth-largest city is a cosmopolitan destination, filled with world-class dining, arts, hotels, shopping and nightlife. Take a stroll through the historic Heights, spend the day exploring the Museum District or head down to Space Center Houston. Later on, grab a bite in one of dozens of award-winning restaurants, or hang out with the cool kids on Washington Avenue. There's always something to do in this Southern hospitality meets urban chic city. 
+            .col-md-5
+              h4 Recent posts from the blog
+              ul.no-style-type.recent
+
+block scripts
+  +blogFeed('houston')
