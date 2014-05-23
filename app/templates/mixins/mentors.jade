@@ -1,1 +1,10 @@
-mentors.jade
+mixin mentors(people)
+  each person in people
+    .profile-box
+      img(src="/images/accelerator/mentors/#{person.image}")
+      .content
+        h4= person.name
+        p= person.title
+        ul.no-style-type
+          each link in person.links
+            li: a(href="#{link.url}") <img src="/images/accelerator/mentors/#{link.image}">
