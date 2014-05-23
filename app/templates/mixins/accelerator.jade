@@ -11,4 +11,7 @@ mixin accelerator(profiles)
           p= profile.title
         ul.no-style-type
           each link in profile.links
-            li: a(href="#{link.url}") <img src="/images/accelerator/mentors/#{link.image}">
+            if link.url
+              li: a(href="#{link.url}") <img src="/images/accelerator/mentors/#{link.image}">
+            if link.email
+              li: a(href="mailto:#{link.email}") <img src="/images/accelerator/mentors/#{link.image}">

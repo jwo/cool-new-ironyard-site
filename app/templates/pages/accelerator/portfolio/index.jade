@@ -1,10 +1,21 @@
-include /mixins/accelerator
 extends /layouts/main
 block content
   +navigation({
-    title: 'Mentors',
+    title: 'Portfolio',
     color: 'turquoise'
   })
 
- .container(style="margin-top:40px")
+  .container(style="margin-top:40px")
     .container-fluid(style="text-align:center")
+
+    +accelerator(
+      [
+        {
+          name:"3Scan",
+          portfolio:"http://3scan.com/",
+          image:"3-scan.jpg",
+          links: [
+            {email:"megan@3scan.com", image:"icon-email.png"}
+          ]
+        }
+      ])

@@ -97,7 +97,7 @@ gulp.task('connect', function () {
         });
 });
 
-gulp.task('serve', ['connect', 'styles', 'templates', 'images'], function () {
+gulp.task('serve', ['connect', 'styles', 'templates'], function () {
     require('opn')('http://0.0.0.0:9000');
 });
 
