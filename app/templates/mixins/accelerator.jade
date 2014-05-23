@@ -1,0 +1,14 @@
+mixin accelerator(profiles)
+  each profile in profiles
+    .profile-box
+      if profile.portfolio
+        a(href="#{profile.portfolio}" style="text-decoration:none"): img(src="/images/accelerator/portfolio/#{profile.image}")
+      else  
+        img(src="/images/accelerator/mentors/#{profile.image}")
+      .content
+        h4= profile.name
+        if profile.title
+          p= profile.title
+        ul.no-style-type
+          each link in profile.links
+            li: a(href="#{link.url}") <img src="/images/accelerator/mentors/#{link.image}">
