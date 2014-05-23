@@ -6,7 +6,7 @@ block content
     image: '/images/locations/austin/austin.jpg',
     cutout: true,
     links: [
-      {title: "What We Offer", url: "#programs  "},
+      {title: "What We Offer", url: "#programs"},
       {title: "Connect", url: "#connect"},
     ]
   })
@@ -17,10 +17,10 @@ block content
 
         .row		
           .col-sm-8
-            h1 Coming Soon to Austin!
+            h1 The Iron Yard in Austin
             p 
               | Famous for staying weird, Austin has long been a hub of creativity and music. The last decade has seen the rise of its tech economy in the form of accelerators, startups, investors, coworking spaces, and world-renowned conferences. We’re excited to jump into the action and train the developers who will help drive the amazing momentum that is already in motion!
-          .col-sm-4.mobile-container
+          .col-sm-4.mobile-container#connect
             h2 Connect
             hr
             ul.no-style-type
@@ -31,14 +31,17 @@ block content
               li: a.green-text(href="http://eepurl.com/Qq799") Austin Newsletter
             
 
-      .horizontal-section.gray-light-bg
+      .horizontal-section.gray-light-bg#programs
         .container
             .row
               .col-md-6
-                img.photo(src="/images/locations/greenville/greenville-academy.jpg")
+                img.photo(src="/images/locations/austin/austin-academy.jpg")
               .col-sm-6
-                h4 Academy
-                p We are actively building our intensive Academy classes in Austin. Sign up for the mailing lists for news and announcements.
+                h4 The Academy          
+                p We offer two intensive Academy courses in Austin. Our grads get jobs with amazing local companies as well as awesome shops around the country.
+                ul.no-style-type(style="margin-top:12px")
+                  li(style="display:inline-block; padding-right: 10px;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:18px"> <strong>Front End Engineering</strong>
+                  li(style="display:inline-block; padding-right: 10px;"): a(href="/academy/rails-engineering").green-text <img src="/images/locations/icons/rails-icon.png" style="height:18px"> <strong>Ruby On Rails</strong>
                 a(href="/academy" class="btn") Learn More
       
 
@@ -46,11 +49,11 @@ block content
         .container
           .row
             .col-md-6
-              img.photo(src="/images/locations/kids-classes.jpg")
+              img.photo(src="/images/locations/austin/austin-kids-classes.jpg")
             .col-md-6
               h4 Kids Classes
               p 
                 | We’ll launch our free code classes for kids later this year. Sign up for the newsletter to be notified when things are ready.
-              a(href="/academy#kids").btn(style="text-align:center") Learn More   
+              a(href="http://eepurl.com/Qq799").btn(style="text-align:center") Newsletter 
 
 

@@ -10,8 +10,9 @@ function wpFeed(url, $el) {
          if(entries) {
             
             for(var i=0;i < 4; i++) {
-             fragment += '<li><a href="'+entries[i].link+'">'+entries[i].title+'</a></li>';
-             
+              if (entries[i]) {
+                fragment += '<li><a href="'+entries[i].link+'">'+entries[i].title+'</a></li>';
+              }
             }
            
            $el.append(fragment);

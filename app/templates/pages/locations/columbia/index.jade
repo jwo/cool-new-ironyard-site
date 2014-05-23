@@ -4,7 +4,11 @@ block content
     title: 'Columbia, SC',
     color: 'green',
     image: '/images/locations/columbia/columbia.jpg',
-    cutout: true
+    cutout: true,
+    links: [
+      {title: "What We Offer", url: "#programs"},
+      {title: "Connect", url: "#connect"},
+    ]
   })
 
   .container-fluid(style="padding:0")
@@ -17,46 +21,76 @@ block content
             p 
               | Serving as the capital of our home state, Columbia embodies what can be accomplished when merging business with tech. We are excited to partner with the amazing team at <a class="green-text" href="http://unmatchedstyle.com/">Unmatched Style</a> as we continue to grow the tech scene in Columbia and beyond. <br><br>
               | With UMS we are combining resources to continue to deliver amazing co-working spaces throughout the Southeast like that of <a class="green-text" href="http://soco-work.com/">SOCO</a>. Great startups benefit from creative and collaborative environments for professionals to spark innovation amongst one another and The Unmatched Style team is a proven, local innovator. We can’t wait to get going!
-          .col-sm-4.mobile-container
-            h2 Connect
-            hr
-            ul.no-style-type
-              li: h4
-                a.green-text(href="/jobs") We're Hiring in Columbia!
-              li: a.green-text(href="http://blog.theironyard.com") The Blog
-              li: a.green-text(href="mailto:hello@theironyard.com") hello@theironyard.com
-            
+          
+          .col-sm-4
+            h2 Address
+            p(style="font-size:16px; margin-top:3px") The Iron Yard - Columbia <br>
+              | 823 Gervais Street<br>
+              | Columbia, SC 29201
+            a(href="https://www.google.com/maps/place/823+Gervais+St/@34.000225,-81.039344,17z/data=!3m1!4b1!4m2!3m1!1s0x88f8bb2c4b95de31:0x625ccd3cc2dcccce" class="btn")
+              | Directions              
 
-      .horizontal-section.gray-light-bg
+      .horizontal-section.gray-light-bg#programs
         .container
             .row
               .col-md-6
-                img.photo(src="/images/locations/greenville/greenville-academy.jpg")
+                img.photo(src="/images/locations/columbia/columbia-academy.jpg")
               .col-sm-6
                 h4 Academy
-                p We are launching an intensive and fully immersive Web Design course in Columbia. Our grads get jobs with amazing local companies as well as awesome shops around the country.
-                a(href="/accelerator" class="btn") Learn More
+                p We are launching an intensive and fully immersive Web Design course in Columbia in 2015. Sign up for our newsletter for updates. 
+                ul.no-style-type(style="margin-top:12px")
+                  li(style="display:inline-block; padding-right: 10px;"): a(href="/academy").green-text <img src="/images/locations/icons/web-design-icon.png" style="height:18px"><strong> Web Design</strong>
+                a(href="http://eepurl.com/Vi_PD" class="btn") Newsletter
       
       .horizontal-section      
         .container
           .row
             .col-md-6
-              img.photo(src="/images/locations/greenville/greenville-cowork.jpg")
+              img.photo(src="/images/locations/columbia/columbia-cowork.jpg")
             .col-md-6
               h4 CoWorking Spaces
               p 
                 | Innovate and collaborate at SOCO where you will join a community of collaborators and brainstorming partners. With a full kitchen, free wi-fi, complimentary coffee and drinks, and secure 24-hour access, SOCO will feel just like home.
-
+              a(href="http://soco-work.com" class="btn") Learn More
       .horizontal-section.gray-light-bg      
         .container
           .row
             .col-md-6
-              img.photo(src="/images/locations/kids-classes.jpg")
+              img.photo(src="/images/locations/columbia/columbia-kids-classes.jpg")
             .col-md-6
               h4 Kids Classes
               p 
                 | We believe in investing in the local tech economy for the long-run, and that means impacting the next generation.<br><br>
                 | Students in our intensive courses are required to volunteer, teach and run our Kids programs as a part of their involvement in the Academy.
-              a(href="/academy").btn(style="text-align:center") Learn More   
+              a(href="http://eepurl.com/Vi_PD").btn(style="text-align:center") Newsletter   
+
+      .container  
+        .row
+          .col-sm-7.mobile-container
+            h2 Meet Our Columbia Team
+            .row.left-column
+              .photo-list
+                .photo-container
+                  a(href="/about/team#gene"): img.photo-mentor(src="/images/about/gene-crawford.jpg")
+                h3 Gene Crawford
+                h4 Campus Director
+              .photo-list
+                .photo-container
+                  a(href="/about/team#giovanni"): img.photo-mentor(src="/images/about/giovanni-difeterici.jpg")
+                h3 Giovanni Difeterici
+                h4 Web Design Instructor
+
+          .col-sm-5.mobile-container#connect
+            h2 Connect
+            hr
+            ul.no-style-type
+              li: h4
+                a.green-text(href="/jobs") We're Hiring!
+              li: a.green-text(href="http://blog.theironyard.com") The Blog
+              li: a.green-text(href="https://twitter.com/search?q=%23tiycolumbia&src=typd") #tiycolumbia
+              li: a.green-text(href="mailto:columbia@theironyard.com") columbia@theironyard.com
+              li: a.green-text(href="http://eepurl.com/Vi_PD") Columbia newsletter
+
+            img.photo-medium(src="/images/locations/columbia/columbia-city.jpg")
 
 
