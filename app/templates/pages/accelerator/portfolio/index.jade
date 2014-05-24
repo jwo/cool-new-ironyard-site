@@ -1,3 +1,4 @@
+include /mixins/accelerator
 extends /layouts/main
 block content
   +navigation({
@@ -8,14 +9,393 @@ block content
   .container(style="margin-top:40px")
     .container-fluid(style="text-align:center")
 
-    +accelerator(
-      [
-        {
-          name:"3Scan",
-          portfolio:"http://3scan.com/",
-          image:"3-scan.jpg",
-          links: [
-            {email:"megan@3scan.com", image:"icon-email.png"}
-          ]
-        }
-      ])
+      +accelerator(
+        [
+          {
+            name:"3Scan",
+            portfolio:"http://3scan.com/",
+            image:"3-scan.jpg",
+            links: [
+              {email:"megan@3scan.com"},
+              {url:"http://twitter.com/3ScanTweets", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"8 to 18",
+            portfolio:"http://8to18.com",
+            image:"8-to-18.jpg",
+            links: [
+              {email:"jeff.keller@8to18.com"}
+            ]
+          },
+          {
+            name:"AuditFile.com",
+            portfolio:"http://auditfile.com",
+            image:"audit-file.jpg",
+            links: [
+              {email:"kevin@auditfile.com"},
+              {url:"https://angel.co/auditfile", image:"angellist.png"},
+              {url:"https://twitter.com/AuditFile_team", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"BetterFit",
+            portfolio:"#",
+            image:"betterfit.jpg",
+            links: [
+              {email:"hello@theironyard.com"}
+            ]
+          },
+          {
+            name:"Blaze health",
+            portfolio:"http://blazehealth.co",
+            image:"blaze-health.jpg",
+            links: [
+              {email:"hfounders@blazehealth.co"},
+              {url:"https://www.facebook.com/BlazeHealth", image:"facebook.png"},
+              {url:"http://twitter.com/blazehealth", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Careport Health",
+            portfolio:"http://careporthealth.com/",
+            image:"careport-health.jpg",
+            links: [
+              {url:"https://angel.co/careport-health", image:"angellist.png"},
+              {url:"http://www.facebook.com/Careporthealth", image:"facebook.png"},
+              {url:"https://twitter.com/careporthealth", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Care IT",
+            portfolio:"http://care.it/",
+            image:"care-it.jpg",
+            links: [
+              {email:"support@care.it"},
+              {url:"http://twitter.com/CareThruIT", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"ChartSpan",
+            portfolio:"http://chartspan.com",
+            image:"chart-span.jpg",
+            links:[
+              {email:"JonMichial@ChartSpan.com"},
+              {url:"https://angel.co/chartspan-medical-technologies", image:"angellist.png"},
+              {url:"https://www.facebook.com/ChartSpan", image:"facebook.png"},
+              {url:"https://twitter.com/ChartSpanApp", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"FilterEasy",
+            portfolio:"http://filtereasy.com/",
+            image:"filtereasy.jpg",
+            links: [
+              {email:"kevin@filtereasy.com"},
+              {url:"https://angel.co/filtereasy", image:"angellist.png"},
+              {url:"http://www.crunchbase.com/company/filtereasy", image:"crunchbase.png"},
+              {url:"https://www.facebook.com/FilterEasy", image:"facebook.png"},
+              {url:"https://twitter.com/filtereasy", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Fit Steps",
+            portfolio:"#",
+            image:"fit-steps.jpg",
+            links: [
+              {email:"djrodillo@gmail.com"}
+            ]
+          },
+          {
+            name:"FullContact",
+            portfolio:"http://fullcontact.com",
+            image:"full-contact.jpg",
+            links:[
+              {url:"https://angel.co/fullcontact-1/jobs#overview", image:"angellist.png"},
+              {url:"http://www.facebook.com/FullContactAPI", image:"facebook.png"},
+              {url:"https://twitter.com/FullContactAPI", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Gamemaster",
+            portfolio:"http://www.gamemaster-inc.com/",
+            image:"gamemaster.jpg",
+            links: [
+              {email:"info@gamemastermedia.com"},
+              {url:"https://angel.co/gamemaster", image:"angellist.png"},
+              {url:"https://twitter.com/gamemasterinc", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Health Plotter",
+            portfolio:"http://healthplotter.com",
+            image:"health-plotter.jpg",
+            links: [
+              {email:"senthil@healthplotter.com"},
+              {url:"https://angel.co/healthplotter", image:"angellist.png"},
+              {url:"https://twitter.com/healthplotter", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Kambit",
+            portfolio:"http://www.kambit.com",
+            image:"kambit.jpg",
+            links: [
+              {email:"founders@kambit.com"},
+              {url:"https://angel.co/kambit/activity#overview", image:"angellist.png"},
+              {url:"http://www.facebook.com/KambitCares", image:"facebook.png"},
+              {url:"http://twitter.com/kambitcares", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Kydaemos",
+            portfolio:"http://kydaemos.com",
+            image:"kydaemos.jpg",
+            links: [
+              {email:"elenatropp@kydaemos.com"},
+              {url:"https://angel.co/kydaemos", image:"angellist.png"},
+              {url:"http://www.facebook.com/Kydaemos", image:"facebook.png"},
+              {url:"https://twitter.com/Kydaemos", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Leaguevine",
+            portfolio:"http://leaguevine.com",
+            image:"leaguevine.jpg",
+            links: [
+              {email:"founders@leaguevine.com"},
+              {url:"https://angel.co/leaguevine", image:"angellist.png"},
+              {url:"http://www.facebook.com/Leaguevine", image:"facebook.png"},
+              {url:"http://www.twitter.com/leaguevine", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Locally",
+            portfolio:"https://www.locally.fm/",
+            image:"locally.jpg",
+            links: [
+              {email:"founders@locengine.com"},
+              {url:"https://angel.co/locally-2/activity#overview", image:"angellist.png"},
+              {url:"http://www.facebook.com/Locallyfm?ref=hl", image:"facebook.png"},
+              {url:"https://twitter.com/locallyfm", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"MoonClerk",
+            portfolio:"http://moonclerk.com/",
+            image:"moonclerk.jpg",
+            links: [
+              {email:"founders@moonclerk.com"},
+              {url:"http://www.facebook.com/moonclerk", image:"facebook.png"},
+              {url:"http://twitter.com/moonclerk", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"My Doc Time",
+            portfolio:"http://www.mydoctime.com",
+            image:"my-doc-time.jpg",
+            links: [
+              {email:"info@mydoctime.com"},
+              {url:"http://www.facebook.com/mydoctime", image:"facebook.png"},
+              {url:"http://www.twitter.com/mydoctime", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"No Chains",
+            portfolio:"http://www.nochains.co",
+            image:"no-chains.jpg",
+            links: [
+              {email:"founders@nochains.co"},
+              {url:"https://angel.co/no-chains", image:"angellist.png"},
+              {url:"https://www.facebook.com/mydoctime", image:"facebook.png"},
+              {url:"http://twitter.com/nochainsapp", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Origin.al",
+            portfolio:"http://Origin.al",
+            image:"original.jpg",
+            links: [
+              {url:"https://angel.co/original-2", image:"angellist.png"}
+            ]
+          },
+          {
+            name:"Pathwright",
+            portfolio:"http://pathwright.com/",
+            image:"pathwright.jpg",
+            links: [
+              {email:"founders@pathwright.com"},
+              {url:"https://angel.co/pathwright", image:"angellist.png"},
+              {url:"http://www.facebook.com/pathwright", image:"facebook.png"},
+              {url:"http://www.twitter.com/pathwrightapp", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Prime Genomics",
+            portfolio:"http://www.primegenomics.com/",
+            image:"prime-genomics.jpg",
+            links: [
+              {email:"info@primegenomics.com"},
+              {url:"https://angel.co/prime-genomics", image:"angellist.png"},
+              {url:"https://www.facebook.com/pages/Prime-Genomics/209295552418856?sk=wall", image:"facebook.png"},
+              {url:"https://twitter.com/primegenomics", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"RACTIV",
+            portfolio:"http://ractiv.com",
+            image:"ractiv.jpg",
+            links: [
+              {email:"info@ractiv.com"},
+              {url:"https://angel.co/ractiv", image:"angellist.png"},
+              {url:"https://www.facebook.com/ractivtech", image:"facebook.png"},
+              {url:"https://twitter.com/ractivtech", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Relocality",
+            portfolio:"http://relocality.com",
+            image:"relocality.jpg",
+            links: [
+              {email:"diane@relocality.com"},
+              {url:"https://angel.co/relocality", image:"angellist.png"},
+              {url:"http://www.crunchbase.com/company/relocality", image:"crunchbase.png"},
+              {url:"https://www.facebook.com/relocality", image:"facebook.png"},
+              {url:"https://twitter.com/relocality", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"RateValet",
+            portfolio:"http://ratevaletapp.com",
+            image:"ratevalet.jpg",
+            links: [
+              {email:"hello@ratevaletapp.com"},
+              {url:"https://angel.co/trips-n-salsa/followers#overview", image:"angellist.png"},
+              {url:"http://www.twitter.com/ratevaletapp", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Relify",
+            portfolio:"#",
+            image:"relify.jpg",
+            links: [
+              {email:"hello@theironyard.com"}
+            ]
+          },
+          {
+            name:"RidePost",
+            portfolio:"http://ridepost.com",
+            image:"ridepost.jpg",
+            links: [
+              {email:"founders@ridepost.com"},
+              {url:"https://angel.co/ridepost/press#overview", image:"angellist.png"},
+              {url:"http://www.facebook.com/ridepost", image:"facebook.png"},
+              {url:"http://twitter.com/ridepost", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Second Light",
+            portfolio:"http://www.secondlight.co/",
+            image:"second-light.jpg",
+            links: [
+              {email:"founders@2nl.co"},
+              {url:"https://angel.co/second-light", image:"angellist.png"},
+              {url:"https://www.facebook.com/2nlco", image:"facebook.png"},
+              {url:"https://twitter.com/2nlco", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Tavern",
+            portfolio:"http://tavernapp.com/",
+            image:"tavern.jpg",
+            links: [
+              {email:"rob@tavernapp.com"},
+              {url:"https://angel.co/tavern", image:"angellist.png"},
+              {url:"https://twitter.com/tavern", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"ThoroughCare",
+            portfolio:"http://www.thoroughcare.net/",
+            image:"thoroughcare.jpg",
+            links: [
+              {email:"info@thoroughcare.net"},
+              {url:"https://angel.co/thoroughcare", image:"angellist.png"},
+              {url:"https://twitter.com/ThoroughCare", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"TinderBox",
+            portfolio:"https://gettinderbox.com",
+            image:"tinderbox.jpg",
+            links: [
+              {url:"https://angel.co/tinderbox", image:"angellist.png"},
+              {url:"http://www.facebook.com/GetTinderBox", image:"facebook.png"},
+              {url:"https://twitter.com/GetTinderBox", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"TipHive",
+            portfolio:"http://www.tiphive.com",
+            image:"tiphive.jpg",
+            links: [
+              {email:"madiken@tiphive.com"},
+              {url:"https://angel.co/tiphive", image:"angellist.png"},
+              {url:"https://www.facebook.com/tiphive", image:"facebook.png"},
+              {url:"https://twitter.com/TipHive", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Tribr",
+            portfolio:"http://www.tribr.com/",
+            image:"tribr.jpg",
+            links:[
+              {email:"founders@tribr.com"},
+              {url:"https://angel.co/tribr/activity#overview", image:"angellist.png"},
+              {url:"https://www.facebook.com/tribrapp", image:"facebook.png"},
+              {url:"http://twitter.com/tribrapp", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"UpKeep Charlie",
+            portfolio:"http://upkeepcharlie.com",
+            image:"upkeep-charlie.jpg",
+            links: [
+              {email:"stefan@upkeepcharlie.com"},
+              {url:"https://angel.co/upkeep-charlie/embed#overview", image:"angellist.png"},
+              {url:"http://www.crunchbase.com/company/upkeep-charlie", image:"crunchbase.png"},
+              {url:"https://twitter.com/upkeepcharlie", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Urban Hero",
+            portfolio:"http://urbanherosports.com/",
+            image:"urban-hero.jpg",
+            links: [
+              {url:"https://angel.co/urban-hero-sports", image:"angellist.png"},
+              {url:"https://twitter.com/UrbanHeroSports", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Vheda",
+            portfolio:"http://www.vheda.com/",
+            image:"vheda.jpg",
+            links: [
+              {email:"shameet@vheda.com"},
+              {url:"https://angel.co/vheda-health", image:"angellist.png"},
+              {url:"https://twitter.com/vhedahealth", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"Wantworthy",
+            portfolio:"http://wantworthy.com",
+            image:"wantworthy.jpg",
+            links: [
+              {url:"https://angel.co/want-worthy", image:"angellist.png"},
+              {url:"http://www.facebook.com/Wantworthy", image:"facebook.png"},
+              {url:"https://twitter.com/wantworthy", image:"twitter.png"}
+            ]
+          }
+
+
+        ])
