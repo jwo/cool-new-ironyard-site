@@ -1,0 +1,7 @@
+mixin events(events)
+  each event in events
+        .horizontal-section(style="max-width:992px")
+          a(href="{#event.link}"): img.photo(src="#{event.image}")
+          h3 #{event.name} - <em>#{event.dates}</em>
+          p= event.description
+          a(href="#{event.link}").btn Learn More
