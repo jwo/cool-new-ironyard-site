@@ -1,0 +1,46 @@
+extends /layouts/main
+block content
+  +navigation({
+    title: 'Green Tech Program',
+    color: 'turquoise',
+    links: [
+      {title: "Mentors", url: "/accelerator/mentors"},
+      {title: "Asheville", url: "/locations/asheville"}
+    ]
+  })
+
+  .container
+    .row(style="margin-top:60px")
+      .col-md-8
+        img.photo(src="/images/accelerator/green-tech/green-program-image.jpg")
+        h3 From green tech consumer apps to clean tech enterprise software and hardware, we’re helping startups build the future of clean technology.
+        p <strong>Members of our Accelerator Receive</strong>
+          ul 
+            li $20,000 in seed capital.
+            li Three months of incredible mentorship and weekly workshops from experts in healthcare innovation, fundraising, UX/UI and development, design, lean startup methodology, team formation and financing.           
+            li Demo Day to present to potential customers and investors as well as the community.
+            li Full year of free coworking space surrounded by other innovators.
+            li Strong partnerships with industry experts.
+            li Free legal services and amazing perks through <a href="http://gan.co">GAN</a> and <a href="http://f6s.com">F6S</a>.
+            li Great downtown housing in the same building as the accelerator and free access to bikes for getting around town.
+            li Fun events to introduce you to the Upstate and the surrounding mountains. All work and no play makes Jack a dull entrepreneur.
+          p <strong>Your Team: </strong>
+          ul
+            li Two or more people. We will occasionally take solo founders, but teams are preferred.
+            li Company should be software or a software/hardware combination. We also will consider select medical devices, biotech, and life sciences companies.
+            li Your team must co-locate at The Iron Yard for the duration of the program. There’s no obligation to stay here, but we’d sure love to have you.
+      .col-md-4
+        h3 Applications closed
+        hr
+        h3 Virtual Office Hours
+        ul
+          li: a(href="http://ohours.org/bauermarty") Click to schedule an appointment
+        hr
+        h3 Dig Deeper
+        ul
+          li <a href="http://eepurl.com/MmxWX">Sign up for our newsletter</a>
+          li <a href="mailto:asheville@theironyard.com">asheville@theironyard.com</a>
+          li Check out our <a href="/accelerator/green-tech/faq">Frequently Asked Questions</a>
+          li Check out our lovely city, <a href="/locations/asheville">Asheville</a>
+          li Meet your <a href="/accelerator/mentors">mentors</a>
+          li We offer amazing perks through <a href="http://gan.co">GAN</a> and <a href="http://f6s.com">F6S</a>
