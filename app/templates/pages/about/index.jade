@@ -1,0 +1,10 @@
+extends /layouts/main
+block content
+  +navigation({
+    title: 'About The Iron Yard',
+    color: 'gray-dark',
+    links: [
+      {title: "Team", url: "/about/team"},
+      {title: "Culture", url: "/about/culture"}
+    ]
+  })
