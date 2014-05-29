@@ -1,12 +1,12 @@
 mixin events(events)
   each event in events
         .horizontal-section(style="max-width:992px; margin:10px auto")
-          a(href="#{event.link}"): img.photo(src="#{event.image}")
+          a(href="#{event.link}" target="_blank"): img.photo(src="#{event.image}")
           if event.dates
             h3 #{event.name} - <em>#{event.dates}</em>
           else
             h3= event.name
           p= event.description
-          a(href="#{event.link}" style="margin-bottom:10px").btn Learn More
+          a(href="#{event.link}" target="_blank" style="margin-bottom:10px").btn Learn More
           if event.hr 
             hr
