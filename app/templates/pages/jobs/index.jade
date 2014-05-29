@@ -1,0 +1,71 @@
+extends /layouts/main
+block content
+  +navigation({
+    title: "We're Hiring",
+    color: 'gray-dark',
+    links: [
+      {title:"Our mission", url:"#mission"},
+      {title:"Our culture", url:"#culture"},
+      {title:"Programming Instructors", url:"#instructors"},
+      {title:"Campus Directors", url:"#directors"}
+    ]
+  })
+
+  .container
+    .row(style="margin-top:50px")
+      .col-md-8
+        h3(style="margin-top:0px  ") The short story
+        p We’re hiring programming instructors and campus directors to launch code schools in cities across the Southeast. Check out the open positions below, and be sure to read about our <a href="#mission">mission</a> and <a href="#culture">culture</a>.
+        h1#instructors Programming Instructors
+        hr
+        p We're looking for:
+        ul 
+          li iOS instructors
+          li Ruby on Rails instructors
+          li Front end engineering (JavaScript) instructors
+        p If you live and breathe code as your craft; find joy in helping other people learn it too; and want a huge amount of time to pursue freelance, personal projects, or open source work, then this job was custom-made for you.<br><br>
+        strong Educational values
+        p First and most importantly, here are a few of our values when it comes to teaching someone how to be a developer:
+        ul
+          li <strong>Thing over syntax</strong> -  We believe syntax is the easy part of programming and that we are successful when we’ve helped someone learn to think like an engineer.
+          li <strong>Quality over quantity</strong> – We’re interested in training true professionals, not getting as many people into our classes as possible.
+          li <strong>Real projects over scripted assignments</strong> – People learn programming best by tackling hard problems with a mentor, not following a list of steps and taking a quiz.
+          li <strong>Emphasis on open source</strong> – We deeply value the open source mindset and intentionally create and contribute to open source projects.
+        p
+          | <strong>What the role and responsibilities look like</strong><br><br>
+          | Our instructors serve as lecturers and mentors to our students, helping them learn to think like engineers and hone their skills in a programming discipline. You’ll also help define and refine the curriculum to stay current with cool new stuff. Here’s a peek at the <a href="/academy/front-end-engineering">Front End Engineering</a> course we’ve already launched.<br><br>
+          | You’ll teach three, three-month semesters each year. The remaining three months you’ll only have light duties for The Iron Yard, such as curriculum updates and interviewing students for future classes. Beyond those things, you’re free to work on whatever you want (such as personal projects, open source projects, or products that we’re building and launching as The Iron Yard). And, of course, you’ll want to take some well-deserved time off.<br><br>
+          | Each class will be 15 students (no more), and you will have an admin/campus director to take care of all the non-teaching-critical parts of running a program.<br><br>
+          | Outside of teaching responsibilities, you’ll be an active part of the development community in your city (hopefully you already are).<br><br>
+          | <strong>Your qualities</strong>
+        ul
+          li Self-starter who takes ownership of your job role
+          li Expertise (and lots of experience) in either JavaScript, Ruby/Rails, or mobile dev (iOS or Android)
+          li GitHub credibility (evidence of an active passion for development)
+          li Great communication skills, especially in distilling complex subject matter
+          li You believe in our <a href="#mission">mission</a> and are excited about building our <a href="#culture">culture</a>
+          li Really care about the mission of filling the gigantic developer shortfall happening in our industry
+          li A good sense of humor – intensive classes don’t work if it’s all work and no play
+          li Big fan of open source work and building the dev community in general
+          li: em Bonus: great at finding epic gifs
+        strong Compensation and benefits
+        ul
+          li Compensation and benefits
+          li Competitive, full-time developer salary
+          li Profit sharing
+          li Ample time to pursue personal projects, open source work, and more between semesters
+          li 100% paid benefits
+        p 
+          | <strong>Sound like a dream come true?</strong><br><br> 
+          | <a href="iwannajoin@theironyard.com?subject=I'm interested in the programming instructor position">Send us an email</a> explaining why you’re an incredible fit for our company and this job. Be sure to include:
+        ul
+          li What you’ll teach (iOS, RoR, or JS)
+          li Where you live and whether you are willing to relocate
+          li A link to your GitHub profile
+          li Portfolio or examples of work and
+          li Your favorite gif
+      .col-md-4
+        img.photo(src="/images/jobs/academy-jobs-1.jpg" style="margin-bottom:10px; max-width:500px")
+        img.photo(src="/images/jobs/academy-jobs-2.jpg" style="margin-bottom:10px; max-width:500px")
+        img.photo(src="/images/jobs/academy-jobs-3.jpg" style="margin-bottom:10px; max-width:500px")
+        img.photo(src="/images/jobs/academy-jobs-4.jpg" style="max-width:500px")
