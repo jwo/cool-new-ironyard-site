@@ -19,4 +19,4 @@ function wpFeed(url, $el) {
            }
          }
      });
-}
+};
