@@ -1,0 +1,32 @@
+extends /layouts/main
+block content
+  +navigation({
+    title: 'CoWork',
+    color: 'yellow',
+    image: '/images/cowork/cowork.jpg',
+    cutout: true,
+    links: [
+      {title: "Pricing", url: "#programs"},
+      {title: "Locations", url: "#connect"},
+    ]
+  })
+
+
+  .container(style="max-height: 999px; max-width: 960px; text-align: center; margin-top: 40px;")
+    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/60752267' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+  
+  .container.container-fluid
+    .row
+      .col-md-4(style="text-align:center")
+        h2 Railside
+        p.
+          Railside is the original CoWorking recipe in Greenville. This location’s proximity to main street and beautiful industrial aesthetic are icing on a cake made from some of the best entrepreneurs and designers in the Southeast.
+
+      .col-md-4(style="text-align:center")
+        h2 The Forge
+        p.
+          The Forge is located downtown in the heart of Greenville, SC’s technology hub, The NEXT Innovation Center. Join freelancers, startup founders, Academy students, and other high-tech companies headquartered in town.
+
+      .col-md-4(style="text-align:center")
+        h2 The Mill
+        p. Located in The Grain District of Spartanburg, SC, The Mill is home to our Digital Health Accelerator program. A variety of creatives and entrepreneurs share a gorgeous space located right next to the best art and music venue in town.
