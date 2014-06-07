@@ -1,5 +1,8 @@
 extends /layouts/main
 block content
+
+  
+
   +navigation({
     title: 'CoWork',
     color: 'yellow',
@@ -11,6 +14,40 @@ block content
     ]
   })
 
+  style.
+    .slider{
+      border: black solid 3px;
+      height: 370px;
+      margin: 10px auto;
+      position: relative; /* required */
+      width: 450px;
+    }
+
+    .slider > .sequence-canvas li > * { 
+      position: absolute;
+    }
+
+    .slider > .sequence-canvas { /* required */
+      height: 100%; 
+      width: 100%;
+    }
+
+    .slider > .sequence-canvas > li {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .slider > .sequence-canvas > li > div {
+      left: -150px;
+      top: 10px;
+      -webkit-transition-duration: 1s;
+      -moz-transition-duration: 1s;
+      -o-transition-duration: 1s;
+      -ms-transition-duration: 1s;
+      transition-duration: 1s;
+    }
 
   .container(style="max-height: 999px; max-width: 960px; text-align: center; margin-top: 40px;")
     <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/60752267' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
@@ -76,15 +113,16 @@ block content
       .col-md-12
         h1 Railside
         .slider
-          ul
+          ul.sequence-canvas.no-style-type
             li 
-              h1 COOL
+              div(style="background-image:url('/images/events/bdorlando2014.png'); height:100%; width:100%")
             li
-              h1 COOLER
+              div(style="background-image:url('/images/events/convergerva.png'); height:100%; width:100%")
+              
 
 block scripts
   script(src="/scripts/libs/sequence.jquery.js")
-  js.
+  script(type="text/javascript").
     $('document').ready(function(){
       sequence = $(".slider").sequence({
         autoPlay: true,
