@@ -1,0 +1,14 @@
+extends /layouts/main
+block content
+  +navigation({
+    title: 'Academy',
+    color: 'gold',
+    image: '/images/academy/academy-header.jpg',
+    cutout: true,
+    links: [
+      {title: "Hire Graduates", url: "/academy/graduates"},
+      {title: "Alumni", url: "/academy/alumni"},
+      {title: "FAQs", url: "/academy/faq"},
+      {title: "Kids Classes", url: "/academy#kids"}
+    ]
+  })
