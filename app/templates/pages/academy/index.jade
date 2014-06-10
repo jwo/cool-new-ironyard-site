@@ -12,6 +12,7 @@ block content
       {title: "Kids Classes", url: "/academy#kids"}
     ]
   })
+  <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 
   .container
     .row
@@ -31,7 +32,7 @@ block content
         h3 Mobile Engineering
         p Learn iOS app development using Xcode 5 and a whole lot of Objective-C. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps.
       .col-lg-3.col-sm-4.cta-box
-        a(href="#").btn Learn More
+        a(href="/academy/mobile-engineering").btn Learn More
     hr
 
     .three-col-cta.row
@@ -42,7 +43,7 @@ block content
         h3 Front End Engineering
         p Learn Front End Engineering using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.
       .col-lg-3.col-sm-4.cta-box
-        a(href="#").btn Learn More
+        a(href="/academy/front-end-engineering").btn Learn More
     hr    
 
     .three-col-cta.row
@@ -53,12 +54,82 @@ block content
         h3 Rails Engineering
         p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build rock-solid servers, manage databases and know the basics of front end app development.
       .col-lg-3.col-sm-4.cta-box
-        a(href="#").btn Learn More
+        a(href="/academy/rails-engineering").btn Learn More
 
     .row
-      .callout-box(style="padding:2px")
-        p Questions? Want to know what makes us different?<br>
+      .callout-box(style="padding:2px;")
+        p(style="font-size:16px;") Questions? Want to know what makes us different?<br>
           | <strong>Call and talk to someone on the team</strong><br>
-          | Atlanta: <a href="tel:+7707518046">(770) 751-8046</a> • Charleston: (843) 501-2775 • Durham: (919) 561-6055 <br>
-          | Houston: (713) 425-3797 • Greenville: (864) 952-0099 <br><br>
+          | Atlanta: <a href="tel:+7707518046">(770) 751-8046</a> • Charleston: <a href="tel:+8435012775">(843) 501-2775</a> • Durham: <a href="tel:+9195616055">(919) 561-6055</a> <br>
+          | Houston: <a href="tel:+7134253797">(713) 425-3797</a> • Greenville: <a href="tel:+8649520099">(864) 952-0099</a> <br><br>
           | (You can also <a href="mailto:academy@theironyard.com?subject=I want to learn more about the Academy">shoot us an email</a> or jump into our <a href="#">Academy Chat</a>.)
+
+  .horizontal-section.gray-light-bg
+    .container(style="max-width: 960px; margin-top: 40px;")
+      .row(style="text-align:center")
+        h3 <em>Proven Process, Proven Instructors, Proven Results</em>  
+        .embed-container <iframe src="//player.vimeo.com/video/83723333?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      .row
+        .col-md-6
+          p 
+            | Choosing the right code education program for you can be difficult. Our courses are designed to help you launch a programming career, and require you to put in the effort and commitment it takes to make that happen.<br><br>
+            | We prefer to let our results speak for us, whether that’s a student changing their life or a happy employer that’s blown away after hiring one of our grads.<br><br>
+            | Learn more about our classes and results:
+          ul 
+            li: a(href="http://theironyard.com/academy/faq") Check out our FAQs
+            li: a(href="http://theironyard.com/academy/faq/#different") Learn more about what makes us different
+            li: a(href="mailto:academy@theironyard.com?subject=I'd like to talk with a team member about the Academy") Talk with one of our team members
+            li: a(href="mailto:academy@theironyard.com?subject=I'd like to talk with an Academy graduate") Talk with one of our graduates
+            li: a(href="mailto:academy@theironyard.com?subject=I'd like to talk with an Academy employer") Talk with one of our employers
+          a.btn(href="http://theironyard.com/jobs") We're Hiring!
+        .col-md-6
+          p Here are a few of our values when it comes to teaching someone how to be a developer:
+          ul 
+            li 
+              | <strong>Thinking over syntax </strong><br>
+              | <em>We believe syntax is the easy part of programming and that we are successful when we’ve helped someone learn to think like an engineer.</em>
+            li 
+              | <strong>Quality over quantity </strong><br>
+              | <em>We’re interested in training true professionals, not getting as many people into our classes as possible</em>
+            li 
+              | <strong>Real projects over scripted assignments</strong><br>
+              | <em>People learn programming best by tackling hard problems with a mentor, not following a list of steps and taking a quiz.</em>
+            li 
+              | <strong>Instructors as practitioners </strong><br>
+              | <em>Our teachers stay sharp by taking time off in between classes to freelance, build products and run companies, ensuring the latest, greatest curriculum every semester.</em>
+            li 
+              | <strong>Emphasis on open source </strong><br>
+              | <em>We deeply value the open source mindset and intentionally create and contribute to open source projects.</em>
+
+  .container
+    .row
+      .col-md-12
+        h3 Free Code Education for Kids
+        p 
+          | At each of our locations we offer free code classes for kids. We believe in investing in the local tech economy for the long-run, and that means impacting the next generation.<br><br>
+          | Students in our intensive courses are required to volunteer, teach and run our Kids programs as a part of their involvement in the Academy. (Not only does this develop a giving mindset, but it helps them communicate things they’ve learned—an essential skill as they grow into management positions in their careers.)
+      hr
+
+    .three-col-cta.row
+      .col-lg-2.col-sm-2
+        .image-box
+          img(src="/images/academy/scratch-logo.png")
+      .col-lg-7.col-sm-6
+        h3 Scratch
+        p With Scratch you can program your own interactive stories, games, and animations — and share your creations with others in the online community.
+      .col-lg-3.col-sm-4.cta-box
+        a(href="/academy/scratch").btn Learn More 
+
+    .three-col-cta.row
+      .col-lg-2.col-sm-2
+        .image-box
+          img(src="/images/academy/build-a-website-logo.png")
+      .col-lg-7.col-sm-6
+        h3 Build a Website
+        p Using HTML and CSS, you’ll learn to build your own personal webpage, with awesome interactions and content that you’ve designed.
+      .col-lg-3.col-sm-4.cta-box
+        a(href="/academy/build-a-website").btn Learn More  
+
+
+
+        
