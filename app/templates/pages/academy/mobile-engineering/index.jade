@@ -1,0 +1,78 @@
+extends /layouts/main
+block content
+  +navigation({
+    title: 'Mobile Engineering',
+    color: 'blue',
+    links: [
+      {title:"FAQs", url:"/academy/mobile-engineering/faq"},
+      {title:"We're Hiring!", url:"/jobs"}
+    ]
+  })
+
+  .container
+    .row
+      .col-md-12
+        h3.blue-text: em Learn to build iOS apps using Xcode and Objective-C
+      .col-md-8
+        p 
+          | Over the course of three months, a practicing iOS nerd (and skilled instructor) will teach you the ins-and-outs of iOS app development using Xcode 5 and a whole lot of Objective-C. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps as well.<br><br>
+          | The best part: we’ll help you get a job offer as a mobile developer when you graduate (or your tuition back, guaranteed). Don’t know any code? Don’t worry. Our proven teachers and process will take you from zero to hero and mentor you into a professional junior-level programmer.
+      .col-md-4(style="text-align:center")
+        img.photo(src="/images/academy/mobile-engineering/mobile-eng-image.jpg" style="max-width:500px;")
+
+    .row
+      .callout-box
+        .row
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/mobile-engineering/prototype.png")
+            p(style="width:252px; margin:20px auto") Build testable mobile app prototypes quickly
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/mobile-engineering/apps.png")
+            p(style="width:252px; margin:20px auto") Build fast, production-quality native mobile apps
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/mobile-engineering/ham.png")
+            p(style="width:252px; margin:20px auto") Learn to craft mobile user experiences and interfaces
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/mobile-engineering/code.png")
+            p(style="width:252px; margin:20px auto") Go deep into Objective-C methods and classes
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/mobile-engineering/computers.png")
+            p(style="width:252px; margin:20px auto") Master a mobile-specific development process
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/mobile-engineering/brain-guy.png")
+            p(style="width:252px; margin:20px auto") Most importantly, learn how to learn
+          hr
+          p(style="font-size:16px;") Questions? Want to know what makes us different?<br>
+            | <strong>Call and talk to someone on the team</strong><br>
+            | Atlanta: <a href="tel:+7707518046">(770) 751-8046</a> • Charleston: <a href="tel:+8435012775">(843) 501-2775</a> • Durham: <a href="tel:+9195616055">(919) 561-6055</a> <br>
+            | Houston: <a href="tel:+7134253797">(713) 425-3797</a> • Greenville: <a href="tel:+8649520099">(864) 952-0099</a> <br><br>
+            | (You can also <a href="mailto:academy@theironyard.com?subject=I want to learn more about the Academy">shoot us an email</a> or jump into our <a href="#">Academy Chat</a>.)
+
+    .three-col-cta.row
+      .col-lg-2.col-sm-2
+        .image-box
+          img(src="/images/academy/mobile-engineering/nebula.png")
+      .col-lg-7.col-sm-6
+        h3 Scholarships
+        p One of our missions is to make programming, engineering and computer science welcoming to everyone. Learn more about our scholarships for women, military personnel and others.
+      .col-lg-3.col-sm-4.cta-box
+        a(href="/academy/scholarships").btn Learn More
+
+  .container  
+    table.class-table(style="margin:10px auto; width:90%")
+      tr
+        td Start date
+        td Location
+        td Instructor
+        td: a.btn(href="#") Closed
+      tr
+        td Start date
+        td Location
+        td Instructor
+        td: a.btn(href="#") Apply
+      tr
+        td Start date
+        td Location
+        td Instructor
+        td: a.btn(href="#") Wait List
+  
