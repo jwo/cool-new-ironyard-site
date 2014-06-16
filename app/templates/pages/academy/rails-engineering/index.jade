@@ -1,8 +1,8 @@
 extends /layouts/main
 block content
   +navigation({
-    title: 'Mobile Engineering',
-    color: 'blue',
+    title: 'Rails Engineering',
+    color: 'red',
     links: [
       {title:"FAQs", url:"/academy/mobile-engineering/faq"},
       {title:"We're Hiring!", url:"/jobs"}
@@ -12,11 +12,11 @@ block content
   .container
     .row
       .col-md-12
-        h3.blue-text: em Learn to build iOS apps using Xcode and Objective-C
+        h3.red-text: em Learn to build full-stack apps with Ruby on Rails and fairy dust
       .col-md-8
         p 
-          | Over the course of three months, a practicing iOS nerd (and skilled instructor) will teach you the ins-and-outs of iOS app development using Xcode 5 and a whole lot of Objective-C. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps as well.<br><br>
-          | The best part: we’ll help you get a job offer as a mobile developer when you graduate (or your tuition back, <em>guaranteed</em>). Don’t know any code? Don’t worry. Our proven teachers and process will take you from zero to hero and mentor you into a professional junior-level programmer.
+          | Over the course of three months, a heavy-duty programming veteran (and skilled mentor) will show you the power of Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build rock-solid servers, manage databases and know the basics of front end app development.
+          | The best part: we’ll help you get a job offer as a mobile developer when you graduate (or your tuition back, guaranteed). Don’t know any code? Don’t worry. Our proven teachers and process will take you from zero to hero and mentor you into a professional junior-level programmer.
       .col-md-4(style="text-align:center")
         img.photo(src="/images/academy/mobile-engineering/mobile-eng-image.jpg" style="max-width:500px;")
 
@@ -24,22 +24,22 @@ block content
       .callout-box(style="padding-bottom:10px")
         .row
           .col-md-4.col-sm-6.col-xs-12
-            img(src="/images/academy/mobile-engineering/prototype.png")
-            p(style="width:252px; margin:20px auto") Build testable mobile app prototypes quickly
+            img(src="/images/academy/rails-engineering/watch.png")
+            p(style="width:252px; margin:20px auto") Get functional prototypes lauched quickly
           .col-md-4.col-sm-6.col-xs-12
-            img(src="/images/academy/mobile-engineering/apps.png")
-            p(style="width:252px; margin:20px auto") Build fast, production-quality native mobile apps
+            img(src="/images/academy/rails-engineering/full-stack.png")
+            p(style="width:252px; margin:20px auto") Build fast, production-quality full-stack apps
           .col-md-4.col-sm-6.col-xs-12
-            img(src="/images/academy/mobile-engineering/ham.png")
-            p(style="width:252px; margin:20px auto") Learn to craft mobile user experiences and interfaces
+            img(src="/images/academy/rails-engineering/interface.png")
+            p(style="width:252px; margin:20px auto") Create well-architected server-side systems
           .col-md-4.col-sm-6.col-xs-12
-            img(src="/images/academy/mobile-engineering/code.png")
-            p(style="width:252px; margin:20px auto") Go deep into Objective-C methods and classes
+            img(src="/images/academy/rails-engineering/rails.png")
+            p(style="width:252px; margin:20px auto") Go deep into the Ruby on Rails framework
           .col-md-4.col-sm-6.col-xs-12
-            img(src="/images/academy/mobile-engineering/computers.png")
-            p(style="width:252px; margin:20px auto") Master a mobile-specific development process
+            img(src="/images/academy/rails-engineering/optimize.png")
+            p(style="width:252px; margin:20px auto") Optimize systems for desktop and mobile
           .col-md-4.col-sm-6.col-xs-12
-            img(src="/images/academy/mobile-engineering/brain-guy.png")
+            img(src="/images/academy/rails-engineering/brain-guy.png")
             p(style="width:252px; margin:20px auto") Most importantly, learn how to learn
           hr
           p(style="font-size:16px;") Questions? Want to know what makes us different?<br>
@@ -62,20 +62,30 @@ block content
     .container
       .row
         .col-md-12#class-schedule
-          h3(style="text-align:center").blue-text: em Class Schedule
-          p(style="max-width:960px; margin:0 auto;") Our intensive Mobile Engineering courses run for 12 weeks. The schedule is set up like a typical five-day work week, with lecture in the morning and lab time in the afternoon. Friday is an open lab day where students can work with the instructor to catch up on projects or get a head start on the weekend’s homework.
+          h3(style="text-align:center").red-text: em Class Schedule
+          p(style="max-width:960px; margin:0 auto; color: #A59785") Our intensive Ruby on Rails courses run for 12 weeks. The schedule is set up like a typical five-day work week, with lecture in the morning and lab time in the afternoon. Friday is an open lab day where students can work with the instructor to catch up on projects or get a head start on the weekend’s homework.
     .container  
       table.class-table(style="margin:10px auto; width:90%")
         tr
           td July 21st
+          td Charleston, SC
+          td Nick Bucciarelli
+          td: a.btn(href="https://theironyard.typeform.com/to/njbQe5") Apply
+        tr
+          td July 21st
           td Atlanta, GA
-          td Jo Albright
-          td: a.btn(href="https://theironyard.typeform.com/to/TsBziI") Apply
+          td Shelby Switzer
+          td: a.btn(href="https://theironyard.typeform.com/to/W4YBcM") Apply
+        tr
+          td August 25th
+          td Austin, TX
+          td TBA
+          td: a.btn(href="https://theironyard.typeform.com/to/YWEdvs") Apply          
         tr
           td September 15th
           td Durham, NC
-          td TBA
-          td: a.btn(href="https://theironyard.typeform.com/to/sZzowF") Apply
+          td Clinton Dreisbach
+          td: a.btn(href="https://theironyard.typeform.com/to/oFJzGu") Apply
 
   .container
     .row(style="text-align:center")
@@ -99,46 +109,40 @@ block content
       .row.divide-container
         h3(style="text-align:center"): em Curriculum Overview
         p
-          | Just knowing punctuation doesn’t make you a great writer. In the same sense, just knowing Objective-C doesn’t make you’re great at building apps; that’s the easy part of mobile development. The emphasis in all of our classes is on helping you think like an engineer. Programming is a lifelong study, and our goal is for you to learn how to learn so you remain highly valuable for the rest of your career.<br><br>
-          | That being said, you’ll leave our class with a toolbox of skills that will set you far apart from other junior-level mobile devs. You’ll cover an incredible amount of ground in 3 months, learning everything below and then some. Some topics like Core Libraries will take weeks to cover, and others like Objects and Classes will be taught in just a few lectures.<br><br>
+          | Just knowing punctuation doesn’t make you a great writer. In the same sense, just knowing how to spin up a Rails app doesn’t make you a programmer; that’s the easy part of development. The emphasis in all of our classes is on helping you <em>think like an engineer</em>. Programming is a lifelong study, and our goal is for you to learn how to learn so you remain highly valuable for the rest of your career.<br><br>
+          | That being said, you’ll leave our class with a toolbox of skills that will set you far apart from other junior-level Rails devs. You’ll cover an incredible amount of ground in 3 months, learning everything below and then some. Some topics like JSON AJAX requests will take weeks to cover, others like using Active Helper (instead of HTML) will be taught in just a few lectures..<br><br>
           | No matter your learning pace, we keep our class sizes small so that we can spend individual time with each student and make sure no one falls behind.
 
         .col-md-6.col-sm-6.col-xs-12
           p
             | <strong>Git and GitHub</strong><br>
-            | Master Git for personal and team workflows. All of your code will live on GitHub from day one.<br><br>
-            | <strong>Objective-C & C</strong><br>
-            | We build a solid foundation on Objective-C and C so you feel comfortable formulating your own scripts from scratch.<br><br>
-            | <strong>Classes and Objects</strong><br>
-            | We dive into the world of Object Oriented Programming (and don’t look back).<br><br>
+            | <span>Master Git for personal and team workflows. All of your code will live on GitHub from day one.</span><br><br>
+            | <strong>Rails Fundamentals</strong><br>
+            | <span>We’ll cover generators, app structure, Bundler/gem management, migrations, Active Record, relationships, routes, models, views, controllers, Rails style, developing APIs, Active Helper, Asset Pipeline and much, more.</span><br><br>
+            | <strong>Testing, testing, testing</strong><br>
+            | <span>No code should be written without proper testing. We will do our fair share in both Ruby and Javascript.</span><br><br>
             | <strong>Design fundamentals</strong><br>
-            | Every student learns strong fundamentals in layout, typography, color theory, user interface and user experience.<br><br>
+            | <span>Every student learns strong fundamentals in layout, typography, color theory, user interface and user experience.</span><br><br>
             | <strong>Freelance fundamentals</strong><br>
-            | Seasoned pros show you how to find good work, write contracts, set expectations, price well and communicate like a pro.<br><br>
-            | <strong>MVC Fundamentals</strong><br>
-            | We teach you how to build your apps with proper Model View Controller structure.<br><br>
-            | <strong>Cocoa Design Patterns</strong><br>
-            | We give our students a strong understanding of design patterns, teaching them to write code according to established methods used on mobile dev teams and collaborative projects.<br><br>
-            | <strong>Frameworks & Libraries</strong><br>
-            | We’ll teach you how and when to use these valuable assets, and you’ll even learn to build your own.
+            | <span>Seasoned pros show you how to find good work, write contracts, set expectations, price well and communicate like a pro.</span><br><br>
+            | <strong>jQuery</strong><br>
+            | <span>You’ll learn everything from DOM manipulation to non-DOM methods ($.extend, $.proxy, etc) to Chaining, Callbacks and Promises.</span><br><br>
         .col-md-6.col-sm-6.col-xs-12.right-box
           p
-            | <strong>Memory Management & ARC</strong><br>
-            | You’ll learn how memory is managed and best practices for acheiving efficiency, finding memory leaks and troubleshooting problems.<br><br>
-            | <strong>Core Libraries</strong><br>
-            | We’ll work with many of Apple’s core libraries including Core Graphics, Core Data, Core Animation and more.<br><br>
-            | <strong>UI Guidelines</strong><br>
-            | You’ll know what it takes to build apps for multiple iOS versions (6 & 7) & multiple device types (iPhone & iPad). You’ll also learn the proper ways to layout and use your UI.<br><br>
-            | <strong>Xcode IDE</strong><br>
-            | We’ll learn and use Xcode 5 to build our projects, expanding our knowledge as we get deeper into the course.<br><br>
-            | <strong>Interface Builder</strong><br>
-            | You’ll be an expert on how and when to use Storyboards and Xibs.<br><br>
-            | <strong>Deployment : TestFlight & App Store</strong><br>
-            | We’ll teach you how to distribute your app for testing (each project will be deployed), and we’ll also show you how to get your app submitted—our goal is for you to leave class with an app live in the App Store.<br><br>
-            | <strong>Parse as a Backend</strong><br>
-            | With a tool like Parse, our mobile dev can do a massive amount of backend/database work on their mobile apps.<br><br>
+            | <strong>MVC Fundamentals</strong><br>
+            | <span>We look closely at what it means to utilize MVC structure in your applications.</span><br><br>
+            | <strong>Backbone, Angular, and Ember</strong><br>
+            | <span>These are the three big contenders in the world of MVC-like tools.</span><br><br>
+            | <strong>HTML and CSS</strong><br>
+            | <span>We will cover HTML and CSS foundations and utilize the SCSS preprocessor that is included in the Ruby on Rails toolkit.</span><br><br>
+            | <strong>JavaScript Basics</strong><br>
+            | <span>We will dive into JS fundamentals covering types, functions, objects, scope, losures, constructors, prototypes and more. These will be used to enrich your Rails applications with some beautiful front end interactions.</span><br><br>
+            | <strong>CoffeeScript</strong><br>
+            | <span>We will learn CoffeeScript as it is included in Ruby on Rails as a substitute for JavaScript.</span><br><br>
+            | <strong>Deployment</strong><br>
+            | <span>Utilize Heroku to quickly turn your application from local to production ready.</span><br><br>
             | <strong>Getting Hired</strong><br>
-            | We do mock interviews, resume writing and portfolio building. Grads have weekly meetings with our team to help find exciting jobs and projects.
+            | <span>We do mock interviews, resume writing and portfolio building. Grads have weekly meetings with our team to help find exciting jobs and projects.</span>
       .row(style="margin: 0 auto; max-width:720px")
         .col-md-12(style="text-align:center; padding: 18px 25px; border: 3px solid #E3E7E9;")
           p(style="font-size:15px") Excited? You’ve come to the right place. Keep reading!
@@ -148,10 +152,10 @@ block content
       .col-md-7
         h3: em Is this for you?
         p 
-          | Before we get into specifics, we need to let you know that this class is going to be very challenging. The material gets really hard, really fast. All of the work is very do-able, but if you think you’re going to develop professional level skills in a cushy 40 hour week, this isn’t the place for you. (The average student puts in about 60 hours per week, minimum). We don’t require you to know code to start with, but you need to have tried it and enjoyed it. If that’s you, go ahead and <a href="#class-schedule">apply now</a>. If not, <a href="http://teamtreehouse.com/library/objectivec-basics">try a few exercises to see.</a><br><br>
+          | Before we get into specifics, we need to let you know that this class is going to be very challenging. The material gets really hard, really fast. All of the work is very do-able, but if you think you’re going to develop professional level skills in a cushy 40 hour week, this isn’t the place for you. (The average student puts in about 60 hours per week, minimum). We don’t require you to know code to start with, but you need to have tried it and enjoyed it. If that’s you, go ahead and <a href="#class-schedule">apply now</a>. If not, <a href="http://www.codecademy.com/tracks/ruby">try a few exercises to see.</a><br><br>
           | We’re family people, so our goal is for you to work as hard as possible in class so you can find joy in a great job, freelance work, or starting your own company when you’re done. We’re proud of all of the different types of people who have come through The Iron Yard, and we don’t have stereotypes of what a programmer is like. We’ve taught students from 18 to 50 years old, from different countries and all sorts of backgrounds.
         h3: em How Much Does It Cost?
-        p <strong>Base tuition is $10,000</strong>, and we have significant discounts for enlisted military personnel and veterans, and not to mention a <a href="http://theironyard.com/academy/scholarships">Women in Tech Scholarship</a>. Do we offer payment options? You know it. Checkout out our <a href="/academy/mobile-engineering/faq">FAQ</a>.
+        p <strong>Base tuition is $10,000</strong>, and we have significant discounts for enlisted military personnel and veterans, and not to mention a <a href="http://theironyard.com/academy/scholarships">Women in Tech Scholarship</a>. Do we offer payment options? You know it. Checkout out our <a href="/academy/rails-engineering/faq">FAQ</a>.
       .col-md-5
         h4(style="margin-top:28px;"): em Here are a few things we look for in students:
         p(style="color:")
@@ -172,10 +176,10 @@ block content
     .container
       .row(style="margin-bottom:20px; margin-top:20px")
         .col-md-5
-          a(href="https://vimeo.com/69189570"): img(src="/images/academy/mobile-engineering/andrew-quote.jpg")
+          a(href="https://vimeo.com/69189570"): img(src="/images/academy/rails-engineering/flack-quote.jpg")
         .col-md-7
-          p.blue-text(style="margin-left:10px; margin-top:0; font-size:22px"): em “When I hired Andrew McIntee to overhaul a handful of our web properties, I was blown away at how much he had learned from The Iron Yard Academy.”
-          p(style="margin-left:10px"): em Dan Waldschmidt,<br> CEO of Waldschmidt Partners
+          p.blue-text(style="margin-left:10px; margin-top:0; font-size:22px"): em “Andy’s skill set coming out of The Iron Yard Academy is nothing short of amazing. The experience he gained applying practical solutions to real world problems over the course of three months is more impressive than the experience most CS students gain in four years. The intensive training the Academy provides has unequivocally set Andy up for a success as a front end developer in our company.”
+          p(style="margin-left:10px"): em Terry Horner,<br> CTO of ChartSpan
       .row(style="margin: 0 auto; max-width:720px")
         .col-md-12(style="text-align:center; padding: 18px 25px; border: 3px solid #E3E7E9;")
           p(style="font-size:15px") Want to meet more of our grads? Check out our <a href="/academy/graduates">Graduates for Hire</a> page.
