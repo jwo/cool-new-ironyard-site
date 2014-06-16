@@ -12,29 +12,29 @@ block content
   })
 
   style.
-    .slider{
+    .sequence{
       height: 400px;
       margin: 10px auto;
       position: relative; /* required */
     }
 
-    .slider > .sequence-canvas li > * { 
+    .sequence > .sequence-canvas li > * { 
       position: absolute;
     }
 
-    .slider > .sequence-canvas { /* required */
+    .sequence > .sequence-canvas { /* required */
       height: 100%; 
       width: 80%;
     }
 
-    .slider > .sequence-canvas > li {
+    .sequence > .sequence-canvas > li {
       position: absolute;
       width: 100%;
       height: 100%;
       z-index: 1;
     }
 
-    .slider > .sequence-canvas > li > div {
+    .sequence > .sequence-canvas > li > div {
       position:absolute;
       left: 0;
       right: 0;
@@ -107,18 +107,18 @@ block content
     .row
       .col-md-12
         h1 Railside
-        .slider
+        .sequence
           ul.sequence-canvas.no-style-type
             li 
-              div.bg(style="background-image:url('/images/cowork/railside/railside-1.jpg');")
+              div(style="background-image:url('/images/cowork/railside/railside-1.jpg');")
             li
-              div.bg(style="background-image:url('/images/cowork/railside/railside-2.jpg');")
+              div(style="background-image:url('/images/cowork/railside/railside-2.jpg');")
             li
-              div.bg(style="background-image:url('/images/cowork/railside/railside-3.jpg');")
+              div(style="background-image:url('/images/cowork/railside/railside-3.jpg');")
             li
-              div.bg(style="background-image:url('/images/cowork/railside/railside-4.jpg');")
+              div(style="background-image:url('/images/cowork/railside/railside-4.jpg');")
             li
-              div.bg(style="background-image:url('/images/cowork/railside/railside-5.jpg');")
+              div(style="background-image:url('/images/cowork/railside/railside-5.jpg');")
     .row
       .col-md-9(style="text-align:left;")
         p
@@ -131,7 +131,7 @@ block scripts
   script(src="/scripts/libs/sequence.jquery.js")
   script(type="text/javascript").
     $('document').ready(function(){
-      sequence = $(".slider").sequence({
+      sequence = $(".sequence").sequence({
         autoPlay: true,
         autoPlayDelay: 3000,
         moveActiveFrameToTop: true,
