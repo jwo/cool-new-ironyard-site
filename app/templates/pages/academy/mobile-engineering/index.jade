@@ -61,7 +61,7 @@ block content
   .horizontal-section.gray-light-bg
     .container
       .row
-        .col-md-12
+        .col-md-12#class-schedule
           h3(style="text-align:center").blue-text: em Class Schedule
           p(style="max-width:960px; margin:0 auto;") Our intensive Mobile Engineering courses run for 12 weeks. The schedule is set up like a typical five-day work week, with lecture in the morning and lab time in the afternoon. Friday is an open lab day where students can work with the instructor to catch up on projects or get a head start on the weekend’s homework.
     .container  
@@ -81,8 +81,8 @@ block content
     .row(style="text-align:center")
       img(src="/images/academy/schedule.png")
 
-    .row
-      .col-md-6.col-sm-6.col-xs-12
+    .row.divide-container
+      .col-md-6.col-sm-6.col-xs-12.left-box
         h3: em Lecture Time
         p Our lessons are fast-paced, interactive and fun. All of our instructors use a hands-on, live-coding lecture style so that students immediately start developing muscle memory for each new skill. We cover a new subject almost every day, building on previous material. The goal is for you to get your hands dirty absorbing a whole lot of information, then apply it on a real project during lab.
       .col-md-6.col-sm-6.col-xs-12
@@ -94,9 +94,9 @@ block content
           | <strong>Being a programmer is more than just writing code.</strong><br> 
           | We put serious focus on the qualitative aspects of work, from team projects to mock job interviews. We also partner with guest speakers who cover a variety of topics like design and freelancing, and we take class field trips to real businesses like MailChimp and BMW. Employers have told us our grads are some of the most well-rounded, teachable hires they’ve ever made.
 
-  .horizontal-section.gray-light-bg
+  .horizontal-section.gray-lighter-bg
     .container
-      .row
+      .row.divide-container
         h3(style="text-align:center"): em Curriculum Overview
         p
           | Just knowing punctuation doesn’t make you a great writer. In the same sense, just knowing Objective-C doesn’t make you’re great at building apps; that’s the easy part of mobile development. The emphasis in all of our classes is on helping you think like an engineer. Programming is a lifelong study, and our goal is for you to learn how to learn so you remain highly valuable for the rest of your career.<br><br>
@@ -121,7 +121,7 @@ block content
             | We give our students a strong understanding of design patterns, teaching them to write code according to established methods used on mobile dev teams and collaborative projects.<br><br>
             | <strong>Frameworks & Libraries</strong><br>
             | We’ll teach you how and when to use these valuable assets, and you’ll even learn to build your own.
-        .col-md-6.col-sm-6.col-xs-12
+        .col-md-6.col-sm-6.col-xs-12.right-box
           p
             | <strong>Memory Management & ARC</strong><br</strong>>
             | You’ll learn how memory is managed and best practices for acheiving efficiency, finding memory leaks and troubleshooting problems.<br><br>
@@ -140,5 +140,55 @@ block content
             | <strong>Getting Hired</strong><br>
             | We do mock interviews, resume writing and portfolio building. Grads have weekly meetings with our team to help find exciting jobs and projects.
       .row(style="margin: 0 auto; max-width:720px")
-        .col-md-12(style="text-align:center; padding: 18px 25px; border: 3px solid gray;")
+        .col-md-12(style="text-align:center; padding: 18px 25px; border: 3px solid #E3E7E9;")
           p(style="font-size:15px") Excited? You’ve come to the right place. Keep reading!
+
+  .container
+    .row
+      .col-md-7
+        h3: em Is this for you?
+        p 
+          | Before we get into specifics, we need to let you know that this class is going to be very challenging. The material gets really hard, really fast. All of the work is very do-able, but if you think you’re going to develop professional level skills in a cushy 40 hour week, this isn’t the place for you. (The average student puts in about 60 hours per week, minimum). We don’t require you to know code to start with, but you need to have tried it and enjoyed it. If that’s you, go ahead and <a href="#class-schedule">apply now</a>. If not, <a href="http://teamtreehouse.com/library/objectivec-basics">try a few exercises to see.</a><br><br>
+          | We’re family people, so our goal is for you to work as hard as possible in class so you can find joy in a great job, freelance work, or starting your own company when you’re done. We’re proud of all of the different types of people who have come through The Iron Yard, and we don’t have stereotypes of what a programmer is like. We’ve taught students from 18 to 50 years old, from different countries and all sorts of backgrounds.
+        h3: em How Much Does It Cost?
+        p <strong>Base tuition is $10,000</strong>, and we have significant discounts for enlisted military personnel and veterans, and not to mention a <a href="http://theironyard.com/academy/scholarships">Women in Tech Scholarship</a>. Do we offer payment options? You know it. Checkout out our <a href="/academy/mobile-engineering/faq">FAQ</a>.
+      .col-md-5
+        h4(style="margin-top:28px;"): em Here are a few things we look for in students:
+        p(style="color:")
+          | <strong>Hard Worker</strong><br>
+          | Like we said above, this won’t be a walk in the park. Prepare for a rigorous course.<br><br>
+          | <strong>Self Motivated</strong><br>
+          | If you need to be micro-managed, this isn’t the place for you.<br><br>
+          | <strong>Works Well With Others</strong><br>
+          | You’ll be assigned to groups for projects, and each person’s role will be crucial.<br><br>
+          | <strong>Interested in Learning</strong><br>
+          | Even if you know basics (or more), you might have to unlearn some things. We’ll start from the ground up as a team, and there won’t be room for egos.<br><br>
+          | <strong>Graceful Problem Solver</strong><br>
+          | We’ll work on some hard, frustrating stuff. Patience and endurance are necessities.<br><br>
+          | <strong>Ready to Have Fun</strong><br>
+          | We work hard, play hard, and laugh every single day. We do the best work we possibly can, but we make sure not to take ourselves too seriously.
+
+  .horizontal-section.gray-lighter-bg
+    .container
+      .row(style="margin-bottom:20px; margin-top:20px")
+        .col-md-5
+          img(src="/images/academy/mobile-engineering/andrew-quote.jpg")
+        .col-md-7
+          h4.blue-text(style="margin-left:10px"): em “When I hired Andrew McIntee to overhaul a handful of our web properties, I was blown away at how much he had learned from The Iron Yard Academy.”
+          p(style="margin-left:10px"): em Dan Waldschmidt,<br> CEO of Waldschmidt Partners
+      .row(style="margin: 0 auto; max-width:720px")
+        .col-md-12(style="text-align:center; padding: 18px 25px; border: 3px solid #E3E7E9;")
+          p(style="font-size:15px") Want to meet more of our grads? Check out our <a href="/academy/graduates">Graduates for Hire</a> page.
+
+    .horizontal-section.blue-bg(style="margin-bottom:-60px")
+      .container(style="text-align:center")
+        .row
+          .col-md-12
+            h3 <em>Our Sponsors</em>
+            p(style="width:70%; margin: 0 auto; margin-bottom:20px") Our sponsors support our students by offering free accounts, assets, and more. We couldn’t do some of the amazing things we do in class without their generosity. Thank you, friends!
+            a(href="http://github.com"): img(src="/images/academy/github.png" style="width:30%")
+            a(href="http://invisionapp.com"): img(src="/images/academy/invision.png" style="width:30%")
+            br
+            a(href="http://macaw.co"): img(src="/images/academy/macaw.png" style="width:30%")
+            a(href="http://wercker.com"): img(src="/images/academy/wercker.png" style="width:30%")
+            a(href="http://symbolset.com"): img(src="/images/academy/symbolset.png" style="width:30%")
