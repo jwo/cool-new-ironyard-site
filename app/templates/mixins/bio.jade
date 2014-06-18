@@ -8,7 +8,8 @@ mixin bio(people)
           p Say hello
       .bio-right
         h2= person.name
-        h4= person.title
+        if person.title
+          h4= person.title
         p= person.description 
         ul.links
           each link in person.links
