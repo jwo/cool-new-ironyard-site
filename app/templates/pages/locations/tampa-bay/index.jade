@@ -24,14 +24,13 @@ block content
               | We're excited to join an already-growing tech scene and bring value by teaching Front End Engineering (HTML/CSS/JavaSCript) and Ruby on Rails Engineering. 
 
           .col-sm-4.mobile-container#connect
-            h2 Connect
+            h3 Academy classes are open. Apply today! 
             hr
-            ul.no-style-type
-              li: h4
-                a.green-text(href="/jobs") We're Hiring in Tampa!
-              li: a.green-text(href="http://blog.theironyard.com") The Blog
-              li: a.green-text(href="mailto:tampa@theironyard.com") tampa@theironyard.com
-              li: a.green-text(href="http://eepurl.com/VklMr") Tampa Newsletter
+            p
+              | Learn to code.<br> 
+              | Life's too short for the wrong career. 
+            p
+              a(href="/academy" class="btn") The Iron Yard Academy
             
 
       .horizontal-section.gray-light-bg#programs
@@ -61,4 +60,53 @@ block content
               p 
                 | We will launch kids classes in Tampa later this year. Sign up for our mailing list to learn more.
               a(href="http://eepurl.com/VklMr" class="btn") Mailing list  
+
+      .container  
+        .row
+          .col-sm-7.mobile-container
+            h2 Meet Our Atlanta Team
+            .row.left-column
+              .photo-list
+                .photo-container
+                  a(href="/about/team#brian"): img.photo-mentor(src="/images/about/brian-burridge.jpg")
+                h3 Brian Burridge
+                h4 Rails Instructor
+              .photo-list
+                .photo-container
+                  a(href="/about/team#justin"): img.photo-mentor(src="/images/about/justin-herrick.jpg")
+                h3 Justin Herrick
+                h4 Front End Instructor
+              .photo-list
+                .photo-container
+                  a(href="/about/team#george"): img.photo-mentor(src="/images/about/george-junginger.jpg")
+                h3 George Junginger
+                h4 Campus Director
+
+          .col-sm-5.mobile-container#connect
+            h2 Connect
+            hr
+            ul.no-style-type
+              li: h4
+                a.green-text(href="/jobs") We're Hiring in Tampa!
+              li: a.green-text(href="http://blog.theironyard.com") The Blog
+              li: a.green-text(href="mailto:tampa@theironyard.com") tampa@theironyard.com
+              li: a.green-text(href="http://eepurl.com/VklMr") Tampa Newsletter
+
+            img.photo-medium(src="/images/locations/tampa/tampa-city1.jpg")
+            img.photo-medium(src="/images/locations/tampa/tampa-city2.jpg")
+
+      .horizontal-section.gray-light-bg(style="margin:40px 0 0 0")
+        .container
+          .row
+            .col-md-7
+              h3(style="margin-top:0") City Highlights
+              p 
+                | St. Petersburg is called the "City by the Sea," and with good reason. St. Pete, as the locals like to call it, is famous for its 35 miles of beaches. The Florida peninsula called Pinellas is surrounded by water on three sides. The beautiful powder white beaches are situated on Florida's Gulf of Mexico. They rest among approximately 20 barrier islands, known as the Keys. These islands provide natural buffers from the Gulf of Mexico, thus making it a perfect spot for swimming and virtually any other water sport . This includes scuba diving, shelling, snorkeling, kayaking, sailing and the like.
+
+            .col-md-5
+              h4 Recent posts from the blog
+              ul.no-style-type.recent
+
+block scripts
+  +blogFeed('blog')
 
