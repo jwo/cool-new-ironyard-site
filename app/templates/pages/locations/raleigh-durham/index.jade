@@ -1,7 +1,7 @@
 extends /layouts/main
 block content
   +navigation({
-    title: 'Durham, NC',
+    title: 'Raleigh-Durham',
     color: 'green',
     image: '/images/locations/durham/durham.jpg',
     cutout: true, 
@@ -18,12 +18,12 @@ block content
           .col-sm-8
             img.photo(src='/images/locations/durham/tiy-sb.png' style="margin-top:10px; width: 700px;")
             p 
-              | Welcome to The Iron Yard Academy powered by <a class="green-text" href="http://smashingboxes.com/">Smashing Boxes</a>, Durham’s premier boot camp style code school. We are building better developers to take on the Triangle’s technology economy.
+              | Welcome to The Iron Yard Academy powered by <a class="green-text" href="http://smashingboxes.com/">Smashing Boxes</a>, Raleigh-Durham’s premier boot camp style code school. We are building better developers to take on the Triangle’s technology economy in North Carolina.
               | <br><br>This school represents a unique partnership between a nationally respected code school and an enterprising technology shop, bringing education directly into the market place so that learning and real world experience happen simultaneously.
               | <br><br>To connect students directly with potential employers, Academy classes are held in the <a class="green-text" href="http://www.americanunderground.com/">American Underground</a>, in close proximity to some of the Triangle’s most promising tech start-ups.
           .col-sm-4
             h2 Address
-            p(style="font-size:16px; margin-top:3px") The Iron Yard - Durham <br>
+            p(style="font-size:16px; margin-top:3px") The Iron Yard - Raleigh-Durham <br>
               | 334 Blackwell Street <br>
               | Suite B017 <br>
               | Durham NC 27701
@@ -37,12 +37,18 @@ block content
                 img.photo(src="/images/locations/durham/durham-academy.jpg")
               .col-sm-6
                 h4 Academy
-                p We offer all of our intensive Academy courses in Durham. Our grads get jobs with amazing local companies as well as awesome shops around the country.
-                ul.no-style-type(style="margin-top:12px")
-                  li(style="display:inline-block; padding-right: 10px;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:18px"> <strong>Front End Engineering</strong>
-                  li(style="display:inline-block; padding-right: 10px;"): a(href="/academy/rails-engineering").green-text <img src="/images/locations/icons/rails-icon.png" style="height:18px"> <strong>Ruby On Rails</strong> 
-                  li(style="display:inline-block; padding-right: 10px;"): a(href="/academy/mobile-engineering").green-text <img src="/images/locations/icons/mobile-icon.png" style="height:18px"> <strong>Mobile Engineering</strong> 
+                p We offer three intensive Academy courses in Raleigh-Durham. Our grads get jobs with amazing local companies as well as awesome shops around the country.
                 a(href="/academy" class="btn") Learn More
+            .row(style="margin-top: 30px;")
+              .col-md-4
+                h4(style="padding-bottom: 0px;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:24px"> <strong>Front End Engineering</strong>
+                p Learn Front End Engineering using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.
+              .col-md-4
+                h4(style="padding-bottom: 0px;"): a(href="/academy/rails-engineering").green-text <img src="/images/locations/icons/rails-icon.png" style="height:24px"> <strong>Rails Engineering</strong>
+                p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build rock-solid servers, manage databases and know the basics of front end app development.            
+              .col-md-4
+                h4(style="padding-bottom: 0px;"): a(href="http://eepurl.com/X-ilf").green-text <img src="/images/locations/icons/python-icon.png" style="height:24px"> <strong>Python Engineering</strong>
+                p In early 2015 we will launch a Python Engineering course in conjunction with several of our hiring parterns in Raleigh-Durham. <a href="http://eepurl.com/X-ilf">Sign up for our newsletter</a> to learn more. 
       
 
       .horizontal-section    
@@ -59,7 +65,7 @@ block content
       .container  
         .row
           .col-sm-7.mobile-container
-            h2 Meet Our Durham Team
+            h2 Meet Our Raleigh-Durham Team
             .row.left-column
               .photo-list
                 .photo-container
@@ -82,10 +88,10 @@ block content
             hr
             ul.no-style-type
               li: h4
-                a.green-text(href="/jobs") We're Hiring in Durham!
-              li: a.green-text(href="http://durham.theironyard.com") The Durham Blog
+                a.green-text(href="/jobs") We're Hiring in Raleigh-Durham!
+              li: a.green-text(href="http://durham.theironyard.com") The Raleigh-Durham Blog
               li: a.green-text(href="mailto:durham@theironyard.com") durham@theironyard.com
-              li: a.green-text(href="http://eepurl.com/JoCJv") Durham Newsletter
+              li: a.green-text(href="http://eepurl.com/JoCJv") Raleigh-Durham Newsletter
 
             //- img.photo-medium(src="/images/locations/durham/durham-city1.jpg")
             img.photo-medium(src="/images/locations/durham/durham-city2.jpg")
