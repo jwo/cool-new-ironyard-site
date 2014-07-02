@@ -41,8 +41,8 @@ mixin navigation(meta)
             else
               h2(style="margin-bottom:-20px")= meta.title
 
-              
-            if meta.cutout
-              .triangle-cutout
-            else
-              .triangle(class="#{meta.color}-triangle")
+            if meta.triangle != false  
+              if meta.cutout
+                .triangle-cutout
+              else
+                .triangle(class="#{meta.color}-triangle")
