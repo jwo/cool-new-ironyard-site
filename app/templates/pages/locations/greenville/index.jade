@@ -1,7 +1,7 @@
 extends /layouts/main
 block content
   +navigation({
-    title: 'Greenville, SC',
+    title: 'Greenville',
     color: 'green',
     image: '/images/locations/greenville/greenville.jpg',
     cutout: true,
@@ -19,12 +19,12 @@ block content
           .col-sm-8
             h1 Where It All Started
             p 
-              | Nestled in the foothills of the Blue Ridge Mountains, Greenville combines traditional southern charm, stunning natural beauty, and nationally-respected tech and design communities to create one of America's hottest emerging destinations and fastest-growing cities.
+              | Nestled in the foothills of the Blue Ridge Mountains, Greenville, South Carolina combines traditional southern charm, stunning natural beauty, and nationally-respected tech and design communities to create one of America's hottest emerging destinations and fastest-growing cities.
               |<br><br>Greenville is also the birthplace of The Iron yard. The home to our HQ, our Greenville location paved the way for our first accelerator program, first intensive Academy courses, and first kids classes. 
           .col-sm-4
             h2 Address
             p(style="font-size:16px; margin-top:3px") The Iron Yard - Greenville <br>
-              | 411 University Ridge, Suite 2 <br>
+              | 411 University Ridge, Suite 220 <br>
               | Greenville, SC 29601 <br>
               | Inside the NEXT Innovation Center
             a(href="https://www.google.com/maps/dir//411+University+Ridge,+Greenville,+SC+29601/@34.84028,-82.398386,17z/data=!4m13!1m4!3m3!1s0x8858302de6a1f221:0xa6e871a61fb5dba0!2s411+University+Ridge!3b1!4m7!1m0!1m5!1m1!1s0x8858302de6a1f221:0xa6e871a61fb5dba0!2m2!1d-82.398386!2d34.84028" class="btn")
@@ -32,15 +32,18 @@ block content
 
       .horizontal-section.gray-light-bg#programs
         .container
-            .row
-              .col-md-6
-                img.photo(src="/images/locations/greenville/greenville-academy.jpg")
-              .col-sm-6
-                h4 The Academy
-                p We offer our intensive Front End Engineering course in Greenville. 
-                ul.no-style-type(style="margin-top:12px")
-                  li(style="display:inline-block;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:18px"> <strong>Front End Engineering</strong>
-                a(href="/academy" class="btn") Learn More
+          .row
+            .col-md-6
+              img.photo(src="/images/locations/greenville/greenville-academy.jpg")
+            .col-sm-6
+              h4 The Academy
+              p We offer our intensive Front End Engineering course in Greenville. 
+              a(href="/academy" class="btn") Learn More
+          hr    
+          .row
+            .col-md-12
+              h3: a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:24px"> <strong>Front End Engineering</strong>
+              p Learn Front End Engineering using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications. Our proven teachers and process will take you from zero to hero and mentor you into a professional junior-level programmer.
       
       .horizontal-section      
         .container
@@ -62,7 +65,7 @@ block content
               h4 CoWorking Spaces
               p 
                 | We have two phenomenal CoWorking spaces in Greenville. NEXT is adjacent to our Academy classroom space, and Railside is a stand-alone location.
-              a.btn(href="/cowork" style="text-align:center") Learn More
+              a.btn(href="mailto:greenville@theironyard.com?subject=I'd like more info on CoWorking in Greenville" style="text-align:center") Learn More
 
       .horizontal-section      
         .container
@@ -83,35 +86,34 @@ block content
               .photo-list
                 .photo-container
                   a(href="/about/team#peter"): img.photo-mentor(src="/images/about/team-peter.jpg")
-                h3 Peter Barth
+                h3(style="font-size: 24px;") Peter Barth
                 h4 Partner, CEO
               .photo-list
                 .photo-container
                   a(href="/about/team#eric"): img.photo-mentor(src="/images/about/team-eric.jpg")
-                h3 Eric Dodds
+                h3(style="font-size: 24px;") Eric Dodds
                 h4 Partner, Brand & Ops
               .photo-list
                 .photo-container
                   a(href="/about/team#mason"): img.photo-mentor(src="/images/about/team-mason.jpg")
-                h3 Mason Stewart
-                h4 Partner,<br> Master Instructor  
+                h3(style="font-size: 24px;") Mason Stewart
+                h4 Partner,<br> Lead Instructor  
               .photo-list
                 .photo-container
                   a(href="/about/team#marty"): img.photo-mentor(src="/images/about/team-marty.jpg")
-                h3 Marty Bauer
-                h4 Managing Director,<br> Accelerator
+                h3(style="font-size: 24px;") Marty Bauer
+                h4 Managing Director,<br> Accelerators
               .photo-list
                 .photo-container
                   a(href="/about/team#roy"): img.photo-mentor(src="/images/about/roy-schmidt.png")
-                h3 Roy Schmidt
+                h3(style="font-size: 24px;") Roy Schmidt
                 h4 Campus Director
               .photo-list
                 .photo-container
                   a(href="/about/team#joe"): img.photo-mentor(src="/images/about/team-tamburro.jpg")
-                h3 Joe Tamburro
+                h3(style="font-size: 24px;") Joe Tamburro
                 h4 Teaching Assistant 
     
-
           .col-sm-5.mobile-container#connect
             h2 Connect
             hr
@@ -125,6 +127,7 @@ block content
             img.photo-medium(src="/images/locations/greenville/greenville-city1.png")
             img.photo-medium(src="/images/locations/greenville/greenville-city2.png")
             img.photo-medium(src="/images/locations/greenville/greenville-city3.png")
+            img.photo-medium(src="/images/locations/greenville/greenville-city4.png")
 
 
       .horizontal-section.gray-light-bg(style="margin:40px 0 0 0")

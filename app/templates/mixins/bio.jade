@@ -3,13 +3,15 @@ mixin bio(people)
     .bio(id=person.id)
       .bio-left
         img.photo-bio(src=person.photo)
-        a.btn.btn-contact(href="mailto:#{person.email}")
-          img(src="http://theironyard.com/images/email.png")
-          p Say hello
+        if person.email
+          a.btn.btn-contact(href="mailto:#{person.email}")
+            img(src="http://theironyard.com/images/email.png")
+            p Say hello
       .bio-right
         h2= person.name
-        h4= person.title
-        p= person.description 
+        if person.title
+          h4= person.title
+        p(style="font-size:16px")= person.description 
         ul.links
           each link in person.links
             li 

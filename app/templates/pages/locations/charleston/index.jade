@@ -1,13 +1,13 @@
 extends /layouts/main
 block content
   +navigation({
-    title: 'Charleston, SC',
+    title: 'Charleston',
     color: 'green',
     image: '/images/locations/charleston/charleston.jpg',
     cutout: true,
     links: [
       {title: "What We Offer", url: "#programs"},
-      {title: "Connect", url: "#connect"},
+      {title: "Connect", url: "#connect"}
     ]
   })
 
@@ -19,7 +19,7 @@ block content
           .col-sm-8
             h1 The Iron Yard In Charleston
             p 
-              | Long known for welcoming ships carrying goods that would make their way to the rest of our country, Charleston has been a hub of activity since the beginning. Staying true to roots in commerce, the city has transformed itself into a modern-day port for technology companies who build products used all around the world.
+              | Long known for welcoming ships carrying goods that would make their way to the rest of our country, Charleston, South Carolina has been a hub of activity since the beginning. Staying true to roots in commerce, the city has transformed itself into a modern-day port for technology companies who build products used all around the world.
               |<br><br>We couldn’t be more excited to jump into an already thriving tech economy and help build it through our code education programs.
 
 
@@ -40,11 +40,15 @@ block content
               .col-sm-6
                 h4 The Academy
                 p We offer two intensive Academy courses in Charleston. Our grads get jobs with amazing local companies as well as awesome shops around the country.
-                ul.no-style-type(style="margin-top:12px")
-                  li(style="display:inline-block; padding-right: 10px;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:18px"> <strong>Front End Engineering</strong>
-                  li(style="display:inline-block; padding-right: 10px;"): a(href="/academy/rails-engineering").green-text <img src="/images/locations/icons/rails-icon.png" style="height:18px"> <strong>Ruby On Rails</strong>
                 a(href="/academy" class="btn") Learn More
-
+            .row(style="margin-top: 30px;")
+              .col-md-6
+                h4(style="padding-bottom: 0px;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:24px"> <strong>Front End Engineering</strong>
+                p Learn Front End Engineering using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.
+              .col-md-6
+                h4(style="padding-bottom: 0px;"): a(href="/academy/rails-engineering").green-text <img src="/images/locations/icons/rails-icon.png" style="height:24px"> <strong>Rails Engineering</strong>
+                p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build rock-solid servers, manage databases and know the basics of front end app development.     
+                           
       .horizontal-section
         .container
           .row
@@ -53,7 +57,7 @@ block content
             .col-sm-6
               h4 Kids Classes
               p 
-                | We will launch kids classes in Charleston in Spring 2014. Sign up for our mailing list to learn more.
+                | We run FREE kids coding classes out of our Charleston space. From building games with Scratch to website basics using HTML and CSS, our kids programs impart skills in fun, relaxed environment. Sign up for our mailing list to learn more. 
               a(href="http://eepurl.com/U-qWj" class="btn") Mailing list
       
       .container  
@@ -64,18 +68,18 @@ block content
               .photo-list
                 .photo-container
                   a(href="/about/team#sally"): img.photo-mentor(src="/images/about/sally-kingston.jpg")
-                h3 Sally Kingston
+                h3(style="font-size: 24px;") Sally Kingston
                 h4 Campus Director
               .photo-list
                 .photo-container
                   a(href="/about/team#nick"): img.photo-mentor(src="/images/about/team-nick.jpg")
-                h3 Nick Bucciarelli
-                h4 Ruby Instructor
+                h3(style="font-size: 24px;") Nick Bucciarelli
+                h4 Rails Instructor
               .photo-list
                 .photo-container
                   a(href="/about/team#calvin"): img.photo-mentor(src="/images/about/team-calvin.jpg")
-                h3 Calvin Webster
-                h4 JavaScript Instructor  
+                h3(style="font-size: 24px;") Calvin Webster
+                h4 Front End Instructor  
 
           .col-sm-5.mobile-container#connect
             h2 Connect
@@ -83,13 +87,13 @@ block content
             ul.no-style-type
               li: h4
                 a.green-text(href="/jobs") We're Hiring!
-              li: a.green-text(href="http://Charleston.theironyard.com") The Blog
+              li: a.green-text(href="http://Charleston.theironyard.com") Charleston Blog
               li: a.green-text(href="https://twitter.com/search?q=%23tiyCharleston&src=typd") #tiyCharleston
               li: a.green-text(href="mailto:Charleston@theironyard.com") Charleston@theironyard.com
 
             img.photo-medium(src="/images/locations/charleston/charleston-city1.jpg")
             img.photo-medium(src="/images/locations/charleston/charleston-city2.jpg")
-            img.photo-medium(src="/images/locations/charleston/charleston-city3.jpg")
+            //- img.photo-medium(src="/images/locations/charleston/charleston-city3.jpg")
 
 
       .horizontal-section.gray-light-bg(style="margin:40px 0 0 0")
@@ -97,7 +101,10 @@ block content
           .row
             .col-md-7
               h3(style="margin-top:0") City Highlights
-              p Known for rich history, well-preserved architecture, a celebrated restaurant community and mannerly people, the Charleston area has been named Top U.S. City by Condé Nast Traveler 2013 Readers’ Choice Awards. This is the third consecutive year the historic coastal destination has received the No. 1 U.S. City ranking.
+              p Known for rich history, well-preserved architecture, a celebrated restaurant community and mannerly people, the Charleston area has been named Top U.S. City by Condé Nast Traveler 2013 Readers’ Choice Awards. On top of those accolades, Charleston has also become known as Silicon Harbor and for good reason—amazing food, beautiful beaches, and tons of history mean software companies  are flocking to Charleston, setting up shop, and looking for talent. Here are a few of our favorite things: 
+              p
+                | <a href="http://www.hometeambbq.com/">Home Team BBQ</a> • <a href="http://www.sullivansisland-sc.com/">Beaches on Sullivan's Island</a> • <a href="http://fortsumtertours.com/">Fort Sumter Historical Site</a>
+
             .col-md-5
               h4 Recent posts from the blog
               ul.no-style-type.recent

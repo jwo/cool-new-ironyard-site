@@ -1,0 +1,26 @@
+extends /layouts/main
+block content
+  +navigation({
+    title: 'Our Culture',
+    color: 'gray-dark'
+  })
+
+  .container
+    .row(style="margin-top:50px")
+      .col-md-8
+        p(style="margin-top:0px") 
+          | If you walk into The Iron Yard on any given afternoon, you’re as likely to see an engineering team architecting software as you are to see a group enjoying craft brews over ping pong and video games.<br><br>
+          | We’ve been told we’re a “work hard, play hard” crew, and we couldn’t agree more. Our standards for producing awesome stuff are extremely high, but so is our capacity to truly enjoy life alongside the people we work with.<br><br>
+          | Here are a few characteristics of how we work:<br><br>
+          | <strong>People first, always</strong><br>
+          | We absolutely love what we get to do everyday, but more importantly we’re passionate about who we get to do it with and the entrepreneurs and students we get to serve—they’re the reason we come to work.<br><br>
+          | <strong>Flat structure and highly entrepreneurial</strong><br>
+          | We don’t manage people, we give them a goal and let them use their skills to accomplish it in the best way possible. This can be difficult if you like a lot of structure and daily direction. For the self-starter types, though, it’s vocational bliss.<br><br>
+          | <strong>Open mindset</strong><br>
+          | The Iron Yard is an open place for people of all kinds; we don’t believe in molds, stereotypes, or any sort of discrimination. Also, we don’t believe in artificial scarcity—if we can help someone, we will. If a project can have a bigger impact being open-sourced, we’ll open source it.<br><br>
+          |<strong>‘Being home for dinner’ policy</strong><br>   
+          |We work really hard, but a constantly imbalanced life isn’t healthy for anyone. We work fast, efficient, and fun so that we can invest in important areas of life outside the office.
+      .col-md-4
+        img.photo(src="/images/about/culture/culture-sidebar-team.jpg" style="margin-bottom:10px; max-width:500px")
+        img.photo(src="/images/about/culture/culture-sidebar-hacker.jpg" style="margin-bottom:10px; max-width:500px")
+        img.photo(src="/images/about/culture/culture-sidebar-friends.jpg" style="max-width:500px")

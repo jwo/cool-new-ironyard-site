@@ -3,6 +3,7 @@
 
 var gulp = require('gulp');
 
+
 // load plugins
 // see https://www.npmjs.org/package/gulp-load-plugins
 var $ = require('gulp-load-plugins')();
@@ -18,8 +19,9 @@ gulp.task('templates', function() {
 
 gulp.task('styles', function () {
     return gulp.src('app/styles/main.scss')
-        .pipe($.rubySass({
-            style: 'expanded'
+        .pipe($.sass({
+            style: 'expanded',
+            includePaths: require('node-bourbon').includePaths
         }))
         .pipe($.autoprefixer('last 1 version'))
         .pipe(gulp.dest('.tmp/styles'))
@@ -126,7 +128,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
     gulp.watch([
         '.tmp/templates/**/*.jade',
         'app/*.html',
-        '.tmp/styles/**/*.css',
+        '.tmp/styles/**/*.*',
         'app/scripts/**/*.js',
         'app/images/**/*'
     ]).on('change', function (file) {
