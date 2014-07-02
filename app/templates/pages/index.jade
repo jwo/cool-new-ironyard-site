@@ -23,11 +23,24 @@ block content
 
   .container-fluid
     .row
-      .col-md-6.col-md-offset-2.col-xs-12
+      .col-md-8.col-md-offset-2.col-xs-12
         a(style="text-decoration:none; color:#39474e" href="/academy"): h3 Become a programmer and get a great job.
         p The Iron Yard Academy teaches intensive, three-month courses that mentor you into a professional junior-level programmer. Our program goes far beyond tactical skills and teaches you to think like a software engineer. Programming is a lifelong study, and our process shows you to learn how to learn so you remain highly valuable for the rest of your career.
-      .col-md-2.col-xs-12(style='padding-top: 45px;')  
-        a(href="/academy").btn Learn More
+        hr
+        .row(style="margin-top: 30px;")
+          .col-md-4(style="margin-bottom: 30px;")
+            h4(style="padding-bottom: 0px;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:24px"> <strong>Front End Engineering</strong>
+            p Learn to build in-browser apps in the Front End Engineering using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.
+            a(href="/academy/front-end-engineering").btn Learn More
+          .col-md-4(style="margin-bottom: 30px;")
+            h4(style="padding-bottom: 0px;"): a(href="/academy/rails-engineering").green-text <img src="/images/locations/icons/rails-icon.png" style="height:24px"> <strong>Rails Engineering</strong>
+            p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build rock-solid servers, manage databases and know the basics of front end app development.            
+            a(href="/academy/rail-engineering").btn Learn More
+          .col-md-4(style="margin-bottom: 30px;")
+            h4(style="padding-bottom: 0px;"): a(href="/academy/mobile-engineering").green-text <img src="/images/locations/icons/mobile-icon.png" style="height:24px"> <strong>Mobile Engineering</strong>
+            p Learn iOS app development using Xcode 5 and a whole lot of Objective-C. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps.
+            a(href="/academy/mobile-engineering").btn Learn More
+
 
 
   +photoBar({
