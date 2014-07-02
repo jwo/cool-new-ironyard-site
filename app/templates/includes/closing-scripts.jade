@@ -18,3 +18,12 @@ script(src="/bower_components/jquery/dist/jquery.js")
 // build:js scripts/main.js
 script(src="/scripts/main.js")
 // endbuild
+
+script
+  :js
+    var reg = /city=([^&]*)\//g;
+    var city = reg.exec(window.location.search);
+    if (city) {
+      $('.class-table tr').removeClass('active');
+      $('.class-table tr.' + city[1]).first().prependTo('.class-table tbody').addClass('active');
+    }
