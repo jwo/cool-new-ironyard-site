@@ -28,7 +28,7 @@ mixin navigation(meta)
                 li
                   a(href="http://blog.theironyard.com") Blog
     
-    div(class="#{meta.image ? 'image-header' : ''}", style="#{meta.image ? 'background:url('+meta.image+')   no-repeat center/cover transparent;' : ''}#{meta.gradient == false ? 'box-shadow: none;' : ''}")
+    div(class="#{meta.image ? 'image-header' : ''} #{meta.home ? 'image-header-home' : ''}", style="#{meta.image ? 'background:url('+meta.image+')   no-repeat center/cover transparent;' : ''}#{meta.gradient == false ? 'box-shadow: none;' : ''}")
       .container
         .sub-nav
           .col-xs-12
