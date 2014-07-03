@@ -7,26 +7,18 @@ block content
     image: '/images/events/events-banner.jpg',
     cutout: true,
     links: [
-      {title: "ConvergeSE", url: "http://convergese.com/"},
-      {title: "BD Conf Nashville", url: "https://bdconf.com/events/nashville-2014/"},
-      {title: "ConvergeRVA", url:"http://convergerva.com/"},
-      {title: "BD Conf Orlando", url:"https://bdconf.com/events/orlando-2014/"},
-      {title: "ConvergeFL", url:"http://convergefl.com/"},
-      {title: "Greenville Grok", url:"/events/grok"}
+      //- {title: "ConvergeSE", url: "http://convergese.com/"},
+      //- {title: "BD Conf Nashville", url: "https://bdconf.com/events/nashville-2014/"},
+      //- {title: "ConvergeRVA", url:"http://convergerva.com/"},
+      //- {title: "BD Conf Orlando", url:"https://bdconf.com/events/orlando-2014/"},
+      //- {title: "ConvergeFL", url:"http://convergefl.com/"},
+      //- {title: "Greenville Grok", url:"/events/grok"}
     ]
   })
 
   .container.container-fluid(style="text-align:center")
     +events(
       [
-        {
-          name: "ConvergeSE",
-          image: "/images/events/convergese2014.png",
-          dates: "May 1-3, 2014",
-          description: "With in-depth workshops, a multiple track day and single track keynotes ConvergeSE is three days that will leave you changed and inspired.",
-          link: "http://convergese.com/",
-          hr: true
-        },
         {
           name: "BD Conf Nashville",
           image: "/images/events/bdnashville2014.png",
@@ -65,5 +57,13 @@ block content
           description: "A three day event sans the how-to sessions from industry leaders. We think a 10 minute session of hard questions from a new face is as good as a lock-tight answer from an old pro. We started Grok because we wanted to learn big, and go big.",
           link: "/events/grok/",
           hr: false
-        }
+        },
+        {
+          name: "ConvergeSE",
+          image: "/images/events/convergese2014.png",
+          dates: "May 1-3, 2014",
+          description: "With in-depth workshops, a multiple track day and single track keynotes ConvergeSE is three days that will leave you changed and inspired.",
+          link: "http://convergese.com/",
+          hr: true
+        },
       ])
