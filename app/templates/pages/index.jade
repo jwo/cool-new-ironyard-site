@@ -1,5 +1,12 @@
 include /mixins/photo-bar
 extends /layouts/main
+
+block meta
+  +meta({
+    title: 'Welcome to The Iron Yard',
+    description: 'We run an intensive code school, a startup accelerator, kids\'s programming classes, and organize tech conferences and events.'
+  })
+
 block content
   +navigation({
     color: 'gray-dark',
