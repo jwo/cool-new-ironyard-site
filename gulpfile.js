@@ -3,7 +3,6 @@
 
 var gulp = require('gulp');
 
-
 // load plugins
 // see https://www.npmjs.org/package/gulp-load-plugins
 var $ = require('gulp-load-plugins')();
@@ -20,6 +19,8 @@ gulp.task('templates', function() {
 gulp.task('styles', function () {
     return gulp.src('app/styles/main.scss')
         .pipe($.sass({
+            sourceComments: 'map',
+            sourceMap: 'sass',
             style: 'expanded',
             includePaths: require('node-bourbon').includePaths
         }))
@@ -35,25 +36,28 @@ gulp.task('scripts', function () {
         .pipe($.size());
 });
 
-gulp.task('html', ['wiredep', 'styles', 'scripts', 'templates'], function () {
+gulp.task('html', ['wiredep'], function () {
     var jsFilter = $.filter('**/*.js');
     var cssFilter = $.filter('**/*.css');
 
     return gulp.src('.tmp/**/**/**/**/*.html')
-        .pipe($.useref.assets())
+        // .pipe($.useref.assets())
         .pipe(jsFilter)
         .pipe($.uglify())
         .pipe(jsFilter.restore())
+        
         .pipe(cssFilter)
         .pipe($.csso())
         .pipe(cssFilter.restore())
-        .pipe($.useref.restore())
+
+        // .pipe($.useref.restore())
         .pipe($.useref())
         .pipe(gulp.dest('dist'))
         .pipe($.size());
 });
 
-gulp.task('images', function () {
+
+gulp.task('images',  function () {
     return gulp.src(['app/images/**/*', 'app/bower_components/ghost-shield/dist/images/**/*'])
         .pipe($.cache($.imagemin({
             optimizationLevel: 3,
@@ -82,9 +86,16 @@ gulp.task('clean', function () {
     return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.clean());
 });
 
-gulp.task('build', ['clean', 'cname', 'html', 'images', 'fonts' ]);
 
-gulp.task('default', ['clean'], function () {
+gulp.task('build', ['clean'], function(){
+    console.log('done cleaning, starting build tasks...')
+    gulp.start('cname');
+    gulp.start('html');
+    gulp.start('images');
+    gulp.start('fonts');
+});
+
+gulp.task('default', function () {
     gulp.start('build');
 });
 
@@ -110,7 +121,7 @@ gulp.task('serve', ['connect', 'styles', 'templates'], function () {
 });
 
 // inject bower components
-gulp.task('wiredep', function () {
+gulp.task('wiredep', ['templates', 'styles', 'scripts'], function () {
     var wiredep = require('wiredep').stream;
 
     gulp.src('app/styles/*.scss')
