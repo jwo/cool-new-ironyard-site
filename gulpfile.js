@@ -2,6 +2,7 @@
 // generated on 2014-04-24 using generator-gulp-webapp 0.0.8
 
 var gulp = require('gulp');
+var plumber = require('gulp-plumber');
 
 // load plugins
 // see https://www.npmjs.org/package/gulp-load-plugins
@@ -40,8 +41,19 @@ gulp.task('html', ['wiredep'], function () {
     var jsFilter = $.filter('**/*.js');
     var cssFilter = $.filter('**/*.css');
 
+    // error handler
+    var onError = function (err) {
+        console.error(err);
+        throw err;
+    };
+
     return gulp.src('.tmp/**/**/**/**/*.html')
-        // .pipe($.useref.assets())
+        .pipe(plumber({
+            errorHandler: onError
+        }))
+        .pipe($.useref.assets({
+            searchPath: ['app','.tmp']
+        }))
         .pipe(jsFilter)
         .pipe($.uglify())
         .pipe(jsFilter.restore())
@@ -50,7 +62,7 @@ gulp.task('html', ['wiredep'], function () {
         .pipe($.csso())
         .pipe(cssFilter.restore())
 
-        // .pipe($.useref.restore())
+        .pipe($.useref.restore())
         .pipe($.useref())
         .pipe(gulp.dest('dist'))
         .pipe($.size());
