@@ -9,7 +9,7 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 
 gulp.task('templates', function() {
-  return gulp.src('app/templates/pages/**/*.jade')
+  return gulp.src('app/templates/pages/**/**/**/**/**/*.jade')
     .pipe($.jade({
       basedir: "app/templates",
       pretty: true
@@ -35,11 +35,11 @@ gulp.task('scripts', function () {
         .pipe($.size());
 });
 
-gulp.task('html', ['styles', 'scripts', 'templates'], function () {
+gulp.task('html', ['wiredep', 'styles', 'scripts', 'templates'], function () {
     var jsFilter = $.filter('**/*.js');
     var cssFilter = $.filter('**/*.css');
 
-    return gulp.src('.tmp/**/*.html')
+    return gulp.src('.tmp/**/**/**/**/*.html')
         .pipe($.useref.assets())
         .pipe(jsFilter)
         .pipe($.uglify())
@@ -65,10 +65,16 @@ gulp.task('images', function () {
 });
 
 gulp.task('fonts', function () {
-    return $.bowerFiles()
+    return gulp.src(['app/bower_components/ghost-shield/dist/webfonts/*'])
         .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
         .pipe($.flatten())
-        .pipe(gulp.dest('dist/fonts'))
+        .pipe(gulp.dest('dist/styles'))
+        .pipe($.size());
+});
+
+gulp.task('cname', function () {
+    return gulp.src('CNAME')
+        .pipe(gulp.dest('dist'))
         .pipe($.size());
 });
 
@@ -76,7 +82,7 @@ gulp.task('clean', function () {
     return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.clean());
 });
 
-gulp.task('build', ['html', 'images', 'fonts']);
+gulp.task('build', ['clean', 'cname', 'html', 'images', 'fonts' ]);
 
 gulp.task('default', ['clean'], function () {
     gulp.start('build');
@@ -141,3 +147,13 @@ gulp.task('watch', ['connect', 'serve'], function () {
     gulp.watch('app/images/**/*', ['images']);
     gulp.watch('bower.json', ['wiredep']);
 });
+
+gulp.task('deploy', [], function() {
+  gulp.src("dist/**/*")
+    .pipe($.ghPages({
+        remoteUrl: 'git@github.com:masondesu/cool-new-ironyard-site.git',
+        remote: 'origin',
+        branch: 'gh-pages'
+    }));
+});
+
