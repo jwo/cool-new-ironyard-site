@@ -217,10 +217,9 @@ gulp.task('cname', function () {
 // /____/_/\__/\___/     /_/ /_/ /_/\__,_/ .___/ 
 //                                      /_/      
 
-// After build-step-2 promise is resolved (which depends
-// on the build-step-1 promise being resolved), we can
+// After build-step-1 promise is resolved , we can
 // safely generate a sitemap and put it in dist
-gulp.task('sitemap', ['build-step-2'], function () {
+gulp.task('sitemap', function () {
   gulp.src('dist/**/*.html', {
     read: false
   }).pipe($.sitemap({
@@ -258,6 +257,7 @@ gulp.task('build-step-1', ['clean'], function(){
 
 // this task depends on build-step-1 to complete
 gulp.task('build-step-2', ['build-step-1'], function(){
+  gulp.start('sitemap');
   gulp.start('images-promise');
   return imagesPromise.promise;
 });
@@ -270,10 +270,10 @@ gulp.task('build-step-2', ['build-step-1'], function(){
 // \__,_/\___/ .___/_/\____/\__, /_/ /_/ /_/\___/_/ /_/\__/  
 //          /_/            /____/                            
 
-// this task relies on the sitemap task having run, which will
+// this task relies on the build-step-2 task having run, which will
 // have triggered all other relevant build tasks. It takes everything
 // in dist and commits it to gh-pages and pushes.
-gulp.task('deploy', ['sitemap'], function() {
+gulp.task('deploy', ['build-step-2'], function() {
   gulp.src("dist/**/*")
   .pipe($.ghPages({
     remoteUrl: 'git@github.com:masondesu/cool-new-ironyard-site.git',
