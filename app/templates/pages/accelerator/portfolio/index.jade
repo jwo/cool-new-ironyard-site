@@ -1,5 +1,12 @@
 include /mixins/accelerator
 extends /layouts/main
+
+block meta
+  +meta({
+    title:"Portfolio",
+    description:"The list of companies that have gone through our Accelerator program.s"
+  })
+
 block content
   +navigation({
     title: 'Portfolio',
