@@ -1,0 +1,53 @@
+extends /layouts/main
+
+block meta
+  +meta({
+    title:"Iron Yard- Financing",
+    description:" "
+  })
+
+block content
+  +navigation({
+    title: "Invest In Your Future",
+    color: 'gold',
+    links: [
+      {title:"Tuition", url:"#tuition"},
+      {title:"Financing", url:"#financing"},
+      {title:"Scholarships", url:"#scholarships"}
+    ]
+  })
+
+  .container
+    .row#tuition
+      .col-md-12: h1 Tuition
+        h4(style="padding-bottom: 0px;") Joining The Iron Yard Family
+        p When you are accepted to The Iron Yard Academy, you join a family that extends far beyond your individual class or campus. Our code school and accelerator graduates comprise a national network of tech professionals, giving you access to people and companies in almost every sphere of the industry. 
+      .col-md-6
+        h4(style="padding-bottom: 0px;") Course costs
+        p Tuition is <strong>$10,000</strong>. We have <a href="#">financing options</a>  and <a href="#">scholarships</a> available. Our package is one of the most affordable ways to launch and grow a successful programming career. 
+        p • 12 weeks of intensive code education and mentorship<br>• Job placement and career support<br> • Freelance support<br> • Access to The Iron Yard network
+      .col-md-6
+        .col-md-7
+          a(href="https://vimeo.com/69189571")
+            img.photo(src="/images/academy/front-end-engineering/marco-quote.jpg")
+          p Read more on our <a href="http://stories.theironyard.com">Stories Blog</a>.
+        .col-md-5
+          p(style="margin-top: 0px;") <em>"I was amazed at the amount of skill these students had acquired after only a month-and-a-half of teaching."</em><br><strong>— Marco Suarez, Creative Director at Etsy
+
+  .horizontal-section.gray-light-bg
+    .container
+      .row#financing
+        .col-md-4: h1 Financing
+        .col-md-8
+          blockquote
+            p. 
+              "Organic YOLO chambray American Apparel kale chips. 
+              Squid stumptown cardigan gentrify, try-hard seitan 
+              sartorial gluten-free before they sold out." 
+            footer  Hispteria Crazedor, Coffee Shop Prophet
+        .col-md-4
+          h2 Pay In Full
+        .col-md-4
+          h2 Finance
+        .col-md-4
+          h2 Upstart
