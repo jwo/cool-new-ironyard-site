@@ -229,10 +229,6 @@ gulp.task('sitemap', ['build-step-2'], function () {
   .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('clean', function () {
-  return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.clean());
-});
-
 
 //     __          _ __    __        __                 
 //    / /_  __  __(_) /___/ /  _____/ /____  ____  _____
@@ -240,6 +236,11 @@ gulp.task('clean', function () {
 //  / /_/ / /_/ / / / /_/ /  (__  ) /_/  __/ /_/ (__  ) 
 // /_.___/\__,_/_/_/\__,_/  /____/\__/\___/ .___/____/  
 //                                       /_/            
+
+gulp.task('clean', function () {
+  return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.rimraf());
+});
+
 
 // clean is a dependency of this task, but can't be run asynchronously 
 // with the other nested tasks. This build task should ideally wait for 
