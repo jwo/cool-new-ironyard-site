@@ -149,11 +149,11 @@ gulp.task('asset-build', ['templates', 'styles', 'scripts'], function () {
 // optimize them and put them in dist/images
 gulp.task('images',  function () {
   return gulp.src(['app/images/**/*', 'app/bower_components/ghost-shield/dist/images/**/*'])
-    .pipe($.cache($.imagemin({
-      optimizationLevel: 3,
-      progressive: true,
-      interlaced: true
-    })))
+    // .pipe($.cache($.imagemin({
+    //   optimizationLevel: 3,
+    //   progressive: true,
+    //   interlaced: true
+    // })))
     .pipe(gulp.dest('dist/images'))
     .pipe($.size());
 });
