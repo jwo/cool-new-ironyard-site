@@ -226,7 +226,7 @@ gulp.task('sitemap', ['build-step-2'], function () {
   }).pipe($.sitemap({
       siteUrl: 'http://theironyard.com'
   }))
-  .pipe(gulp.dest('dist/'));
+  .pipe(gulp.dest('dist'));
 });
 
 
@@ -278,7 +278,8 @@ gulp.task('deploy', ['sitemap'], function() {
   .pipe($.ghPages({
     remoteUrl: 'git@github.com:masondesu/cool-new-ironyard-site.git',
     remote: 'origin',
-    branch: 'gh-pages'
+    branch: 'gh-pages',
+    cacheDir: '.deploy-repo'
   }));
 });
 
