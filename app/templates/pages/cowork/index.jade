@@ -1,4 +1,11 @@
 extends /layouts/main
+
+block meta
+  +meta({
+    title:"Iron Yard- CoWork",
+    description:"Beautiful work spaces focused on 100% independent collaboration."
+  })
+
 block content
   +navigation({
     title: 'CoWork',
@@ -68,10 +75,10 @@ block content
           li Unlimited coffee
     hr
   .container(style="text-align:center")
-    .row
-      .col-md-12
+    .row#locations
+      .col-md-12#railside
         h1 Railside
-
+        img(src="/images/cowork/railside-1.jpg").photo(style="max-width:900px;")
     .row
       .col-md-9(style="text-align:left;")
         p
@@ -79,9 +86,9 @@ block content
       .col-md-3
         a.btn(href="/cowork/apply" style="margin-top:20px")  Apply To Join!
     .row
-      .col-md-12
+      .col-md-12#forge
         h1 The Forge
-
+        img(src="/images/cowork/the-forge-1.jpg").photo(style="max-width:900px;")
     .row
       .col-md-9(style="text-align:left;")
         p
@@ -90,9 +97,9 @@ block content
         a.btn(href="/cowork/apply" style="margin-top:20px")  Apply To Join!               
               
     .row
-      .col-md-12
+      .col-md-12#mill
         h1 The Mill
-
+        img(src="/images/cowork/the-mill-1.jpg").photo(style="max-width:900px;")
     .row
       .col-md-9(style="text-align:left;")
         p
