@@ -1,0 +1,24 @@
+extends /layouts/main
+
+block meta
+  +meta ({
+    title:"Iron Yard- Kids Education",
+    description: "Geared towards children, our kids classes are meant to provide a fun and educational introduction to programming and computer science."
+  })
+
+block content
+  +navigation({
+    title: 'Kids Education',
+    color: 'gold',
+    links: [
+      {title:"Build-A-Website", url:"/academy/kids#website"},
+      {title: "Scratch", url: "/academy/kids#scratch"},
+      {title: "Minecraft", url: "/academy/kids#minecraft"},   
+      {title:"Schedule", url:"/academy/kids#schedule"},
+      {title: "FAQ", url:"/academy/kids#faq"}
+    ]
+  })
+
+  .container(style="margin-top:60px")
+    .row
+      .col-md-8
