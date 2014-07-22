@@ -1,4 +1,11 @@
 extends /layouts/main
+
+block meta
+  +meta({
+      title:"Iron Yard- Team",
+      description:"We are a group of passionate thinkers and builders who believe that great people can use technology to make the world a better place."
+    })
+
 block content
   +navigation({
     color: 'gray-dark',
@@ -41,7 +48,7 @@ block content
                 {title: "@ericdodds", url: "https://twitter.com/ericdodds"},
                 {title: "LinkedIn", url: "http://www.linkedin.com/in/ericdodds"},
                 {title: "GitHub", url: "https://github.com/"},
-                {title: "ericdodds.com", url: "http://ericdods.com/"}
+                {title: "ericdodds.com", url: "http://ericdodds.com/"}
               ]
             },
             {
@@ -124,17 +131,6 @@ block content
               ]
             },
             {
-              name: "Laura Lindeman",
-              id: "laura",
-              title: "Assistant Campus Director & Content Editor",
-              description: "Laura Lindeman is an all-around word nerd: avid reader, blogger, and occasional grammar pedant who has opinions about the Oxford comma. She comes to The Iron Yard after several years of working in the non-profit sector and is excited to translate her organizing skills into empowering the next generation of developers. Laura is a firm believer in the power of community and the ways technology brings people together, though sharing a delicious meal in person is even better. She has a soft spot for cardigans, funky earrings, and chocolate with peanut butter. When she's not writing or helping students with Ruby on Rails, you can often find her backpacking, bargain hunting, or trying out new recipes.",
-              photo: "/images/about/laura-lindeman.jpg",
-              links: [
-                {title: "@lclindeman", url: "https://twitter.com/lclindeman"},
-                {title: "GitHub", url: "https://github.com/lclindeman"}
-              ]
-            },
-            {
               name: "Sarah Lodato",
               id: "sarah",
               title: "Campus Director",
@@ -173,6 +169,17 @@ block content
               photo: "/images/about/rich-winley.jpg",
               links: [
                 {title: "@richwinley", url: "https://twitter.com/richwinley"}
+              ]
+            },
+            {
+              name: "Laura Lindeman",
+              id: "laura",
+              title: "Assistant Campus Director & Content Editor",
+              description: "Laura Lindeman is an all-around word nerd: avid reader, blogger, and occasional grammar pedant who has opinions about the Oxford comma. She comes to The Iron Yard after several years of working in the non-profit sector and is excited to translate her organizing skills into empowering the next generation of developers. Laura is a firm believer in the power of community and the ways technology brings people together, though sharing a delicious meal in person is even better. She has a soft spot for cardigans, funky earrings, and chocolate with peanut butter. When she's not writing or helping students with Ruby on Rails, you can often find her backpacking, bargain hunting, or trying out new recipes.",
+              photo: "/images/about/laura-lindeman.jpg",
+              links: [
+                {title: "@lclindeman", url: "https://twitter.com/lclindeman"},
+                {title: "GitHub", url: "https://github.com/lclindeman"}
               ]
             }
           ])
@@ -253,7 +260,6 @@ block content
             {
               name: "Tim Whitacre",
               id: "tim",
-              email: " ",
               title: "JavaScript Instructor",
               description: "Tim comes to Atlanta after living in Scranton, PA, for the past 12 years. He is just as excited to leave behind the long-wintered north as he is to be a part of The Iron Yard. As a developer he has had a wide range of experiences from roles in small startups to large, publicly traded companies. He is also the co-founder of an agency that has worked alongside Fortune 500 companies. When not programming, he can be found playing music or catching up on one of the many documentaries found on Netflix",
               photo: "/images/about/tim-whitacre.jpg",

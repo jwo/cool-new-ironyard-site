@@ -1,7 +1,14 @@
 extends /layouts/main
+
+block meta
+  +meta({
+    title:"Iron Yard- Digital Health Program",
+    description:"$20,000 in seed capital, demo days in Silicon Valley, three months of incredible mentorship and weekly workshops from experts in healthcare innovation, and more!"
+  })
+
 block content
   +navigation({
-    title: 'Digital Health program',
+    title: 'Digital Health Program',
     color: 'turquoise',
     links: [
       {title: "FAQ", url: "/accelerator/digital-health/faq"},

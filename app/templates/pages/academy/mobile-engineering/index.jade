@@ -1,11 +1,19 @@
 extends /layouts/main
+
+block meta
+  +meta ({
+    title:"Iron Yard- Mobile Engineering",
+    description: "The Iron Yard's super-intensive mobile app development course takes students through everything they need to know to start working as mobile developers."
+  })
+
 block content
   +navigation({
     title: 'Mobile Engineering',
     color: 'blue',
     links: [
       {title:"FAQs", url:"/academy/mobile-engineering/faq"},
-      {title:"Schedule", url:"/academy/mobile-engineering#class-schedule"},    ]
+      {title:"Schedule", url:"/academy/mobile-engineering#class-schedule"},
+      {title: "Tuition", url: "/academy/tuition"}    ]
   })
 
   .container
@@ -46,10 +54,10 @@ block content
         .image-box
           img(src="/images/academy/mobile-engineering/nebula.png")
       .col-lg-7.col-sm-6
-        h3 Scholarships
-        p One of our missions is to make programming, engineering and computer science welcoming to everyone. Learn more about our scholarships for women, military personnel and others.
+        h3 Tuition, Financing and Scholarships
+        p Our missions is to help you launch a career in programming. We've partnered with financing companies and developed scholarships to make programming, engineering and computer science available to as many people as possible.
       .col-lg-3.col-sm-4.cta-box
-        a(href="/academy/scholarships").btn Learn More
+        a(href="/academy/tuition").btn Learn More
 
     .row(style="background-color:#e3e7e9")
       .col-md-12
@@ -58,7 +66,7 @@ block content
         p(style="margin-top:0") 
           | <strong>We'd love to answer your questions</strong>.<br>We love explaining what makes us different and our friendly team members want to help you make the best choice possible for your career. Feel free to reach out digitally or talk to a human.
         ul.no-style-type 
-          li • Shoot us <a href="mailto:academy@theironyard.com?subject=I want to learn more about the Academy">an email</a> 
+          li • Shoot us <a href="mailto:academy@theironyard.com?subject=I want to learn more about the Mobile Engineering course">an email</a> 
           li • Jump into our <a href="https://www.hipchat.com/gVQZ3qwbv">Academy chat room</a>
       .col-md-6(style="padding:0px 00px 20px 20px")    
         .col-md-6
@@ -167,7 +175,10 @@ block content
           | Before we get into specifics, we need to let you know that this class is going to be very challenging. The material gets really hard, really fast. All of the work is very do-able, but if you think you’re going to develop professional level skills in a cushy 40 hour week, this isn’t the place for you. (The average student puts in about 60 hours per week, minimum). We don’t require you to know code to start with, but you need to have tried it and enjoyed it. If that’s you, go ahead and <a href="#class-schedule">apply now</a>. If not, <a href="http://teamtreehouse.com/library/objectivec-basics">try a few exercises to see.</a><br><br>
           | We’re family people, so our goal is for you to work as hard as possible in class so you can find joy in a great job, freelance work, or starting your own company when you’re done. We’re proud of all of the different types of people who have come through The Iron Yard, and we don’t have stereotypes of what a programmer is like. We’ve taught students from 18 to 50 years old, from different countries and all sorts of backgrounds.
         h3: em How Much Does It Cost?
-        p <strong>Base tuition is $10,000</strong>, and we have significant discounts for enlisted military personnel and veterans, and not to mention a <a href="http://theironyard.com/academy/scholarships">Women in Tech Scholarship</a>. Do we offer payment options? You know it. Checkout out our <a href="/academy/mobile-engineering/faq">FAQ</a>.
+        p You can read about tuition, financing and scholarships on our <a href="/academy/tuition">Tuition page</a>. We offer great financing options, have significant discounts for enlisted military personnel/veterans, and sponsor a Women in Tech Scholarship.
+        h3: em Student Stories
+        ul.no-style-type.recent
+
       .col-md-5
         h4(style="margin-top:28px;"): em Here are a few things we look for in students:
         p(style="color:")
@@ -208,3 +219,6 @@ block content
             a(href="http://macaw.co"): img(src="/images/academy/macaw.png" style="width:30%")
             a(href="http://wercker.com"): img(src="/images/academy/wercker.png" style="width:30%")
             a(href="http://symbolset.com"): img(src="/images/academy/symbolset.png" style="width:30%")
+
+block scripts
+  +storiesFeed('stories')
