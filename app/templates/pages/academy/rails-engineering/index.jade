@@ -1,4 +1,11 @@
 extends /layouts/main
+
+block meta
+  +meta ({
+    title:"Iron Yard- Rails Engineering",
+    description: "The Iron Yard's super-intensive Ruby on Rails development course takes students through everything they need to start working as Rails developers."
+  })
+
 block content
   +navigation({
     title: 'Rails Engineering',
@@ -6,7 +13,7 @@ block content
     links: [
       {title:"FAQs", url:"/academy/rails-engineering/faq"},
       {title:"Schedule", url:"/academy/rails-engineering#class-schedule"},
-    ]
+      {title: "Tuition", url: "/academy/tuition"}    ]
   })
 
   .container
@@ -17,7 +24,7 @@ block content
         p 
           | Over the course of three months, a heavy-duty programming veteran (and skilled mentor) will show you the power of Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build rock-solid servers, manage databases and know the basics of front end app development.
         p
-          | The best part: we’ll help you get a job offer as a mobile developer when you graduate. Don’t know any code? Don’t worry. Our proven teachers and process will take you from zero to hero and mentor you into a professional junior-level programmer.
+          | The best part: we’ll help you get a job offer as a developer when you graduate. Don’t know any code? Don’t worry. Our proven teachers and process will take you from zero to hero and mentor you into a professional junior-level programmer.
       .col-md-4(style="text-align:center")
         img.photo(src="/images/academy/mobile-engineering/mobile-eng-image.jpg" style="max-width:500px;")
 
@@ -48,10 +55,10 @@ block content
         .image-box
           img(src="/images/academy/mobile-engineering/nebula.png")
       .col-lg-7.col-sm-6
-        h3 Scholarships
-        p One of our missions is to make programming, engineering and computer science welcoming to everyone. Learn more about our scholarships for women, military personnel and others.
+        h3 Tuition, Financing and Scholarships
+        p Our missions is to help you launch a career in programming. We've partnered with financing companies and developed scholarships to make programming, engineering and computer science available to as many people as possible.
       .col-lg-3.col-sm-4.cta-box
-        a(href="/academy/scholarships").btn Learn More
+        a(href="/academy/tuition").btn Learn More
 
     .row(style="background-color:#e3e7e9")
       .col-md-12
@@ -60,7 +67,7 @@ block content
         p(style="margin-top:0") 
           | <strong>We'd love to answer your questions</strong>.<br>We love explaining what makes us different and our friendly team members want to help you make the best choice possible for your career. Feel free to reach out digitally or talk to a human.
         ul.no-style-type 
-          li • Shoot us <a href="mailto:academy@theironyard.com?subject=I want to learn more about the Academy">an email</a> 
+          li • Shoot us <a href="mailto:academy@theironyard.com?subject=I want to learn more about the Rails Engineering course">an email</a> 
           li • Jump into our <a href="https://www.hipchat.com/gVQZ3qwbv">Academy chat room</a>
       .col-md-6(style="padding:0px 00px 20px 20px")    
         .col-md-6
@@ -97,7 +104,7 @@ block content
           td September 22nd
           td Tampa Bay, FL
           td Brian Burridge
-          td: a.btn(href="https://theironyard.typeform.com/to/PfCfAp") Apply        
+          td: a.btn(href="https://theironyard.typeform.com/to/X5SCGY" type='”submit”', value='”Submit”', onclick='ga(\'send\', \'event\', { eventCategory: \'Applications\', eventAction: \'Started Application\', eventLabel: \'Tampa\'});') Apply       
         tr
           td September 22nd
           td Durham, NC
@@ -213,7 +220,9 @@ block content
           | Before we get into specifics, we need to let you know that this class is going to be very challenging. The material gets really hard, really fast. All of the work is very do-able, but if you think you’re going to develop professional level skills in a cushy 40 hour week, this isn’t the place for you. (The average student puts in about 60 hours per week, minimum). We don’t require you to know code to start with, but you need to have tried it and enjoyed it. If that’s you, go ahead and <a href="#class-schedule">apply now</a>. If not, <a href="http://www.codecademy.com/tracks/ruby">try a few exercises to see.</a><br><br>
           | We’re family people, so our goal is for you to work as hard as possible in class so you can find joy in a great job, freelance work, or starting your own company when you’re done. We’re proud of all of the different types of people who have come through The Iron Yard, and we don’t have stereotypes of what a programmer is like. We’ve taught students from 18 to 50 years old, from different countries and all sorts of backgrounds.
         h3: em How Much Does It Cost?
-        p <strong>Base tuition is $10,000</strong>, and we have significant discounts for enlisted military personnel and veterans, and not to mention a <a href="http://theironyard.com/academy/scholarships">Women in Tech Scholarship</a>. Do we offer payment options? You know it. Checkout out our <a href="/academy/rails-engineering/faq">FAQ</a>.
+        p You can read about tuition, financing and scholarships on our <a href="/academy/tuition">Tuition page</a>. We offer great financing options, have significant discounts for enlisted military personnel/veterans, and sponsor a Women in Tech Scholarship.
+        h3: em Student Stories
+        ul.no-style-type.recent   
       .col-md-5
         h4(style="margin-top:28px;"): em Here are a few things we look for in students:
         p(style="color:")
@@ -254,3 +263,6 @@ block content
             a(href="http://macaw.co"): img(src="/images/academy/macaw.png" style="width:30%")
             a(href="http://wercker.com"): img(src="/images/academy/wercker.png" style="width:30%")
             a(href="http://symbolset.com"): img(src="/images/academy/symbolset.png" style="width:30%")
+
+block scripts
+  +storiesFeed('stories')

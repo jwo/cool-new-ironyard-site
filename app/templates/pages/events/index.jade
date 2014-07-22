@@ -1,5 +1,12 @@
 include /mixins/events
 extends /layouts/main
+
+block meta
+  +meta({
+    title: "Iron Yard- Events",
+    description: "We set out to build the events we've always wanted to attend."
+  })
+
 block content
   +navigation({
     title: 'Events',
