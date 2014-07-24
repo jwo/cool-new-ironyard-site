@@ -8,13 +8,23 @@ block meta
 
 block content
   +navigation({
-    title: 'Academy',
-    color: 'gold',
-    image: '/images/academy/academy-header.jpg',
-    cutout: true,
-    links: [
-      {title: "FAQs", url: "/academy/faq"},
-      {title: "Tuition", url: "/academy/tuition"}, 
-      {title: "Kids Classes", url: "/academy#kids"}
-    ]
+    title: 'Refer A Student',
+    color: 'gold'
   })
+
+  .container
+    .row(style="margin-top:80px")
+      .col-md-8
+        div.typeform-widget(data-url="https://theironyard.typeform.com/to/lWhX4O" data-text="Refer someone to The Iron Yard Academy" style="width:100%;height:500px;")
+        <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+      .col-md-4
+        h3 Referring a student? You could be on your way to 150 bucks. Happy day!
+        hr
+        p.strong Learn More
+        ul
+          li: a(href="/academy") The Iron Yard Academy
+          li: a(href="mailto:academy@theironyard.com") academy@TheIronYard.com
+          li: a(href="http://twitter.com/theironyard") @theironyard
+          li: a(href="/locations") Locations
+          li: a(href="/about/team") Meet our team 
+          li: a(href="/about/culture") Discover our culture
