@@ -1,0 +1,20 @@
+extends /layouts/main
+
+block meta
+  +meta({
+    title: "Iron Yard- Refer A Student",
+    description: "Refer someone and if they get accepted into our Academy you receive a $150."
+  })
+
+block content
+  +navigation({
+    title: 'Academy',
+    color: 'gold',
+    image: '/images/academy/academy-header.jpg',
+    cutout: true,
+    links: [
+      {title: "FAQs", url: "/academy/faq"},
+      {title: "Tuition", url: "/academy/tuition"}, 
+      {title: "Kids Classes", url: "/academy#kids"}
+    ]
+  })
