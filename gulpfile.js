@@ -274,7 +274,7 @@ gulp.task('build-step-2', ['build-step-1'], function(){
 // have triggered all other relevant build tasks. It takes everything
 // in dist and commits it to gh-pages and pushes.
 gulp.task('deploy', ['build-step-2'], function() {
-  gulp.src("dist/**/*")
+  gulp.src("./dist/**/*")
   .pipe($.ghPages({
     remoteUrl: 'git@github.com:masondesu/cool-new-ironyard-site.git',
     remote: 'origin',
