@@ -274,13 +274,20 @@ gulp.task('build-step-2', ['build-step-1'], function(){
 // have triggered all other relevant build tasks. It takes everything
 // in dist and commits it to gh-pages and pushes.
 gulp.task('deploy', ['build-step-2'], function() {
-  gulp.src("dist/**/*")
-  .pipe($.ghPages({
-    remoteUrl: 'git@github.com:masondesu/cool-new-ironyard-site.git',
-    remote: 'origin',
-    branch: 'gh-pages',
-    cacheDir: '.deploy-repo'
-  }));
+  return gulp.src('dist')
+    .pipe($.subtree({
+      remote: 'origin',
+      branch: 'gh-pages',
+      message: 'New build on ' + (new Date).toLocaleDateString("en-US", {
+                                    weekday: "long", 
+                                    year: "numeric", 
+                                    month: "short",
+                                    day: "numeric", 
+                                    hour: "2-digit", 
+                                    minute: "2-digit"
+                                  })
+    }))
+    .pipe($.rimraf());
 });
 
 
