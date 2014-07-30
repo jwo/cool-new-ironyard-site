@@ -1,0 +1,20 @@
+extends /layouts/main
+
+block meta
+  +meta({
+      title:"Iron Yard- 404",
+      description:" "
+    })
+
+block content
+  +navigation({
+    color: 'gray-dark',
+    title: '404'
+  })
+
+
+  .container(style="height:500px")
+    .row
+      .callout-box(style="margin-top:80px")
+        h1 Oops! We can't find that page!
+        p It seems you've tried to reach a page that doesn't exist. If you think there should be something here, email us at <a href="mailto:websiteoverlord@theironyard.com">websiteoverlord@theironyard.com</a>.
