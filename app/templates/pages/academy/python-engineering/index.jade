@@ -1,0 +1,17 @@
+extends /layouts/main
+
+block meta
+  +meta ({
+    title:"Iron Yard- Python Engineering",
+    description: "The Iron Yard's super-intensive python development course takes students through everything they need to know to start working as python developers."
+  })
+
+block content
+  +navigation({
+    title: 'Python Engineering',
+    color: 'teal',
+    links: [
+      {title:"FAQs", url:"/academy/python-engineering/faq"},
+      {title:"Schedule", url:"/academy/python-engineering#class-schedule"},
+      {title: "Tuition", url: "/academy/tuition"}    ]
+  })
