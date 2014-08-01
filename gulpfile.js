@@ -11,6 +11,7 @@
 
 var gulp = require('gulp'),
   plumber = require('gulp-plumber'),
+  exec = require('child_process').exec,
   Q = require('q'),
   // Asset compilation and image crunching
   // are long-running tasks. I'm using two
@@ -273,14 +274,15 @@ gulp.task('build-step-2', ['build-step-1'], function(){
 // this task relies on the build-step-2 task having run, which will
 // have triggered all other relevant build tasks. It takes everything
 // in dist and commits it to gh-pages and pushes.
+// 
+// deploy script from: https://github.com/X1011/git-directory-deploy
 gulp.task('deploy', ['build-step-2'], function() {
-  gulp.src("dist/**/*")
-  .pipe($.ghPages({
-    remoteUrl: 'git@github.com:masondesu/cool-new-ironyard-site.git',
-    remote: 'origin',
-    branch: 'gh-pages',
-    cacheDir: '.deploy-repo'
-  }));
+  var deployPromise = Q.defer();
+  exec('sh deploy.sh', function(){
+    deployPromise.resolve();
+  });
+
+  return deployPromise.promise;
 });
 
 
