@@ -4,7 +4,7 @@ mixin accelerator(profiles)
       if profile.portfolio
         a(href="#{profile.portfolio}" style="text-decoration:none"): img(style="height:220px; width:220px" src="/images/accelerator/portfolio/#{profile.image}")
       else  
-        img(style="height:220px; width:220px" src="/images/accelerator/portfolio/#{profile.image}")
+        img(style="height:220px; width:220px" src="/images/accelerator/mentors/#{profile.image}")
       .content
         h4= profile.name
         if profile.title
