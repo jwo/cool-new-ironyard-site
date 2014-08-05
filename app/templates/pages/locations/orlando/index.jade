@@ -36,7 +36,7 @@ block content
               | Learn to code.<br> 
               | Life's too short for the wrong career. 
             p
-              a(href="/academy" class="btn") The Iron Yard Academy
+              a(href="/academy" class="btn") Enroll Now!
             
 
       .horizontal-section.gray-light-bg#programs
@@ -69,27 +69,49 @@ block content
                 | We will launch kids classes in Orlando later this year. Sign up for our mailing list to learn more.
               a(href="http://eepurl.com/YcBAD" class="btn") Mailing list  
 
-      .horizontal-section.gray-light-bg.last
-        .container  
-          .row
-            .col-sm-7.mobile-container
-              h3(style="margin-top:0") City Highlights
-              p 
-                | In addition to its unrivaled visitor experience, Orlando is home to an incredible ecosystem of entrepreneurs and technology companies. In fact, technology is the region’s second largest industry with over 5,000 companies shaping the future of modeling and simulation, defense, digital media, and biotechnology. A thriving startup scene also has a strong foothold in Downtown Orlando, with one in five jobs in the area based in tech. Culturally, a hyperlocal focus is fostering a renewed vibrancy in the food and art scene. With Orlando’s weather, central location, and world-class attractions, this is the perfect place to live, work, and play. Some of our favorite things:
-              ul 
-                li: a(href="http://bungalower.com/") The Bungalower
-                li: a(href="http://www.cityoforlando.net/parks/lake-eola-park/") Lake Eola
-                li: a(href="http://downtowncredo.com/") Downtown Credo
-                li: a(href="http://orlandotech.org/") Orlando Tech
+      .container  
+        .row
+          .col-sm-7.mobile-container
+            h2 Meet Our Tampa Bay Team
+            .row.left-column
+              .photo-list
+                .photo-container
+                  a(href="/about/team#david-rogers"): img.photo-mentor(src="/images/about/david-rogers.jpg")
+                h3(style="font-size: 24px;") David Rogers
+                h4 Front End Instructor
+              .photo-list
+                .photo-container
+                  a(href="/about/team#elbadri"): img.photo-mentor(src="/images/about/sarah-elbadri.jpg")
+                h3(style="font-size: 24px;") Sarah Elbadri
+                h4 Campus Director
   
-            .col-sm-5.mobile-container#connect
-              h2 Connect
-              hr
-              ul.no-style-type
-                li: h4
-                  a.green-text(href="/jobs") We're Hiring in Orlando!
-                li: a.green-text(href="http://blog.theironyard.com") The Blog
-                li: a.green-text(href="mailto:orlando@theironyard.com") orlando@theironyard.com
-                li: a.green-text(href="http://eepurl.com/YcBAD") Orlando Newsletter
-                li: a.green-text(href="tel:+4073586683") (407) 358-6683
+          .col-sm-5.mobile-container#connect
+            h2 Connect
+            hr
+            ul.no-style-type
+              li: h4
+                a.green-text(href="/jobs") We're Hiring in Orlando!
+              li: a.green-text(href="http://blog.theironyard.com") The Blog
+              li: a.green-text(href="mailto:orlando@theironyard.com") orlando@theironyard.com
+              li: a.green-text(href="http://eepurl.com/YcBAD") Orlando Newsletter
+              li: a.green-text(href="tel:+4073586683") (407) 358-6683
+
+      .horizontal-section.gray-light-bg.last
+              .container
+                .row
+                  .col-md-7
+                    h3(style="margin-top:0") City Highlights
+                    p 
+                      | In addition to its unrivaled visitor experience, Orlando is home to an incredible ecosystem of entrepreneurs and technology companies. In fact, technology is the region’s second largest industry with over 5,000 companies shaping the future of modeling and simulation, defense, digital media, and biotechnology. A thriving startup scene also has a strong foothold in Downtown Orlando, with one in five jobs in the area based in tech. Culturally, a hyperlocal focus is fostering a renewed vibrancy in the food and art scene. With Orlando’s weather, central location, and world-class attractions, this is the perfect place to live, work, and play. Some of our favorite things:
+                    ul
+                      li: a(href="http://bungalower.com/") The Bungalower
+                      li: a(href="http://www.cityoforlando.net/parks/lake-eola-park/") Lake Eola
+                      li: a(href="http://downtowncredo.com/") Downtown Credo
+                      li: a(href="http://orlandotech.org/") Orlando Tech
+                  .col-md-5
+                    h4 Recent posts from the blog
+                    ul.no-style-type.recent
+
+block scripts
+  +blogFeed('blog')
 
