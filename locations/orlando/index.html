@@ -71,7 +71,7 @@
                 Learn to code.<br> 
                 Life's too short for the wrong career. 
               </p>
-              <p><a href="/academy" class="btn">The Iron Yard Academy</a></p>
+              <p><a href="/academy" class="btn">Enroll Now!</a></p>
             </div>
           </div>
         </div>
@@ -107,10 +107,42 @@
             </div>
           </div>
         </div>
+        <div class="container"> 
+          <div class="row">
+            <div class="col-sm-7 mobile-container">
+              <h2>Meet Our Tampa Bay Team</h2>
+              <div class="row left-column">
+                <div class="photo-list">
+                  <div class="photo-container"><a href="/about/team#david-rogers"><img src="/images/about/david-rogers.jpg" class="photo-mentor"></a></div>
+                  <h3 style="font-size: 24px;">David Rogers</h3>
+                  <h4>Front End Instructor</h4>
+                </div>
+                <div class="photo-list">
+                  <div class="photo-container"><a href="/about/team#elbadri"><img src="/images/about/sarah-elbadri.jpg" class="photo-mentor"></a></div>
+                  <h3 style="font-size: 24px;">Sarah Elbadri</h3>
+                  <h4>Campus Director</h4>
+                </div>
+              </div>
+            </div>
+            <div id="connect" class="col-sm-5 mobile-container">
+              <h2>Connect</h2>
+              <hr>
+              <ul class="no-style-type">
+                <li>
+                  <h4><a href="/jobs" class="green-text">We're Hiring in Orlando!</a></h4>
+                </li>
+                <li><a href="http://blog.theironyard.com" class="green-text">The Blog</a></li>
+                <li><a href="mailto:orlando@theironyard.com" class="green-text">orlando@theironyard.com</a></li>
+                <li><a href="http://eepurl.com/YcBAD" class="green-text">Orlando Newsletter</a></li>
+                <li><a href="tel:+4073586683" class="green-text">(407) 358-6683</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="horizontal-section gray-light-bg last">
-          <div class="container"> 
+          <div class="container">
             <div class="row">
-              <div class="col-sm-7 mobile-container">
+              <div class="col-md-7">
                 <h3 style="margin-top:0">City Highlights</h3>
                 <p>In addition to its unrivaled visitor experience, Orlando is home to an incredible ecosystem of entrepreneurs and technology companies. In fact, technology is the region’s second largest industry with over 5,000 companies shaping the future of modeling and simulation, defense, digital media, and biotechnology. A thriving startup scene also has a strong foothold in Downtown Orlando, with one in five jobs in the area based in tech. Culturally, a hyperlocal focus is fostering a renewed vibrancy in the food and art scene. With Orlando’s weather, central location, and world-class attractions, this is the perfect place to live, work, and play. Some of our favorite things:</p>
                 <ul>
@@ -120,18 +152,9 @@
                   <li><a href="http://orlandotech.org/">Orlando Tech</a></li>
                 </ul>
               </div>
-              <div id="connect" class="col-sm-5 mobile-container">
-                <h2>Connect</h2>
-                <hr>
-                <ul class="no-style-type">
-                  <li>
-                    <h4><a href="/jobs" class="green-text">We're Hiring in Orlando!</a></h4>
-                  </li>
-                  <li><a href="http://blog.theironyard.com" class="green-text">The Blog</a></li>
-                  <li><a href="mailto:orlando@theironyard.com" class="green-text">orlando@theironyard.com</a></li>
-                  <li><a href="http://eepurl.com/YcBAD" class="green-text">Orlando Newsletter</a></li>
-                  <li><a href="tel:+4073586683" class="green-text">(407) 358-6683</a></li>
-                </ul>
+              <div class="col-md-5">
+                <h4>Recent posts from the blog</h4>
+                <ul class="no-style-type recent"></ul>
               </div>
             </div>
           </div>
@@ -205,5 +228,11 @@ if (city) {
     <!--clicky analytics-->
     <script src="//static.getclicky.com/js"></script>
     <script type="text/javascript">try{ clicky.init(100714900); }catch(e){}</script>
+    <script>$(function(){
+  wpFeed("http://blog.theironyard.com/feed/", $(".recent"));
+})
+
+
+    </script>
   </body>
 </html>
