@@ -2,8 +2,8 @@ extends /layouts/main
 
 block meta 
  +meta({
-    title: "Orlando, FL",
-    description: "The Iron Yard Academy in Orlando helps people launch careers in programming. Our intensive, 12-week code classes train you into a professional, junior-level developer."
+    title: "The Iron Yard | Orlando, FL Code School",
+    description: "Learn to code, get a job. We teach Front End Engineering and Rails Engineering right here in Orlando, FL."
   })
 
 block content
@@ -25,9 +25,9 @@ block content
           .col-sm-8
             h1 The Iron Yard in Orlando
             p 
-              | Orlando, Florida has long been known as a creative hub for multiple industries. Both software and media companies are building great products that are used around the world. 
+              | Orlando is on the rise! As one of the fastest growing cities in the country’s third largest state, Orlando is fostering innovation and high-growth companies in powerful tech clusters.
             p 
-              | We're excited to join an already-robust tech and creative scene, bringing value by teaching Front End Engineering (HTML/CSS/JavaSCript) and Ruby on Rails Engineering. 
+              | We're proud to be a part of Orlando’s already-robust tech and creative scene, contributing to the thriving tech ecosystem by teaching Front End Engineering (HTML/CSS/Javascript) and Ruby on Rails Engineering at our Downtown Orlando campus. 
 
           .col-sm-4.mobile-container#connect
             h3 Academy classes are open in Orlando. Apply now! 
@@ -36,7 +36,7 @@ block content
               | Learn to code.<br> 
               | Life's too short for the wrong career. 
             p
-              a(href="/academy" class="btn") The Iron Yard Academy
+              a(href="/academy" class="btn") Enroll Now!
             
 
       .horizontal-section.gray-light-bg#programs
@@ -55,7 +55,7 @@ block content
                 a.btn.hover-yellow(href="/academy/front-end-engineering") Front End Engineering
               .col-md-6
                 h4(style="padding-bottom: 0px;"): a(href="/academy/rails-engineering").green-text <img src="/images/locations/icons/rails-icon.png" style="height:24px"> <strong>Rails Engineering</strong>
-                p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build rock-solid servers, manage databases and front end app basics.
+                p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build fast, production-quality full-stack apps.
                 a.btn.hover-red(href="/academy/rails-engineering") Rails Engineering         
 
       .horizontal-section    
@@ -72,10 +72,19 @@ block content
       .container  
         .row
           .col-sm-7.mobile-container
-            h3(style="margin-top:0") City Highlights
-            p 
-              | A world-renowned destination, Orlando is the place to make all of your vacation dreams come true. Of course, it is beloved for its theme parks: Walt Disney World, Universal Studios Florida, SeaWorld Orlando and many others. But it also beckons with world-class resorts, shopping opportunities for every budget, all-season golf courses, and some of the most enticing dining opportunities on the planet. Less known but equally inviting are the downtown sections of Orlando itself and many nearby towns in Central Florida – places that celebrate public art and take pride in offering a myriad of cultural opportunities.
-
+            h2 Meet Our Orlando Team
+            .row.left-column
+              .photo-list
+                .photo-container
+                  a(href="/about/team#david-rogers"): img.photo-mentor(src="/images/about/david-rogers.jpg")
+                h3(style="font-size: 24px;") David Rogers
+                h4 Front End Instructor
+              .photo-list
+                .photo-container
+                  a(href="/about/team#elbadri"): img.photo-mentor(src="/images/about/sarah-elbadri.jpg")
+                h3(style="font-size: 24px;") Sarah Elbadri
+                h4 Campus Director
+  
           .col-sm-5.mobile-container#connect
             h2 Connect
             hr
@@ -85,4 +94,24 @@ block content
               li: a.green-text(href="http://blog.theironyard.com") The Blog
               li: a.green-text(href="mailto:orlando@theironyard.com") orlando@theironyard.com
               li: a.green-text(href="http://eepurl.com/YcBAD") Orlando Newsletter
+              li: a.green-text(href="tel:+4073586683") (407) 358-6683
+
+      .horizontal-section.gray-light-bg.last
+              .container
+                .row
+                  .col-md-7
+                    h3(style="margin-top:0") City Highlights
+                    p 
+                      | In addition to its unrivaled visitor experience, Orlando is home to an incredible ecosystem of entrepreneurs and technology companies. In fact, technology is the region’s second largest industry with over 5,000 companies shaping the future of modeling and simulation, defense, digital media, and biotechnology. A thriving startup scene also has a strong foothold in Downtown Orlando, with one in five jobs in the area based in tech. Culturally, a hyperlocal focus is fostering a renewed vibrancy in the food and art scene. With Orlando’s weather, central location, and world-class attractions, this is the perfect place to live, work, and play. Some of our favorite things:
+                    ul
+                      li: a(href="http://bungalower.com/") The Bungalower
+                      li: a(href="http://www.cityoforlando.net/parks/lake-eola-park/") Lake Eola
+                      li: a(href="http://downtowncredo.com/") Downtown Credo
+                      li: a(href="http://orlandotech.org/") Orlando Tech
+                  .col-md-5
+                    h4 Recent posts from the blog
+                    ul.no-style-type.recent
+
+block scripts
+  +blogFeed('blog')
 
