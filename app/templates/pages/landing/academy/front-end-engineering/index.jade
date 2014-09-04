@@ -1,5 +1,5 @@
 extends /layouts/main
-include /mixins/contact
+
 
 block meta
   +meta ({
@@ -48,7 +48,7 @@ block content
 
       .col-md-4
         h3.section-headline Where cool contact form will go
-        +contact()
+        include /includes/contact
 
     .row(style="background-color:#e3e7e9")
       .col-md-12
