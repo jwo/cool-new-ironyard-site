@@ -1,8 +1,8 @@
 div#container.ltr
   form#form1.wufoo.topLabel.page(name="form1" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" action="https://ironyard.wufoo.com/forms/z5pjhog1vxzm32/#public")
     header#header.info
-      h2 Apply Today!    
-    ul.no-style-type
+      h3 Apply Today!    
+    ul.no-style-type(style="background-color:#e3e7e9; max-width:310px")
       li#foli1.notranslate
         label.desc#title1(for="Field1") Name
         div
@@ -13,17 +13,17 @@ div#container.ltr
           input#Field2.field.text.medium(name="Field2" type="email" spellcheck="false" value="" maxlength="255" tabindex="2")
       li#foli3.phone.notranslate
         label.desc#title3(for="Field3") Phone Number
-        div
-          span
-            input#Field3.field.text(name="Field3" type="tel" value="" size="3" maxlength="3" tabindex="3")
-            label(for="Field3")###
-          span.symbol -
-          span
-            input#Field3-1.field.text(name="Field3-1" type="tel" value="" size="3" maxlength="3" tabindex="3")
-            label(for="Field3-1")###
-          span.symbol -
-          span
-            input#Field3-2.field.text(name="Field3-2" type="tel" value="" size="4" maxlength="4" tabindex="5")
+          div
+            span
+              input#Field3.field.text(name="Field3" type="tel" value="" size="3" maxlength="3" tabindex="3")
+              label(for="Field3")###
+            span.symbol -
+            span
+              input#Field3-1.field.text(name="Field3-1" type="tel" value="" size="3" maxlength="3" tabindex="3")
+              label(for="Field3-1")###
+            span.symbol -
+            span
+              input#Field3-2.field.text(name="Field3-2" type="tel" value="" size="4" maxlength="4" tabindex="5")
       li#foli4.notranslate
         label.desc#title4(for="Field4") Select a Choice
         div
@@ -34,7 +34,7 @@ div#container.ltr
             option(value="test 4") test 4
       li.buttons
         div
-          input#saveForm.btText.submit(name="saveForm" type="submit" value="Submit")
+          input#saveForm.btText.submit.btn.section-headline(name="saveForm" type="submit" value="Submit" style="margin-left: 88px; margin-bottom: 20px;")
       //- li.hide
       //-   label(for="comment") Do Not Fill This Out
       //-   textarea#comment(name="comment" rows="1" cols="1")
@@ -81,6 +81,7 @@ script
       if(depth == 2){var fieldContainer = el.parentNode.parentNode;}
       if(depth == 3){var fieldContainer = el.parentNode.parentNode.parentNode;}
       if(depth == 4){var fieldContainer = el.parentNode.parentNode.parentNode.parentNode;}
+      if(depth == 5){var fieldContainer = el.parentNode.parentNode.parentNode.parentNode.parentNode;}
       
       addClassName(fieldContainer, 'focused', true);
       var focusedFields = getElementsByClassName(document, "*", "focused");
