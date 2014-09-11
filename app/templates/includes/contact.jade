@@ -12,7 +12,7 @@ div#container.ltr
         div
           input#Field2.field.text.medium(name="Field2" type="email" spellcheck="false" value="" maxlength="255" tabindex="2")
       li#foli3.phone.notranslate
-        label.desc#title3(for="Field3") Phone Number
+        label.desc#title3(for="Field3") Phone Number (optional)
         span
           input#Field3.field.text(name="Field3" type="tel" value="" size="3" maxlength="3" tabindex="3")
         span.symbol  -
@@ -22,13 +22,18 @@ div#container.ltr
         span
           input#Field3-2.field.text(name="Field3-2" type="tel" value="" size="4" maxlength="4" tabindex="5")
       li#foli4.notranslate
-        label.desc#title4(for="Field4") Select a Choice
+        label.desc#title4(for="Field4") Which campus are you interested in?
         div
           select#Field4.field.select.medium(name="Field4" tabindex="6")
-            option(value="test 1" selected="selected") test 1
-            option(value="test 2") test 2
-            option(value="test 3") test 3
-            option(value="test 4") test 4
+            option(value="atlanta" selected="selected") Atlanta, GA
+            option(value="austin") Austin, TX
+            option(value="charleston") Charleston, SC
+            option(value="columbia") Columbia, SC
+            option(value="greenville") Greenville, SC
+            option(value="houston") Houston, TX
+            option(value="orlando") Orlando, FL
+            option(value="durham") Raleigh-Durham, NC
+            option(value="tampa") Tampa Bay, FL
       li.buttons
         div
           input#saveForm.btText.submit.btn.section-headline(name="saveForm" type="submit" value="Submit" style="display: block; margin: 0px auto 20px auto; border:0px; width:155px; font-weight:200;")
