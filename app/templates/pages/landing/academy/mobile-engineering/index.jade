@@ -1,0 +1,69 @@
+extends /layouts/main
+
+block meta
+  +meta ({
+    title:"The Iron Yard | Mobile Engineering",
+    description: "The Iron Yard's super-intensive mobile app development course takes students through everything they need to know to start working as mobile developers."
+  })
+
+block content
+  +navigation({
+    title: 'Mobile Engineering',
+    color: 'blue',
+    //- links: [
+    //-   {title:"FAQs", url:"/academy/mobile-engineering/faq"},
+    //-   {title: "Tuition", url: "/academy/tuition"}
+    //- ]  
+  })
+
+  .container
+    .row
+      .col-md-8
+        h3.blue-text: em Learn to build iOS apps using Xcode and Objective-C
+
+        .callout-box(style="padding-bottom:10px")
+          .row
+            .col-md-4.col-sm-6.col-xs-12
+              img(src="/images/academy/mobile-engineering/prototype.png")
+              p(style="max-width: 260px; margin:0 auto") Build testable mobile app prototypes quickly
+            .col-md-4.col-sm-6.col-xs-12
+              img(src="/images/academy/mobile-engineering/apps.png")
+              p(style="max-width: 260px; margin:0 auto") Build fast, production-quality native mobile apps
+            .col-md-4.col-sm-6.col-xs-12
+              img(src="/images/academy/mobile-engineering/ham.png")
+              p(style="max-width: 260px; margin:0 auto") Learn to craft mobile user experiences and interfaces
+            .col-md-4.col-sm-6.col-xs-12
+              img(src="/images/academy/mobile-engineering/code.png")
+              p(style="max-width: 260px; margin:0 auto") Go deep into Objective-C methods and classes
+            .col-md-4.col-sm-6.col-xs-12
+              img(src="/images/academy/mobile-engineering/computers.png")
+              p(style="max-width: 260px; margin:0 auto") Master a mobile-specific development process
+            .col-md-4.col-sm-6.col-xs-12
+              img(src="/images/academy/mobile-engineering/brain-guy.png")
+              p(style="max-width: 260px; margin:0 auto") Most importantly, learn how to learn
+        p 
+          | Over the course of three months, a practicing iOS nerd (and skilled instructor) will teach you the ins-and-outs of iOS app development using Xcode 5 and a whole lot of Objective-C and Swift. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps as well.
+  
+      .col-md-4
+        include /includes/contact  
+
+      hr
+
+      .col-md-12
+        p
+          | The best part: <strong>we’ll help you get a job offer as a mobile developer when you graduate</strong>. Don’t know any code? Don’t worry. Our proven teachers and process will take you from zero to hero and mentor you into a professional junior-level programmer.
+
+  .horizontal-section.blue-bg(style="margin-bottom:-60px")
+    .container(style="text-align:center")
+      .row
+        .col-md-12
+          h3 <em>Our Sponsors</em>
+          p(style="width:70%; margin: 0 auto; margin-bottom:20px") Our sponsors support our students by offering free accounts, assets, and more. We couldn’t do some of the amazing things we do in class without their generosity. Thank you, friends!
+          a(href="http://github.com"): img(src="/images/academy/github.png" style="width:30%")
+          a(href="http://invisionapp.com"): img(src="/images/academy/invision.png" style="width:30%")
+          br
+          a(href="http://macaw.co"): img(src="/images/academy/macaw.png" style="width:30%")
+          a(href="http://wercker.com"): img(src="/images/academy/wercker.png" style="width:30%")
+          a(href="http://symbolset.com"): img(src="/images/academy/symbolset.png" style="width:30%")
+block scripts
+  +storiesFeed('stories')
