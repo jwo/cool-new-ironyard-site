@@ -1,4 +1,5 @@
 extends /layouts/main
+include /mixins/contact
 
 block meta
   +meta ({
@@ -45,7 +46,7 @@ block content
           | Over the course of three months, a practicing iOS nerd (and skilled instructor) will teach you the ins-and-outs of iOS app development using Xcode 5 and a whole lot of Objective-C and Swift. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps as well.
   
       .col-md-4
-        include /includes/contact  
+        +contact('Mobile Landing')
 
       hr
 
