@@ -1,4 +1,5 @@
 extends /layouts/main
+include /mixins/contact
 
 block meta 
   +meta({
@@ -36,6 +37,4 @@ block content
                   p(style="font-size:16px") Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build rock-solid servers, manage databases and know the basics of front end app development.            
 
           .col-sm-3
-            include /includes/contact
-
-
+            +contact('Tampa Landing')
