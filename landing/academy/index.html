@@ -72,26 +72,26 @@
                 <li id="foli1" class="notranslate">
                   <label id="title1" for="Field1" class="desc">Name</label>
                   <div>
-                    <input id="Field1" name="Field1" type="text" value="" maxlength="255" tabindex="1" onkeyup="" class="field text medium">
+                    <input id="Field1" style="max-width:90%" name="Field1" type="text" value="" maxlength="255" tabindex="1" onkeyup="" class="field text medium"/>
                   </div>
                 </li>
                 <li id="foli2" class="notranslate">
                   <label id="title2" for="Field2" class="desc">Email</label>
                   <div>
-                    <input id="Field2" name="Field2" type="email" spellcheck="false" value="" maxlength="255" tabindex="2" class="field text medium">
+                    <input id="Field2" style="max-width:90%" name="Field2" type="email" spellcheck="false" value="" maxlength="255" tabindex="2" class="field text medium"/>
                   </div>
                 </li>
                 <li id="foli3" class="phone notranslate">
                   <label id="title3" for="Field3" class="desc">Phone Number (optional)</label><span>
-                    <input id="Field3" name="Field3" type="tel" value="" size="3" maxlength="3" tabindex="3" class="field text"></span><span class="symbol"> -</span><span>
-                    <input id="Field3-1" name="Field3-1" type="tel" value="" size="3" maxlength="3" tabindex="3" class="field text"></span><span class="symbol"> -</span><span>
-                    <input id="Field3-2" name="Field3-2" type="tel" value="" size="4" maxlength="4" tabindex="5" class="field text"></span>
+                    <input id="Field3" name="Field3" type="tel" value="" size="3" maxlength="3" tabindex="3" class="field text"/></span><span class="symbol"> -</span><span>
+                    <input id="Field3-1" name="Field3-1" type="tel" value="" size="3" maxlength="3" tabindex="3" class="field text"/></span><span class="symbol"> -</span><span>
+                    <input id="Field3-2" name="Field3-2" type="tel" value="" size="4" maxlength="4" tabindex="5" class="field text"/></span>
                 </li>
                 <li id="foli4" class="notranslate">
                   <label id="title4" for="Field4" class="desc">Which campus are you interested in?</label>
                   <div>
                     <select id="Field4" name="Field4" tabindex="6" class="field select medium">
-                      <option value="test1" selected="selected">Atlanta, GA</option>
+                      <option value="atlanta" selected="selected">Atlanta, GA</option>
                       <option value="austin">Austin, TX</option>
                       <option value="charleston">Charleston, SC</option>
                       <option value="columbia">Columbia, SC</option>
@@ -105,13 +105,13 @@
                 </li>
                 <li class="buttons">
                   <div>
-                    <input id="saveForm" name="saveForm" type="submit" value="Submit" style="display: block; margin: 0px auto 20px; border:0px; width:155px; font-weight:200;" class="btText submit btn section-headline">
+                    <input id="saveForm" name="saveForm" type="submit" value="Submit" onClick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Information Request', eventLabel: 'Academy Landing'});" style="display: block; margin: 0px auto 20px; border:0px; width:155px; font-weight:200;" class="btText submit btn section-headline"/>
                   </div>
                 </li>
                 <li class="hide">
                   <label for="comment">Do Not Fill This Out</label>
                   <textarea id="comment" name="comment" rows="1" cols="1"></textarea>
-                  <input id="idstamp" type="hidden" name="idstamp" value="9uWNIGksziQ5vEZw613OnPYgl+xNkYBb7wMLR3K6uxE=">
+                  <input id="idstamp" type="hidden" name="idstamp" value="9uWNIGksziQ5vEZw613OnPYgl+xNkYBb7wMLR3K6uxE="/>
                 </li>
               </ul>
             </form>
@@ -280,7 +280,7 @@ function addEvent( obj, type, fn ) {
   else{
     obj.addEventListener( type, fn, false );  
   }
-} 
+}
           </script>
         </div>
       </div>
