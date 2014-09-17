@@ -1,0 +1,16 @@
+mixin schema(events)
+  each event in events
+    meta(itemscope)
+
+mixin schema-table(classes)
+  table.class-table(style="margin:10px auto; width:90%")
+    each class in classes
+      tr(itemscope itemtype="http://schema.org/EducationEvent")
+        //- format for isoDate should be YYYY-MM-DD and date should be Month Day
+        td(itemprop="startDate" content="#{class.isoDate}")= class.date
+        td(itemprop="name")= class.location
+        td= class.instructor  
+        td
+          //- format for class.subject should correspond to subfolder (example: web-design or front-end-engineering)
+          link(itemprop="url" href="/academy/#{class.subject}/#class-schedule")
+          a.btn(href="https://theironyard.typeform.com/to/jmkqtN") Apply

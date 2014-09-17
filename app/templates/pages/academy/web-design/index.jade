@@ -84,22 +84,22 @@ block content
           p(style="max-width:960px; margin:0 auto; color: #A59785;") Our intensive Web Design courses run for 12 weeks. The schedule is set up like a typical five-day work week, with lecture in the morning and lab time in the afternoon. Friday is an open lab day where students can work with the instructor to catch up on projects or get a head start on the weekend’s homework.
     .container  
       table.class-table(style="margin:10px auto; width:90%")
-        tr
-          td October 1st
-          td Greenville, SC
+        tr(itemscope itemtype="http://schema.org/EducationEvent")
+          td(itemprop="startDate" content="2014-10-01") October 1st
+          td(itemprop="name") Greenville, SC
           td Sam Kapila
-          td: a.btn(href="https://theironyard.typeform.com/to/jmkqtN") Apply
-        tr
+          td: a.btn(itemprop="url" href="https://theironyard.typeform.com/to/jmkqtN") Apply
+        tr(itemscope itemtype="http://schema.org/EducationEvent")
           td January 5th
           td Columbia, SC
           td Gio Difeterici
-          td: a.btn(href="https://theironyard.typeform.com/to/AAj2wz") Apply
-        tr
+          td: a.btn(itemprop="url" href="https://theironyard.typeform.com/to/AAj2wz") Apply
+        tr(itemscope itemtype="http://schema.org/EducationEvent")
           td January 5th
           td Austin, TX
           td Sam Kapila
-          td: a.btn(href="https://theironyard.typeform.com/to/KTAEba") Apply
- 
+          td: a.btn(itemprop="url" href="https://theironyard.typeform.com/to/KTAEba") Apply
+
   .container
     .row(style="text-align:center")
       img(src="/images/academy/schedule.png" style="max-width:70%")
