@@ -1,9 +1,8 @@
 mixin schema(events)
   each event in events
-    div(itemscope style="display:hidden")
-      div(itemprop="name" content="#{class.location}")
-      //- format for class.isoDate should be YYYY-MM-DD
-      div(itemprop="startDate" content="#{class.isodate}")
+    div(itemscope)
+      meta(itemprop="name" content="#{class.location}")
+      meta(itemprop="startDate" content="#{class.isodate}")
       link(itemprop="url" href="/academy/#{class.subject}")
 
 mixin schema-table(events)
@@ -11,9 +10,9 @@ mixin schema-table(events)
     each event in events
       tr(itemscope itemtype="http://schema.org/EducationEvent")
         //- format for class.isoDate should be YYYY-MM-DD and class.date should be Month Day
-        td(itemprop="startDate" content="#{event.isoDate}")= event.date
-        td(itemprop="name")= event.location
-        td= event.instructor  
+        td(itemprop="startDate" content="#{event.isoDate}")=event.date
+        td(itemprop="name")=event.location
+        td=event.instructor  
         td
           //- format for class.subject should correspond to subfolder (example: web-design or front-end-engineering)
           link(itemprop="url" href="/academy/#{event.subject}/#class-schedule")
