@@ -5,7 +5,7 @@ mixin schema(events)
       meta(itemprop="startDate" content="#{class.isodate}")
       link(itemprop="url" href="/academy/#{class.subject}")
 
-mixin schema-table(events)
+mixin schemaTable(events)
   table.class-table(style="margin:10px auto; width:90%")
     each event in events
       tr(itemscope itemtype="http://schema.org/EducationEvent")
