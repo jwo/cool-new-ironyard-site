@@ -1,10 +1,12 @@
 mixin schema(events)
   each event in events
-    div(itemscope)
-      meta(itemprop="name" content="#{class.location}")
+    div(itemscope style="display:hidden")
+      div(itemprop="location" content="#{event.location}")
+        div(itemprop="addressLocality" content="#{event.location}")
+      div(itemprop="name" content="#(event.name}")
       //- format for class.isoDate should be YYYY-MM-DD
-      meta(itemprop="startDate" content="#{class.isodate}")
-      link(itemprop="url" href="/academy/#{class.subject}")
+      meta(itemprop="startDate" content="#{event.isodate}")
+      link(itemprop="url" href="/academy/#{event.subject}")
 
 mixin schemaTable(events)
   table.class-table(style="margin:10px auto; width:90%")
