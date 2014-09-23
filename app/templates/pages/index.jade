@@ -1,4 +1,5 @@
 include /mixins/photo-bar
+include /mixins/schema
 extends /layouts/main
 
 block meta
@@ -8,6 +9,16 @@ block meta
   })
 
 block content
+  +schema([
+    {
+      academy: true,
+      name: "Academy- Web Design",
+      location: "Greenville, SC",
+      isoDate: "2014-10-01",
+      link: "/academy/web-design/"
+    }
+  ])
+
   +navigation({
     color: 'gray-dark',
     title: '',

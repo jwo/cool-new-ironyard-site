@@ -1,12 +1,22 @@
 mixin schema(events)
   each event in events
-    div(itemscope style="display:hidden")
-      div(itemprop="location" content="#{event.location}")
-        div(itemprop="addressLocality" content="#{event.location}")
-      div(itemprop="name" content="#(event.name}")
-      //- format for class.isoDate should be YYYY-MM-DD
-      meta(itemprop="startDate" content="#{event.isodate}")
-      link(itemprop="url" href="/academy/#{event.subject}")
+    //specify if event is an Academy course or conference/other event with academy: true or false
+    if event.academy
+      div(itemscope itemtype="http://schema.org/EducationEvent" style="display:hidden")
+        div(itemprop="location")
+          div(itemprop="addressLocality" content="#{event.location}")
+        div(itemprop="name" content="#(event.name}")
+        //- format for class.isoDate should be YYYY-MM-DD
+        meta(itemprop="startDate" content="#{event.isodate}")
+        link(itemprop="url" href="#{event.link}")
+    else
+      div(itemscope itemtype="http://schema.org/Event" style="display:hidden")
+        div(itemprop="location")
+          div(itemprop="addressLocality" content="#{event.location}")
+        div(itemprop="name" content="#(event.name}")
+        //- format for class.isoDate should be YYYY-MM-DD
+        meta(itemprop="startDate" content="#{event.isodate}")
+        link(itemprop="url" href="#{event.link}")
 
 mixin schemaTable(events)
   table.class-table(style="margin:10px auto; width:90%")
