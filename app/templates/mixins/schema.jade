@@ -7,7 +7,7 @@ mixin schema(events)
           div(itemprop="addressLocality" content="#{event.location}")
         div(itemprop="name" content="#(event.name}")
         //- format for class.isoDate should be YYYY-MM-DD
-        meta(itemprop="startDate" content="#{event.isodate}")
+        meta(itemprop="startDate" content="#{event.isoDate}")
         link(itemprop="url" href="#{event.link}")
     else
       div(itemscope itemtype="http://schema.org/Event" style="display:hidden")
