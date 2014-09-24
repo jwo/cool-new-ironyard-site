@@ -3,9 +3,9 @@ mixin schema(events)
     //specify if event is an Academy course or conference/other event with academy: true or false
     if event.academy
       div(itemscope itemtype="http://schema.org/EducationEvent" style="display:hidden")
-        div(itemprop="location")
-          div(itemprop="addressLocality" content="#{event.location}")
-        div(itemprop="name" content="#(event.name}")
+        div(itemprop="location" itemscope itemtype="http://schema.org/PostalAddress")
+          span(itemprop="addressLocality" content="#{event.location}")
+        div(itemprop="name" content="#{event.name}")
         //- format for class.isoDate should be YYYY-MM-DD
         meta(itemprop="startDate" content="#{event.isoDate}")
         link(itemprop="url" href="#{event.link}")
