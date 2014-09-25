@@ -1,5 +1,5 @@
 include /mixins/photo-bar
-include /mixins/schema
+//- include /mixins/schema
 extends /layouts/main
 
 block meta
@@ -8,23 +8,30 @@ block meta
     description: "We run an intensive code school, a startup accelerator, kids's programming classes, and organize tech conferences and events."
   })
 
-block content
-  +schema([
-    {
-      academy: true,
-      name: "Academy- Web Design",
-      locations: ["Greenville, SC"],
-      isoDate: "2014-10-01",
-      link: "/academy/web-design/"
-    },
-    {
-      academy: true,
-      name: "Academy- Rails Engineering",
-      locations: ["Atlanta, GA", "Charleston, SC", "Austin, TX", "Tampa Bay, FL", "Durham, NC", "Houston, TX", "Greenville, SC", "Orlando, FL"],
-      isoDate: "2015-01-05",
-      link: "/academy/rails-engineering/"
-    }
-  ])
+//- block content
+//-   +schema([
+//-     {
+//-       academy: true,
+//-       name: "Academy- Web Design",
+//-       locations: ["Greenville, SC"],
+//-       isoDate: "2014-10-01",
+//-       link: "/academy/web-design/"
+//-     },
+//-     {
+//-       academy: true,
+//-       name: "Academy- Rails Engineering",
+//-       locations: ["Atlanta, GA", "Charleston, SC", "Austin, TX", "Tampa Bay, FL", "Durham, NC", "Houston, TX", "Greenville, SC", "Orlando, FL"],
+//-       isoDate: "2015-01-05",
+//-       link: "/academy/rails-engineering/"
+//-     },
+//-     {
+//-       academy: true,
+//-       name: "Academy- Front End Engineering",
+//-       locations: [""],
+//-       isoDate: "2015-01-05",
+//-       link: "/academy/rails-engineering/"
+//-     }
+//-   ])
 
   +navigation({
     color: 'gray-dark',
