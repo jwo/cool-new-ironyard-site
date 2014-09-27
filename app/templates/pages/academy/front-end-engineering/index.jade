@@ -1,4 +1,5 @@
 extends /layouts/main
+include /mixins/schema
 
 block meta
   +meta ({
@@ -88,68 +89,72 @@ block content
         .col-md-12#class-schedule
           h3(style="text-align:center").yellow-text: em Class Schedule
           p(style="max-width:960px; margin:0 auto; color: #A59785;") Our intensive Front End courses run for 12 weeks. The schedule is set up like a typical five-day work week, with lecture in the morning and lab time in the afternoon. Friday is an open lab day where students can work with the instructor to catch up on projects or get a head start on the weekend’s homework.
-    .container  
-      table.class-table(style="margin:10px auto; width:90%")
-        tr
-          td August 25th
-          td Greenville, SC
-          td Jake Smith
-          td: strong Class Full
-        tr
-          td September 22nd
-          td Houston, TX
-          td Matt Keas
-          td: a.btn(href="https://theironyard.typeform.com/to/c3z6iK") Apply
-        tr
-          td September 15th
-          td Durham, NC
-          td Julia Elman
-          td: a.btn(href="https://theironyard.typeform.com/to/Bn9FmZ") Apply 
-        tr
-          td September 22nd
-          td Tampa Bay, FL
-          td Justin Herrick
-          td: a.btn(href="https://theironyard.typeform.com/to/hmT9NZ" type='”submit”', value='”Submit”', onclick='ga(\'send\', \'event\', { eventCategory: \'Applications\', eventAction: \'Started Application\', eventLabel: \'Tampa\'});') Apply
-        tr
-          td September 22nd
-          td Orlando, FL
-          td David Rogers
-          td: a.btn(href="https://theironyard.typeform.com/to/X5SCGY" type='”submit”', value='”Submit”', onclick='ga(\'send\', \'event\', { eventCategory: \'Applications\', eventAction: \'Started Application\', eventLabel: \'Orlando\'});') Apply         
-        tr
-          td January 5th
-          td Atlanta, GA
-          td Tim Whitacre
-          td: a.btn(href="https://theironyard.typeform.com/to/cL55xr") Apply
-        tr
-          td January 5th
-          td Austin, TX
-          td Coming Soon
-          td: a.btn(href="https://theironyard.typeform.com/to/bALvas" type='”submit”', value='”Submit”', onclick='ga(\'send\', \'event\', { eventCategory: \'Applications\', eventAction: \'Started Application\', eventLabel: \'Orlando\'});') Apply 
-        tr
-          td January 5th
-          td Orlando, FL
-          td David Rogers
-          td: a.btn(href="https://theironyard.typeform.com/to/X5SCGY" type='”submit”', value='”Submit”', onclick='ga(\'send\', \'event\', { eventCategory: \'Applications\', eventAction: \'Started Application\', eventLabel: \'Orlando\'});') Apply
-        tr
-          td January 5th
-          td Charleston, SC
-          td Calvin Webster
-          td: a.btn(href="https://theironyard.typeform.com/to/kBOiOS") Apply
-        tr
-          td January 5th
-          td Greenville, SC
-          td Mason Stewart
-          td: a.btn(href="https://theironyard.typeform.com/to/Atsjwy") Apply
-        tr
-          td January 5th
-          td Houston, TX
-          td Matt Keas
-          td: a.btn(href="https://theironyard.typeform.com/to/c3z6iK") Apply
-        tr
-          td January 5th
-          td Tampa Bay, FL
-          td Justin Herrick
-          td: a.btn(href="https://theironyard.typeform.com/to/hmT9NZ" type='”submit”', value='”Submit”', onclick='ga(\'send\', \'event\', { eventCategory: \'Applications\', eventAction: \'Started Application\', eventLabel: \'Tampa\'});') Apply
+    .container
+      +schemaTable([
+        {
+          date:"January 5th",
+          isoDate: "2015-01-05",
+          location: "Atlanta, GA",
+          city: "Atlanta",
+          instructor: "Tim Whitacre",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/cL55xr"
+        },
+        {
+          date:"January 5th",
+          isoDate: "2015-01-05",
+          location: "Austin, TX",
+          city: "Austin",
+          instructor: "TBD",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/bALvas"
+        },
+        {
+          date:"January 5th",
+          isoDate: "2015-01-05",
+          location: "Charleston, SC",
+          city: "Charleston",
+          instructor: "Calvin Webster",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/KB0iOS"
+        },
+        {
+          date: "January 5th",
+          isoDate: "2015-01-05",
+          location: "Greenville, SC",
+          city: "Greenville",
+          instructor: "Mason Stewart",
+          subject: "front-end-engineering",
+          applicationLink: "htps://theironyard.typeform.com/to/Atsjwy"
+        },
+        {
+          date: "January 5th",
+          isoDate: "2015-01-05",
+          location: "Houston, TX",
+          city: "Houston",
+          instructor: "Matt Keas",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/c3z6iK"
+        },
+        {
+          date: "January 5th",
+          isoDate: "2015-01-05",
+          location: "Orlando, FL",
+          city: "Orlando",
+          instructor: "David Rogers",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/X5SCGY"
+        },
+        {
+          date: "January 5th",
+          isoDate: "2015-01-05",
+          location: "Tampa Bay, FL",
+          city: "Tampa",
+          instructor: "Justin Herrick",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/hmT9NZ"
+        }
+      ])
 
   .container
     .row(style="text-align:center")

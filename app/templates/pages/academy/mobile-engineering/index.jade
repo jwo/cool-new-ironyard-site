@@ -1,4 +1,5 @@
 extends /layouts/main
+include /mixins/schema
 
 block meta
   +meta ({
@@ -88,12 +89,17 @@ block content
           h3(style="text-align:center").blue-text: em Class Schedule
           p(style="max-width:960px; margin:0 auto;") Our intensive Mobile Engineering courses run for 12 weeks. The schedule is set up like a typical five-day work week, with lecture in the morning and lab time in the afternoon. Friday is an open lab day where students can work with the instructor to catch up on projects or get a head start on the weekend’s homework.
     .container  
-      table.class-table(style="margin:10px auto; width:90%")
-        tr
-          td January 5th
-          td Atlanta, GA
-          td Jo Albright
-          td: a.btn(href="https://theironyard.typeform.com/to/TsBziI") Apply
+      +schemaTable([
+        {
+          date: "January 5th",
+          isoDate: "2015-01-05",
+          location: "Atlanta, GA",
+          city: "Atlanta",
+          instructor: "Jo Albright",
+          subject: "mobile-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/TsBziI"
+        }
+      ])
 
   .container
     .row(style="text-align:center")
