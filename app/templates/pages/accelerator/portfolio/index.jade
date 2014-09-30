@@ -3,7 +3,7 @@ extends /layouts/main
 
 block meta
   +meta({
-    title:"Iron Yard- Portfolio",
+    title:"The Iron Yard | Accelerator Portfolio",
     description:"The list of companies that have gone through our Accelerator program.s"
   })
 
@@ -15,6 +15,108 @@ block content
 
   .container(style="margin-top:40px")
     .container-fluid(style="text-align:center")
+
+      .row
+        h2.turquoise-text.section-headline 2014 Cohort
+
+      +accelerator(
+        [
+          {
+            name:"ahoyDoc",
+            portfolio:"http://www.ahoydoc.com",
+            image:"/2014/ahoydoc.png",
+            links: [
+              {email:"founder@ahoydoc.com"},
+              {url:"http://twitter.com/ahoydoc", image:"twitter.png"},
+              {url:"http://www.facebook.com/ahoydoc", image:"facebook.png"},
+              {url:"https://angel.co/ahoydoc", image:"angellist.png"}
+            ]
+          },
+          {
+            name:"b:resilient",
+            portfolio:"http://bresilient.co",
+            image:"/2014/reztech.png",
+            links: [
+              {email:"rfarrell@resiliencytechnologies.com"},
+              {url:"http://twitter.com/resiliencytech", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"ExcepApps",
+            portfolio:"http://excepapps.com",
+            image:"/2014/excepapps.png",
+            links: [
+              {email:"excepapps@gmail.com"},
+              {url:"http://twitter.com/excepapps", image:"twitter.png"}
+            ]
+          },
+          {
+            name:"iClinical",
+            portfolio:"http://iclinical.in",
+            image:"/2014/iclinical.png",
+            links: [
+              {email:"sridhar@iclinical.com"},
+              {url:"https://angel.co/iclinical", image:"angellist.png"}
+            ]
+          },
+          {
+            name:"Bioscanr",
+            portfolio:"http://bioscanr.com/",
+            image:"/2014/bioscanr.png",
+            links: [
+              {email:"Contact@intentiontechnology.com"},
+              {url:"https://angel.co/bioscanr", image:"angellist.png"},
+              {url:"https://twitter.com/bioscanr", image:"twitter.png"},
+              {url:"https://www.facebook.com/bioscanr", image:"facebook.png"},
+              {url:"http://www.linkedin.com/company/bioscanr ", image:"linkedin.png"}
+            ]
+          },
+          {
+            name:"NavAssist",
+            portfolio:"http://www.navassist.me",
+            image:"/2014/navassist.png",
+            links: [
+              {email:"erik.cardenas@hatsofftech.com"},
+              {url:"http://twitter.com/navassist", image:"twitter.png"},
+              {url:"https://angel.co/navassist-by-hats-off-tech", image:"angellist.png"}
+            ]
+          },
+          {
+            name:"PillFill",
+            portfolio:"http://www.pill-fill.com",
+            image:"/2014/pillfill.png",
+            links: [
+              {email:"Michael@pill-fill.com"},
+              {url:"http://twitter.com/pillfill", image:"twitter.png"},
+              {url:"http://www.pill-fill.com/?page_id=4", image:"tumblr.png"}
+            ]
+          },
+          {
+            name:"RallyFit",
+            portfolio:"http://www.myrallyfit.com",
+            image:"/2014/rallyfit.png",
+            links: [
+              {email:"info@myrallyfit.com"},
+              {url:"https://twitter.com/rallyfit", image:"twitter.png"},
+              {url:"http://www.facebook.com/rallyfit", image:"facebook.png"},
+              {url:"https://pinterest.com/rallyfit", image:"tumblr.png"}
+            ]
+          },
+          {
+            name:"Recovr",
+            portfolio:"http://www.recovrinc.com",
+            image:"/2014/recovr.png",
+            links: [
+              {email:"austen@recovrllc.com"}
+            ]
+          }
+        ]
+      )
+
+      hr
+
+      .row
+        h2.turquoise-text.section-headline Previous Cohorts 
 
       +accelerator(
         [
@@ -333,11 +435,11 @@ block content
           },
           {
             name:"TinderBox",
-            portfolio:"https://gettinderbox.com",
+            portfolio:"http://gettinderbox.com",
             image:"tinderbox.jpg",
             links: [
               {url:"https://angel.co/tinderbox", image:"angellist.png"},
-              {url:"http://www.facebook.com/GetTinderBox", image:"facebook.png"},
+              {url:"http://www.facebosok.com/GetTinderBox", image:"facebook.png"},
               {url:"https://twitter.com/GetTinderBox", image:"twitter.png"}
             ]
           },

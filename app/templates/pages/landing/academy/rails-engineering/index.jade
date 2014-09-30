@@ -1,0 +1,71 @@
+extends /layouts/main
+include /mixins/contact
+
+block meta
+  +meta ({
+    title:"The Iron Yard | Rails Engineering",
+    description: "The Iron Yard's super-intensive Ruby on Rails development course takes students through everything they need to start working as Rails developers."
+  })
+
+block content
+  +navigation({
+    title: 'Rails Engineering',
+    color: 'red',
+    //- links: [
+    //-   {title:"FAQs", url:"/academy/rails-engineering/faq"},
+    //-   {title: "Tuition", url: "/academy/tuition"}    ]
+  })
+
+  .container
+    .row
+      .col-md-8
+        h3.red-text: em Learn to build full-stack apps with Ruby on Rails and fairy dust
+
+        .row
+          .callout-box(style="padding: 30px 15px;")
+            .row
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/rails-engineering/watch.png")
+                p(style="max-width: 220px; margin:0 auto") Get functional prototypes lauched quickly
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/rails-engineering/full-stack.png")
+                p(style="max-width: 220px; margin:0 auto") Build fast, production-quality full-stack apps
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/rails-engineering/interface.png")
+                p(style="max-width: 220px; margin:0 auto") Create well-architected server-side systems
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/rails-engineering/rails.png")
+                p(style="max-width: 220px; margin:0 auto") Go deep into the Ruby on Rails framework
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/rails-engineering/optimize.png")
+                p(style="max-width: 220px; margin:0 auto") Optimize systems for desktop and mobile
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/rails-engineering/brain-guy.png")
+                p(style="max-width: 200px; margin:0 auto") Most importantly, learn how to learn
+        p 
+          | Over the course of three months, a heavy-duty programming veteran (and skilled mentor) will show you the power of Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build fast, production-quality full-stack apps.
+
+      .col-md-4
+        +contact('Rails Engineering')
+
+      hr
+
+      .col-md-12
+        p
+          | The best part: <strong>we’ll help you get a job offer as a developer when you graduate</strong>. Don’t know any code? Don’t worry. Our proven teachers and process will take you from zero to hero and mentor you into a professional junior-level programmer.
+
+  .horizontal-section.red-bg(style="margin-bottom:-60px")
+    .container(style="text-align:center")
+      .row
+        .col-md-12
+          h3 <em>Our Sponsors</em>
+          p(style="width:70%; margin: 0 auto; margin-bottom:20px") Our sponsors support our students by offering free accounts, assets, and more. We couldn’t do some of the amazing things we do in class without their generosity. Thank you, friends!
+          a(href="http://github.com"): img(src="/images/academy/github.png" style="width:30%")
+          a(href="http://invisionapp.com"): img(src="/images/academy/invision.png" style="width:30%")
+          br
+          a(href="http://macaw.co"): img(src="/images/academy/macaw.png" style="width:30%")
+          a(href="http://wercker.com"): img(src="/images/academy/wercker.png" style="width:30%")
+          a(href="http://symbolset.com"): img(src="/images/academy/symbolset.png" style="width:30%")
+
+block scripts
+  +storiesFeed('stories')

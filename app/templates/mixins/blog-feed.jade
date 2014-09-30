@@ -2,7 +2,7 @@ mixin blogFeed (cityName)
   script
     :js
       $(function(){
-        wpFeed("http://#{cityName}.theironyard.com/feed/", $(".recent"));
+        wpFeed("http://#{cityName}.theironyard.com/rss/", $(".recent"));
       })
 
 
@@ -11,5 +11,5 @@ mixin storiesFeed (blog)
   script
     :js
       $(function(){
-        storiesFeed("http://#{blog}.theironyard.com/feed/", $(".recent"));
+        storiesFeed("http://#{blog}.theironyard.com/rss/", $(".recent"));
       })

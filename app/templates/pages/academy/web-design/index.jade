@@ -1,8 +1,9 @@
 extends /layouts/main
+include /mixins/schema
 
 block meta
   +meta ({
-    title:"Iron Yard- Web Design",
+    title:"The Iron Yard | Web Design",
     description:"The Iron Yard's super-intensive Web Design course teaches you how to design and build beautiful, user-centric websites and digital products."
   })
 
@@ -73,8 +74,8 @@ block content
         .col-md-6
           ul.no-style-type
             li • Greenville:<br> <a href="tel:+8649520099">(864) 952-0099</a>
-            li • Columbia:<br> <a href="tel:+8649520099">(803) 873-9299</a>
-            li • Austin:<br> <a href="tel:+8649520099">(512) 596-2939</a>
+            li • Columbia:<br> <a href="tel:+8038739299">(803) 873-9299</a>
+            li • Austin:<br> <a href="tel:+5125962939">(512) 596-2939</a>
 
   .horizontal-section.gray-light-bg
     .container
@@ -82,24 +83,37 @@ block content
         .col-md-12#class-schedule
           h3(style="text-align:center").purple-text: em Class Schedule
           p(style="max-width:960px; margin:0 auto; color: #A59785;") Our intensive Web Design courses run for 12 weeks. The schedule is set up like a typical five-day work week, with lecture in the morning and lab time in the afternoon. Friday is an open lab day where students can work with the instructor to catch up on projects or get a head start on the weekend’s homework.
-    .container  
-      table.class-table(style="margin:10px auto; width:90%")
-        tr
-          td September 22nd
-          td Greenville, SC
-          td Gio Difeterici
-          td: a.btn(href="https://theironyard.typeform.com/to/jmkqtN") Apply
-        tr
-          td January 5th
-          td Columbia, SC
-          td Gio Difeterici
-          td: a.btn(href="https://theironyard.typeform.com/to/AAj2wz") Apply
-        tr
-          td January 5th
-          td Austin, TX
-          td TBD
-          td: a.btn(href="https://theironyard.typeform.com/to/KTAEba") Apply
- 
+    .container
+      +schemaTable([
+        {
+          date: "October 1st",
+          isoDate: "2014-10-01",
+          location: "Greenville, SC",
+          city: "Greenville",
+          instructor: "Sam Kapila",
+          subject: "web-design",
+          applicationLink: "https://theironyard.typeform.com/to/jmkqtN"
+        },
+        {
+          date: "January 5th",
+          isoDate: "2015-01-05",
+          location: "Columbia, SC",
+          city: "Columbia",
+          instructor: "Gio Difeterici",
+          subject: "web-design",
+          applicationLink: "https://theironyard.typeform.com/to/AAj2wz"
+        },
+        {
+          date: "January 5th",
+          isoDate: "2015-01-05",
+          location: "Austin, TX",
+          city: "Austin",
+          instructor: "Sam Kapila",
+          subject: "web-design",
+          applicationLink: "https://theironyard.typeform.com/to/KTAEba"
+        }
+      ])
+
   .container
     .row(style="text-align:center")
       img(src="/images/academy/schedule.png" style="max-width:70%")
@@ -122,9 +136,9 @@ block content
       .row
         h3(style="text-align:center"): em Curriculum Overview
         p
-          | Just knowing punctuation doesn’t make you a great writer. In the same sense, just knowing HTML and CSS doesn’t make you’re great at designing websites; that’s the easy part of web design. The emphasis in all of our classes is on helping you think like a designer. Web Design is a lifelong study, and our goal is for you to learn how to learn so you remain highly valuable for the rest of your career.<br><br>
-          | That being said, you’ll leave our class with a toolbox of skills that will set you far apart from other junior-level designers. You’ll cover an incredible amount of ground in 3 months, learning everything below and then some. Some topics like responsive web design will take weeks to cover, others like Sass pre-processing will be taught in just a few lectures.<br><br>
-          | No matter your learning pace, we keep our class sizes small so that we can spend individual time with each student and make sure no one falls behind.
+          | Just knowing punctuation doesn’t make you a great writer. In the same sense, just knowing HTML and CSS doesn’t make you great at designing websites; that’s the easy part of web design. The emphasis in all of our classes is on helping you think like a designer. Web Design is a lifelong study, and our goal is for you to learn how to learn so you remain highly valuable for the rest of your career.<br><br>
+          | That being said, you’ll leave our class with a toolbox of skills that will set you far apart from other junior-level web designers. You’ll cover an incredible amount of ground in 3 months, from foundational design concepts to complex interactive JavaScript. Some topics like responsive web design will take weeks to cover, while others like Sass pre-processing will be taught in just a few lectures. Each instructor and class stays agile so that the curriculum can adapt as tools and languages evolve, but we ensure that each student graduates with the same core skillset.<br><br>
+          | No matter your learning pace, we keep our class sizes small so that we can spend individual time with each student and make sure no one falls behind.  
 
       .row.divide-container
         .col-md-6.col-sm-6.col-xs-12.divider-left
@@ -172,8 +186,7 @@ block content
           | We’re family people, so our goal is for you to work as hard as possible in class so you can find joy in a great job, freelance work, or starting your own company when you’re done. We’re proud of all of the different types of people who have come through The Iron Yard, and we don’t have stereotypes of what a programmer is like. We’ve taught students from 18 to 50 years old, from different countries and all sorts of backgrounds.
         h3: em How Much Does It Cost?
         p You can read about tuition, financing and scholarships on our <a href="/academy/tuition">Tuition page</a>. We offer great financing options, have significant discounts for enlisted military personnel/veterans, and sponsor a Women in Tech Scholarship.
-        h3: em Student Stories
-        ul.no-style-type.recent 
+        p To ensure students are prepared for the web design industry, we highly recommend that you sign up for an <a href="https://creative.adobe.com/plans">Adobe Creative Cloud</a> subscription, which includes <a href"http://www.adobe.com/creativecloud.html">every Adobe application</a>, including Photoshop, Illustrator, and Typekit (which we will use the most). These are industry standard applications. Depending on which <a href="https://creative.adobe.com/plans">subscription model</a> you choose, the price can vary from $80 a month to $600 a year, and we recommend taking advantage of the 30-day free trial, like we did! There are discounts for recent college grads and upgrades. If you have earlier versions of these programs, that’s okay with us, too, as long as they are CS4 or newer.
       .col-md-5
         h4(style="margin-top:28px;"): em Here are a few things we look for in students:
         p(style="color:")
@@ -189,6 +202,8 @@ block content
           | We’ll work on some hard, frustrating stuff. Patience and endurance are necessities.<br><br>
           | <strong>Ready to Have Fun</strong><br>
           | We work hard, play hard, and laugh every single day. We do the best work we possibly can, but we make sure not to take ourselves too seriously.
+        h3: em Student Stories
+        ul.no-style-type.recent 
 
   .horizontal-section.gray-lighter-bg
     .container

@@ -2,7 +2,7 @@ extends /layouts/main
 
 block meta
   +meta({
-    title:"Iron Yard- About",
+    title:"The Iron Yard | About",
     description:"The Iron Yard exists to create exceptional value for people and their ideas through code education, startup accelerators, and coworking spaces."
   })
 
@@ -38,6 +38,18 @@ block content
           li: a(href="/locations") Locations 
           li: a(href="/about/team") Meet our team
           li: a(href="/about/culture") Discover our culture
+          li Give us a call:
+            ul(style="margin-top:5px")
+              li Atlanta: <a href="tel:+7707518046">(770) 751-8046</a>
+              li Austin: <a href="tel:+5125962939">(512) 596-2939</a> 
+              li Charleston: <a href="tel:+8435012775">(843) 501-2775</a>
+              li Columbia:  <a href="tel:+8038739299">(803) 873-9299</a>
+              li Durham: <a href="tel:+9195616055">(919) 561-6055</a>
+              li Greenville: <a href="tel:+8649520099">(864) 952-0099</a>
+              li Houston: <a href="tel:+7134253797">(713) 425-3797</a>
+              li Orlando: <a href="tel:+4073586683">(407) 358-6683</a>
+              li Tampa: <a href="tel:+8137752275">(813) 775-2275</a> 
+
         hr 
         img.photo(src="/images/about/about-page-team.jpg" style="max-width:500px")
         img.photo(src="/images/about/about-page-collaborate.jpg" style="max-width:500px")

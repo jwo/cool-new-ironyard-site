@@ -2,15 +2,15 @@ extends /layouts/main
 
 block meta 
   +meta({
-      title:"Iron Yard- Tampa-St. Petersburg, FL",
-      description: "The Iron Yard Academy in Columbia helps people launch careers in programming. Our intensive, 12-week code classes train you into a professional, junior-level developer."
+      title:"Iron Yard | Tampa-St. Petersburg, FL",
+      description: "Learn to code, get a job. We teach Front End Engineering and Rails Engineering right here in Tampa-St Petersburg, FL."
     })
 
 block content
   +navigation({
     title: 'Tampa-St. Petersburg, FL',
     color: 'green',
-    image: '/images/locations/tampa/tampa.jpg',
+    image: '/images/locations/tampa/st-petersburg.jpg',
     cutout: true,
     links: [
       {title: "What We Offer", url: "#programs"},
@@ -33,7 +33,7 @@ block content
             h3(style="margin-top: 20px; font-size: 27px;") Learn to code. Life's too short for the wrong career.
             hr
             p(style="font-size:16px; margin-top:3px") 
-              | Our intensive coding courses are open in Tampa Bay. Study Mobile Engineering, Ruby on Rails or Front End Engineering and launch a new career. 
+              | Our intensive coding courses are open in St. Petersburg. Study Mobile Engineering, Ruby on Rails or Front End Engineering and launch a new career.
             a(href="/academy" class="btn") 
               | Enroll Today
             
@@ -45,7 +45,7 @@ block content
                 img.photo(src="/images/locations/tampa/tampa-academy.jpg")
               .col-sm-6
                 h4 The Academy
-                p We offer two intensive Academy courses in Tampa Bay. Our grads get jobs with amazing local companies as well as awesome shops around the country.
+                p We offer two intensive Academy courses in St. Petersburg. Our grads get jobs with amazing local companies as well as awesome shops around the country.
                 a(href="/academy" class="btn") Learn More
             .row(style="margin-top: 30px;")
               .col-md-6
@@ -54,7 +54,7 @@ block content
                 a.btn.hover-yellow(href="/academy/front-end-engineering") Front End Engineering
               .col-md-6
                 h4(style="padding-bottom: 0px;"): a(href="/academy/rails-engineering").green-text <img src="/images/locations/icons/rails-icon.png" style="height:24px"> <strong>Rails Engineering</strong>
-                p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build rock-solid servers, manage databases and front end app basics.
+                p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build fast, production-quality full-stack apps.
                 a.btn.hover-red(href="/academy/rails-engineering") Rails Engineering                 
 
       .horizontal-section    
@@ -65,7 +65,7 @@ block content
             .col-md-6
               h4 Kids Classes
               p 
-                | We will launch kids classes in Tampa Bay later this year. Sign up for our mailing list to learn more.
+                | We will launch kids classes in St. Petersburg later this year. Sign up for our mailing list to learn more.
               a(href="http://eepurl.com/VklMr" class="btn") Mailing list  
 
       .container  
@@ -95,9 +95,10 @@ block content
             ul.no-style-type
               li: h4
                 a.green-text(href="/jobs") We're Hiring in Tampa Bay!
-              li: a.green-text(href="http://blog.theironyard.com") The Blog
-              li: a.green-text(href="mailto:tampa@theironyard.com") tampa@theironyard.com
-              li: a.green-text(href="http://eepurl.com/VklMr") Tampa Newsletter
+              li: a.green-text(href="http://tampa.theironyard.com") The Tampa Bay Blog
+              li: a.green-text(href="mailto:tampa@theironyard.com") tampabay@theironyard.com
+              li: a.green-text(href="http://eepurl.com/VklMr") Tampa Bay Newsletter
+              li: a.green-text(href="tel:+8137752275") (813) 775-2275
 
             img.photo-medium(src="/images/locations/tampa/tampa-city1.jpg")
             img.photo-medium(src="/images/locations/tampa/tampa-city2.jpg")
@@ -108,12 +109,12 @@ block content
             .col-md-7
               h3(style="margin-top:0") City Highlights
               p 
-                | St. Petersburg is called the "City by the Sea," and with good reason. St. Pete, as the locals like to call it, is famous for its 35 miles of beaches. The Florida peninsula called Pinellas is surrounded by water on three sides. The beautiful powder white beaches are situated on Florida's Gulf of Mexico. They rest among approximately 20 barrier islands, known as the Keys. These islands provide natural buffers from the Gulf of Mexico, thus making it a perfect spot for swimming and virtually any other water sport . This includes scuba diving, shelling, snorkeling, kayaking, sailing and the like.
+                | St. Petersburg, Florida’s fourth largest city, is one of the brightest spots on America’s Gulf coast. Located in the heart of the largest metro area in the state, the Sunshine City combines the tropical splendor of a vacation destination with the sophistication of an urban resort. Its quarter of a million inhabitants enjoy a vibrant arts and cultural climate, endless sports and recreational opportunities, charming and historic neighborhoods, and one of the fastest growing economies in the United States. Learn more at <a href=" http://www.stpete.org/news/">stpete.org</a>.
 
             .col-md-5
               h4 Recent posts from the blog
               ul.no-style-type.recent
 
 block scripts
-  +blogFeed('blog')
+  +blogFeed('tampa')
 

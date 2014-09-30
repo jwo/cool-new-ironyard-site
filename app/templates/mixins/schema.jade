@@ -1,0 +1,33 @@
+//- mixin schema(events)
+//-   each event in events
+//-     //specify if event is an Academy course or conference/other event with academy: true or false
+//-     if event.academy
+//-       div(itemscope itemtype="http://schema.org/EducationEvent" style="display:none")
+//-         each location in event.locations
+//-           div(itemprop="location" itemscope itemtype="http://schema.org/PostalAddress")
+//-             span(itemprop="addressLocality" content="#{location}")
+//-         div(itemprop="name" content="#{event.name}")
+//-         //- format for class.isoDate should be YYYY-MM-DD
+//-         meta(itemprop="startDate" content="#{event.isoDate}")
+//-         link(itemprop="url" href="#{event.link}")
+//-     else
+//-       div(itemscope itemtype="http://schema.org/Event" style="display:none")
+//-         div(itemprop="location")
+//-           div(itemprop="addressLocality" content="#{event.location}")
+//-         div(itemprop="name" content="#(event.name}")
+//-         //- format for class.isoDate should be YYYY-MM-DD
+//-         meta(itemprop="startDate" content="#{event.isodate}")
+//-         link(itemprop="url" href="#{event.link}")
+
+mixin schemaTable(events)
+  table.class-table(style="margin:10px auto; width:90%")
+    each event in events
+      tr(itemscope itemtype="http://schema.org/EducationEvent")
+        //- format for class.isoDate should be YYYY-MM-DD and class.date should be Month Day
+        td(itemprop="startDate" content="#{event.isoDate}")= event.date
+        td(itemprop="name")= event.location
+        td= event.instructor  
+        td
+          //- format for class.subject should correspond to subfolder (example: web-design or front-end-engineering)
+          link(itemprop="url" href="/academy/#{event.subject}/#class-schedule")
+          a.btn(href="#{event.applicationLink}" type='”submit”', value='”Submit”', onclick='ga(\'send\', \'event\', { eventCategory: \'Applications\', eventAction: \'Started Application\', eventLabel: "#{event.city}"});') Apply
