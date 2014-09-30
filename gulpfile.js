@@ -37,6 +37,7 @@ var gulp = require('gulp'),
 // and story them in .tmp
 gulp.task('templates', function() {
   return gulp.src('app/templates/pages/**/*.jade')
+  .pipe($.watch('app/templates/pages/**/*.jade'))
   .pipe($.jade({
     basedir: "app/templates",
     pretty: true
@@ -296,7 +297,7 @@ gulp.task('deploy', ['build-step-2'], function() {
 gulp.task('connect', function () {
   var connect = require('connect');
   var app = connect()
-    .use(require('connect-livereload')({ port: 35729 }))
+    .use(require('connect-livereload')())
     .use(connect.static('app'))
     // look in ghost shield too! XD
     .use(connect.static('app/bower_components/ghost-shield/dist'))
@@ -315,7 +316,7 @@ gulp.task('serve', ['connect', 'styles', 'templates'], function () {
 });
 
 gulp.task('watch', ['connect', 'serve'], function () {
-  var server = $.livereload();
+  $.livereload.listen();
 
   // watch for changes
 
@@ -325,9 +326,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
     '.tmp/styles/**/*.*',
     'app/scripts/**/*.js',
     'app/images/**/*'
-  ]).on('change', function (file) {
-    server.changed(file.path);
-  });
+  ]).on('change', $.livereload.changed);
 
   gulp.watch('app/templates/**/*.jade', ['templates']);
   gulp.watch('app/styles/**/*.scss', ['styles']);
