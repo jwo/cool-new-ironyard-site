@@ -85,7 +85,6 @@ gulp.task('scripts', function () {
     .pipe($.size());
 });
 
-
 //                         __     __          _ __    __
 //   ____ ______________  / /_   / /_  __  __(_) /___/ /
 //  / __ `/ ___/ ___/ _ \/ __/  / __ \/ / / / / / __  / 
@@ -138,6 +137,17 @@ gulp.task('asset-build', ['templates', 'styles', 'scripts'], function () {
     .pipe($.size());
 });
 
+//     ______            _                
+//    / ____/___ __   __(_)________  ____ 
+//   / /_  / __ `/ | / / / ___/ __ \/ __ \
+//  / __/ / /_/ /| |/ / / /__/ /_/ / / / /
+// /_/    \__,_/ |___/_/\___/\____/_/ /_/ 
+                                       
+
+gulp.task('favicon', function () {
+  return gulp.src('app/favicon.ico')
+    .pipe(gulp.dest('dist'));
+});
 
 //     _                                
 //    (_)___ ___  ____ _____ ____  _____
@@ -252,6 +262,7 @@ gulp.task('build-step-1', ['clean'], function(){
   gulp.start('cname');
   gulp.start('asset-build-promise');
   gulp.start('fonts');
+  gulp.start('favicon');
   return assetsPromise.promise;
 
 });
