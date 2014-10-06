@@ -15,4 +15,4 @@ mixin bio(people)
         ul.links
           each link in person.links
             li 
-              a(href=link.url)= link.title
+              a(href=link.url target="blank")= link.title
