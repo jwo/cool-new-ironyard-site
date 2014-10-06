@@ -2,7 +2,7 @@ mixin accelerator(profiles)
   each profile in profiles
     .profile-box
       if profile.portfolio
-        a(href="#{profile.portfolio}" target="blank" style="text-decoration:none"): img(style="height:220px; width:220px" src="/images/accelerator/portfolio/#{profile.image}")
+        a(href="#{profile.portfolio}" target="_blank" style="text-decoration:none"): img(style="height:220px; width:220px" src="/images/accelerator/portfolio/#{profile.image}")
       else  
         img(style="height:220px; width:220px" src="/images/accelerator/mentors/#{profile.image}")
       .content
@@ -12,6 +12,6 @@ mixin accelerator(profiles)
         ul.no-style-type
           each link in profile.links
             if link.url
-              li: a(href="#{link.url}" target="blank") <img src="/images/accelerator/mentors/#{link.image}">
+              li: a(href="#{link.url}" target="_blank") <img src="/images/accelerator/mentors/#{link.image}">
             if link.email
               li: a(href="mailto:#{link.email}") <img src="/images/accelerator/mentors/email.png">

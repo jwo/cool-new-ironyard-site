@@ -30,4 +30,4 @@ mixin schemaTable(events)
         td
           //- format for class.subject should correspond to subfolder (example: web-design or front-end-engineering)
           link(itemprop="url" href="/academy/#{event.subject}/#class-schedule")
-          a.btn(href="#{event.applicationLink}" target="blank" type='”submit”', value='”Submit”', onclick='ga(\'send\', \'event\', { eventCategory: \'Applications\', eventAction: \'Started Application\', eventLabel: "#{event.city}"});') Apply
+          a.btn(href="#{event.applicationLink}" target="_blank" type='”submit”', value='”Submit”', onclick='ga(\'send\', \'event\', { eventCategory: \'Applications\', eventAction: \'Started Application\', eventLabel: "#{event.city}"});') Apply
