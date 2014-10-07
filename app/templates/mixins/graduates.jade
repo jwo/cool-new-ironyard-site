@@ -1,0 +1,17 @@
+mixin graduates(people)
+  each person in people
+    .bio(class=person.location class=person.course)
+      .bio-left
+        img.photo-bio(src=person.photo)
+        if person.email
+          a.btn.btn-contact(href="mailto:#{person.email}")
+            p Say hello
+      .bio-right
+        h2= person.name
+        if person.title
+          h4= person.title
+        p(style="font-size:16px")= person.description 
+        ul.links
+          each link in person.links
+            li 
+              a(href=link.url target="_blank")= link.title
