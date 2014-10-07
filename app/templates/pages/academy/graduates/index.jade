@@ -9,12 +9,7 @@ block meta
 block content
   +navigation({
     title: 'Graduates',
-    color: 'gold',
-    links: [
-      {title: "Front End Engineering", url: "#front-end"},
-      {title: "Rails Engineering", url: "#rails"},
-      {title: "Mobile Engineering", url: "#mobile"}
-    ]
+    color: 'gold'
   })
 
   .container
@@ -59,19 +54,6 @@ block content
             ]
           }
         ])
-    .row(style="text-align:center")
-      h1#rails Rails Engineering Graduates
-      hr
-      p Coming soon!  
-    .row(style="max-width:900px; margin:0 auto")
-      //add bio mixin with Rails student info here
-
-    .row(style="text-align:center")
-      h1#mobile Mobile Engineering Graduates
-      hr
-      p Coming soon!  
-    .row(style="max-width:900px; margin:0 auto")
-      //add bio mixin with Mobile student info here
 
 
-
+script(src="//code.jquery.com/jquery-1.11.0.min.js")
