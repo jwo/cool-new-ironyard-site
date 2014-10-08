@@ -1,20 +1,10 @@
 'use strict';
 console.log('loaded!');
 
-$(function() {
-
-  function filterGrads(select, target) {
-    $(select).click(function() {
-      console.log(select + ' clicked!');
-      $(target).toggle();
-    })
-  }
-
-  filterGrads('#greenville', '.greenville');
-
-  // $('#greenville').click(function() {
-  //   console.log('greenville clicked!!');
-  //   $('.greenville').toggle();
-  // });
+$(document).ready(function() {
+  $('.filter-item').click(function(e){
+    $('.' + e.currentTarget.id).toggle();
+  });
 
 });
+
