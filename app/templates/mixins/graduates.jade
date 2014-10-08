@@ -1,6 +1,6 @@
 mixin graduates(people)
   each person in people
-    .bio(class=person.location class=person.course)
+    .bio.hide(class=person.location class=person.course)
       .bio-left
         img.photo-bio(src=person.photo)
         if person.email
