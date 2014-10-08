@@ -5,14 +5,16 @@ $(function() {
 
   function filterGrads(select, target) {
     $(select).click(function() {
-      console.log(select ' clicked!');
+      console.log(select + ' clicked!');
       $(target).toggle();
     })
   }
 
-  $('#greenville').click(function() {
-    console.log('greenville clicked!!');
-    $('.greenville').toggle();
-  });
+  filterGrads('#greenville', '.greenville');
+
+  // $('#greenville').click(function() {
+  //   console.log('greenville clicked!!');
+  //   $('.greenville').toggle();
+  // });
 
 });
