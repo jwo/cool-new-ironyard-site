@@ -2,8 +2,12 @@
 console.log('loaded!');
 
 $(document).ready(function() {
+
   $('.filter-item').click(function(e){
-    $('.' + e.currentTarget.id).toggleClass('hide');
+    $(this).toggleClass('gold-text');
+
+    var filteredDiv = '.' + e.currentTarget.id;
+    $(filteredDiv).toggleClass('hide');
   });
 
 });
