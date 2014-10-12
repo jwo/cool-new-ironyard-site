@@ -1,18 +1,20 @@
-mixin graduates(location, people)
-  each person in people
-    if location == person.location
-      .bio.hide(class=person.location class=person.course)
-        .bio-left
-          img.photo-bio(src=person.photo)
-          if person.email
-            a.btn.btn-contact(href="mailto:#{person.email}")
-              p Say hello
-        .bio-right
-          h2= person.name
-          if person.title
-            h4= person.title
-          p(style="font-size:16px")= person.description 
-          ul.links
-            each link in person.links
-              li 
-                a(href=link.url target="_blank")= link.title
+mixin graduates(course)
+  include grad-data
+
+  //- each person in people
+  //-   if course == person.course
+  //-     .bio.hide(class=person.location class=person.course)
+  //-       .bio-left
+  //-         img.photo-bio(src=person.photo)
+  //-         if person.email
+  //-           a.btn.btn-contact(href="mailto:#{person.email}")
+  //-             p Say hello
+  //-       .bio-right
+  //-         h2= person.name
+  //-         if person.title
+  //-           h4= person.title
+  //-         p(style="font-size:16px")= person.description 
+  //-         ul.links
+  //-           each link in person.links
+  //-             li 
+  //-               a(href=link.url target="_blank")= link.title
