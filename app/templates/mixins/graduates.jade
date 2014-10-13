@@ -3,7 +3,7 @@ mixin graduates(course, people)
     if course == person.course
       .bio.hide(class=person.location class=person.course)
         .bio-left
-          img.photo-bio(src=person.photo)
+          img.photo-bio("src=/images/academy/graduates/#{person.photo}")
           if person.email
             a.btn.btn-contact(href="mailto:#{person.email}")
               p Say hello
