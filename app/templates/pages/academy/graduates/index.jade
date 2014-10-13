@@ -14,13 +14,25 @@ block content
   })
 
   .container
-    .row(style="max-width:900px; margin:40px auto")
-
-      h1#greenville.filter-item GREENVILLE
-      h1#charleston.filter-item CHARLESTON
-      h1.clear-all CLEAR ALL
-      h1.show-all SHOW ALL
-      
+    .row(style="background-color:#e3e7e9; margin-bottom:40px")
+      .col-md-12
+        h2.section-headline(style="margin-bottom: 10px;") Select A Location   
+        .col-md-6
+            h4.filter-item#atlanta • Atlanta<br>
+            h4.filter-item#austin • Austin<br>
+            h4.filter-item#charleston • Charleston<br>
+            h4.filter-item#durham • Raleigh-Durham<br>
+        .col-md-6
+            h4.filter-item#greenville • Greenville<br>
+            h4.filter-item#houston • Houston:<br>
+            h4.filter-item#tampa • Tampa Bay:<br>
+            h4.filter-item#orlando • Orlando:<br>
+        .col-md-6
+          h3.clear-all CLEAR ALL
+        .col-md-6
+          h3.show-all SHOW ALL
+    
+    .row  
       +graduates("front-end", [
         {
           name: "Joe VanLeeuwen",
