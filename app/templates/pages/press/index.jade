@@ -35,15 +35,26 @@ block content
           li cool fact
           li cool fact
           li cool fact
-
-        hr 
-        img.photo(src="/images/about/about-page-team.jpg" style="max-width:500px")
-        img.photo(src="/images/about/about-page-collaborate.jpg" style="max-width:500px")
-        img.photo(src="/images/about/about-page-mason.jpg" style="max-width:500px")
   
   .container
     .row
       .col-md-6
+        h3 News
         p Lomo organic post-ironic, scenester literally before they sold out Bushwick. PBR&B bicycle rights fashion axe, put a bird on it drinking vinegar sriracha Cosby sweater letterpress vegan.
+        ul.no-style-type.recent
       .col-md-6
+        h3 Stories
         p Lomo organic post-ironic, scenester literally before they sold out Bushwick. PBR&B bicycle rights fashion axe, put a bird on it drinking vinegar sriracha Cosby sweater letterpress vegan. 
+        ul.no-style-type.recent
+
+block scripts
+  +blogFeed('news')
+
+
+
+        
+
+    //- hr 
+    //- img.photo(src="/images/about/about-page-team.jpg" style="max-width:500px")
+    //- img.photo(src="/images/about/about-page-collaborate.jpg" style="max-width:500px")
+    //- img.photo(src="/images/about/about-page-mason.jpg" style="max-width:500px")
