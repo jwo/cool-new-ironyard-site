@@ -1,0 +1,65 @@
+extends /layouts/main
+include /mixins/contact
+
+block meta
+  +meta ({
+    title:"Iron Yard- Python Engineering",
+    description: "The Iron Yard's super-intensive python development course takes students through everything they need to know to start working as python developers."
+  })
+
+block content
+  +navigation({
+    title: 'Python Engineering',
+    color: 'teal'
+  })
+
+  .container
+    .row
+      .col-md-8
+        h3.teal-text: em Learn to analyze data and publish insights using Python and machine learning 
+
+        .row
+          .callout-box(style="padding-bottom:10px")
+            .row
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/mobile-engineering/prototype.png")
+                p(style="max-width:220px; margin:20px auto") Build powerful prototypes quickly
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/python-engineering/data-patterns.png")
+                p(style="max-width:220px; margin:20px auto") Uncover patterns in large datasets
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/python-engineering/machine-learning.png")
+                p(style="max-width:220px; margin:20px auto") Create programs that can learn from data
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/front-end-engineering/front-end-interface.png")
+                p(style="max-width:220px; margin:20px auto") Publish your your analyses online
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/python-engineering/servers.png")
+                p(style="max-width:220px; margin:20px auto") Automate and orchestrate production servers
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/mobile-engineering/brain-guy.png")
+                p(style="max-width:220px; margin:20px auto") Most importantly, learn how to learn
+        p 
+          | Over the course of three months, a heavy-duty programming veteran (and skilled teacher) will show you the power of Python, one of the most powerful languages in the world for web applications, big data, and scientific computing. At the end of the class you’ll make magic happen with real-world data sets and you'll know how to build web apps to show off your wizardry.
+
+      .col-md-4(style="margin-top:30px")
+        +contact('Python Engineering')
+
+      hr
+
+      .col-md-12
+        p
+          | The best part: we’ll help you get a job offer as a Python developer when you graduate. Don’t know any code? Don’t worry. Our proven teachers and process will take you from zero to hero and mentor you into a professional junior-level programmer.
+
+  .horizontal-section.teal-bg(style="margin-bottom:-60px")
+    .container(style="text-align:center")
+      .row
+        .col-md-12
+          h3 <em>Our Sponsors</em>
+          p(style="width:70%; margin: 0 auto; margin-bottom:20px") Our sponsors support our students by offering free accounts, assets, and more. We couldn’t do some of the amazing things we do in class without their generosity. Thank you, friends!
+          a(href="http://github.com"): img(src="/images/academy/github.png" style="width:30%")
+          a(href="http://invisionapp.com"): img(src="/images/academy/invision.png" style="width:30%")
+          br
+          a(href="http://macaw.co"): img(src="/images/academy/macaw.png" style="width:30%")
+          a(href="http://wercker.com"): img(src="/images/academy/wercker.png" style="width:30%")
+          a(href="http://symbolset.com"): img(src="/images/academy/symbolset.png" style="width:30%")
