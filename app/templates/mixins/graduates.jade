@@ -1,5 +1,5 @@
-mixin graduates(course, graduates)
-  each graduate in graduates
+mixin graduates(course, people)
+  each graduate in people
     if course == graduate.course
       .bio.hide(class=graduate.location class=graduate.course)
         .bio-left
