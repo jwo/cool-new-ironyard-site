@@ -1,18 +1,18 @@
-mixin graduates(course, people)
-  each person in people
-    if course == person.course
-      .bio.hide(class=person.location class=person.course)
+mixin graduates(course, graduates)
+  each graduate in graduates
+    if course == graduate.course
+      .bio.hide(class=graduate.location class=graduate.course)
         .bio-left
-          img.photo-bio(src="/images/academy/graduates/#{person.photo}")
-          if person.email
-            a.btn.btn-contact(href="mailto:#{person.email}")
+          img.photo-bio(src="/images/academy/graduates/#{graduate.photo}")
+          if graduate.email
+            a.btn.btn-contact(href="mailto:#{graduate.email}")
               p Say hello
         .bio-right
-          h2= person.name
-          if person.title
-            h4= person.title
-          p(style="font-size:16px")= person.description 
+          h2= graduate.name
+          if graduate.title
+            h4= graduate.title
+          p(style="font-size:16px")= graduate.description 
           ul.links
-            each link in person.links
+            each link in graduate.links
               li 
                 a(href=link.url target="_blank")= link.title
