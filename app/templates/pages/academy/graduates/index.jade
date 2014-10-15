@@ -33,7 +33,8 @@ block content
           h3.show-all SHOW ALL
     
   include /includes/graduates
-  
+  script.
+    - var graduates =JSON.parse((graduates).replace(/&quot;/g,'"')); 
   .container  
     .row  
       +graduates("front-end", graduates)
