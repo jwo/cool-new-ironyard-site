@@ -1,0 +1,65 @@
+extends /layouts/main
+include /mixins/contact
+
+block meta
+  +meta ({
+    title:"The Iron Yard | Web Design",
+    description:"The Iron Yard's super-intensive Web Design course teaches you how to design and build beautiful, user-centric websites and digital products."
+  })
+
+block content
+  +navigation({
+    title: 'Web Design',
+    color: 'purple'
+  })
+
+  .container
+    .row
+      .col-md-8
+        h3.purple-text: em Learn to design and build beautiful, user-centric websites and digital products
+
+        .row
+          .callout-box(style="padding-bottom:10px")
+            .row
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/web-design/sketch.png") 
+                p(style="max-width: 220px; margin:20px auto") Evolve ideas thoroughly from sketching to prototyping
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/web-design/principles.png")
+                p(style="max-width: 220px; margin:20px auto") Master principles of design and learn design thinking
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/front-end-engineering/front-end-interface.png")
+                p(style="max-width: 220px; margin:20px auto") Produce robust, beautiful, and cohesive design systems
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/web-design/css.png")
+                p(style="max-width: 220px; margin:20px auto") Go deep into HTML, CSS and interaction-based JavaScript
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/web-design/responsive.png")
+                p(style="max-width: 220px; margin:20px auto") Optimize designs for accessibility and the responsive web layouts
+              .col-md-4.col-sm-6.col-xs-12
+                img(src="/images/academy/front-end-engineering/brain-guy.png")
+                p(style="max-width: 220px; margin:20px auto") Most importantly, learn how to learn
+        p 
+          | Over the course of three months, a practicing web designer (and skilled instructor) will show you the multiple facets of being a web designer, including creative discovery and ideation, design principles, coding in HTML, CSS, and interaction-based Javascript and responsive Web Design. At the end of the class, you’ll be equipped with portfolio of web design projects built from scratch and looking beautiful.
+
+      .col-md-4(style="margin-top:30px")
+        +contact('Web Design Landing')
+
+      hr
+
+      .col-md-12
+        p
+          | The best part: <strong>we’ll help you get a job offer as a web designer when you graduate</strong>. Don’t know any code? Don’t worry. Our proven teachers and process will take you from zero to hero and mentor you into a professional junior-level web designer.
+
+  .horizontal-section.purple-bg(style="margin-bottom:-60px")
+    .container(style="text-align:center")
+      .row
+        .col-md-12
+          h3 <em>Our Sponsors</em>
+          p(style="width:70%; margin: 0 auto; margin-bottom:20px") Our sponsors support our students by offering free accounts, assets, and more. We couldn’t do some of the amazing things we do in class without their generosity. Thank you, friends!
+          a(href="http://github.com"): img(src="/images/academy/github.png" style="width:30%")
+          a(href="http://invisionapp.com"): img(src="/images/academy/invision.png" style="width:30%")
+          br
+          a(href="http://macaw.co"): img(src="/images/academy/macaw.png" style="width:30%")
+          a(href="http://wercker.com"): img(src="/images/academy/wercker.png" style="width:30%")
+          a(href="http://symbolset.com"): img(src="/images/academy/symbolset.png" style="width:30%")
