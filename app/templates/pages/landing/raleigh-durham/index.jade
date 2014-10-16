@@ -1,0 +1,39 @@
+extends /layouts/main
+include /mixins/contact
+
+block meta 
+  +meta({
+      title: "The Iron Yard | Raleigh-Durham, NC Code School",
+      description: "Learn to code, get a job. We teach Front End Engineering, Ruby on Rails, and Python Engineering right here in Raleigh-Durham, NC."
+    })
+
+block content
+  +navigation({
+    title: 'Raleigh-Durham',
+    color: 'green',
+    image: '/images/locations/durham/durham.jpg',
+    cutout: true
+  })
+
+  .container-fluid(style="padding:0") 
+    .main
+      .container
+        .row
+          .col-sm-9
+            h2 Learn to code. <br>Life's too short for the wrong career.
+            p(style=" margin-top:3px") 
+              | The Iron Yard Academy in Durham teaches intensive, three-month courses that mentor you into a professional junior-level programmer. Study Ruby on Rails, Python, or Front End Engineering and launch a new career. <strong>Fill out the form to get more information from our team</strong>! 
+            .horizontal-section.gray-light-bg#programs
+              .row(style="width:95%; margin: 0 auto; display: block;")
+                .col-md-4
+                  h4(style="padding-bottom: 0px;"): <img src="/images/locations/icons/js-icon.png" style="height:24px"> <strong>Front End Engineering</strong>
+                  p Learn Front End Engineering using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.
+                .col-md-4
+                  h4(style="padding-bottom: 0px;"): <img src="/images/locations/icons/rails-icon.png" style="height:24px"> <strong>Rails Engineering</strong>
+                  p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build fast, production-quality full-stack apps.            
+                .col-md-4
+                  h4(style="padding-bottom: 0px;"): <img src="/images/locations/icons/python-icon.png" style="height:24px"> <strong>Python Engineering</strong>
+                  p Learn to analyze and publish data using Python and machine learning. At the end of the class you’ll make magic happen with real-world data sets and you'll know how to build web apps to show off your wizardry. 
+
+          .col-sm-3(style="margin-top:40px")
+            +contact('Durham Landing')
