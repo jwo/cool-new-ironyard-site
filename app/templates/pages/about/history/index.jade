@@ -1,0 +1,100 @@
+extends /layouts/main
+
+block meta
+  +meta({
+    title:"The Iron Yard | History",
+    description:"Learn how The Iron Yard came to be."
+  })
+
+block content
+  +navigation({
+    title: 'History',
+    color: 'gray-dark',
+    links: [
+      {title: "Bullet points", url: "#short"},
+      {title: "Full Story", url: "#long"}
+    ] 
+  })
+
+  .container
+    .row
+      .col-md-12
+        h3 The History of The Iron Yard
+        p This history recounts the people and events that brought The Iron Yard into existence. You can read an abbreviated version or dive into the full-length story. 
+        hr
+        h3#short The Short Version
+        p <strong>The NEXT Big Thing (2011)</strong>
+        ul
+          li Peter Barth helps launch the NEXT Innovation Center is born
+          li Peter collaborates with the Global Accelerator Network to launch The Next Big Thing startup accelerator
+        p <strong>The Iron Yard is Born (2012)</strong> 
+        ul
+          li Mentors from around the country come to Greenville to guide the first accelerator cohort
+          li The Next Big Thing and CoWork (a famous coworking space in Greenville, SC) decide to join forces and create a new brand, The Iron Yard. 
+        p <strong>Grok, the Digital Health Accelerator and Kids Coding Classes (2012)</strong>
+        ul 
+          li The Iron Yard publicly launches branding and website in May 2012
+          li Grok, an un-conference for design and development, is hosted by The Iron Yard
+          li The Iron Yard Accelerator graduates its first cohort of startups
+          li The Iron Yard's Digital Health Accelerator is created in partnership with a group ofliinvestors from Spartanburg, SC
+          li Eric Dodds (who volunteered at the aforementioned Grok and helped develop The IronliYard brand and website) joins The Iron Yard full-time to help Peter run theliaccelerator programs
+          li Mason Stewart, startup front-end engineer extraordinaire, approaches TIY aboutliteaching free coding classes for kids in The Iron Yard's space; 
+          li The Iron Yard sponsors the kids program and classes quickly grow into a wait list of hundreds of students
+        p <strong>Code education for adults (early 2013)</strong>
+        ul
+          li Peter and Eric have their first discussions about the need for more development talentliin the Southeast to build infrastructure for the startups coming out of theliaccelerator program
+          li The idea of code classes for adults emerges as the answer to the problem
+          li Mason Stewart, who had already begun to think about teaching full time, joins The IronliYard as a partner and writes the first version of the Front End Engineering curriculum
+          li The first Front End Engineering cohort graduates and get jobs (some starting their ownlicompanies) and the curriculum and staff evolve as the second cohort begins
+          li The Iron Yard gains national press and recognition through the success of both the Accelerator and the Academy
+        p <strong>The Accelerator charges on (mid 2013)</strong>
+        ul
+          li Both Accelerator programs (Greenville and Spartanburg) graduate additional cohorts,liwho travel the country on fundraising trips pitching their products to audiences oflithousands
+          li The Iron Yard portfolio companies get national coverage and raise capital from angels and venture firms
+        p <strong>The Academy becomes the largest code school in the country (2014)</strong>
+        ul 
+          li John Saddington, a serial entrepreneur and long-time mentor in the Accelerator prograli, joins The Iron Yard to help scale the business
+          li Over eight months, four new courses are added to the Academy's offerings, the staff is grown from four to over 30 team members and campuses are launched in Charleston, Atlanta, Raleigh-Durham, Houston, Orlando, Tampa-St. Petersburg, Columbia, Austin, and Washington, D.C., making TIY the largest code school in the country
+        p <strong>Where is The Iron Yard headed?</strong>
+        ul
+          li The Iron Yard will launch additional campuses in the future, but is currently focused on maintaining and enhancing the quality of current operations, improving on curriculum, tools, mentorship opportunities and career support programs.
+        hr
+        h3#long The Long Version
+        p <strong>Peter Barth and The Next Big Thing (2011)</strong>
+        p In 2011 Peter Barth, a serial software entrepreneur, was occupied with two things: wrapping up the launch of NEXT Innovation Center and helping several local startups raise their first round of capital. He did both of these things from a downtown office in Greenville, SC where he and his wife chose to raise their 5 children.
+        p In the process of raising money and helping building the tech scene in Greenville, Peter crossed paths with Brad Feld, the Global Accelerator Network (then the TechStars network) and Startup America. What started as conversation about educating Southeast startups and investors ended with Peter adding another venture to his plate and starting The Next Big Thing startup accelerator.
+        p Much of the work that went into the accelerator program in 2011 was focused on building a foundation: Peter flew around the country attending Demo Days, investing in companies and recruiting mentors for The Next Big Thing.
+        p <strong>The Iron Yard is Born (2012)</strong>
+        p By early 2012, the groundwork was laid. Peter's work had paid off—hundreds of companies from around the world applied and dozens of mentors from around the country were on the calendar (one of those mentors happened to be John Saddington, who will make another important later in this story). The first cohort of startups had begun their journey through the accelerator program.
+        p In the process of gearing up for the accelerator, Peter had made connections with a talented group of Greenville designers and developers working at a place called CoWork. What made CoWork unique was level of concentrated talent it brought together. Heavy-hitting startup products (like Treehouse and Zaarly) were being crafted in part by teams and freelancers living and working in Greenville.
+        p Both Peter and the CoWork crew realized that they were telling each others' stories as part of a larger story about what was happening in Greenville.
+        p Before the first cohort of accelerator teams had started, The Next Big Thing and CoWork combined forces and The Iron Yard was born. (Wondering where the name came from? You can read about that here.)
+        p <strong>Grok, the Digital Health Accelerator and Kids Coding Classes (2012)</strong>
+        p Just before The Iron Yard brand was announced publicly, The Next Big Thing and Cowork helped put on a conference called Grok that, along with coworking and the accelerator, had put Greenville on the map in both the design and development industries. As an un-conference, Grok attracted nationally renowned talent from around the country (and lots of locals) who craved conversation about their industries, not just keynote talks from heroes. At this particular conference in 2012, two important things happened. First, the conversation about Grok becoming part of The Iron Yard began (the full transition would take place later that year). Second, Peter crossed paths with an eager young conference volunteer looking to earn his spurs in the tech industry. That volunteer's name was Eric Dodds.
+        p Peter agreed to get lunch with Eric and they hit it off. Eric started to hang around the accelerator program (when he could get away from his day job) and do any work he could get his hands on, which was mostly copywriting, branding and website development to prepare for the public launch of The Iron Yard, which went live in May.
+        p In the summer of 2012 what had become The Iron Yard accelerator program had graduated its first cohort of startups (you can see all of our Iron Yard Ventures companies in our portfolio). The success of the first cohort attracted the attention of a group of investors in Spartanburg, SC. Their interest in fostering entrepreneurship along with deep connections to large hospital systems and international medical organizations like The Mayo Clinic made the opportunity clear: a vertical-specific accelerator focused on companies building software for the healthcare space.
+        p You might already be marveling at Peter's super-human power to run a million things at one time (and run them well), but an additional accelerator program on top of everything else would require a second set of hands. After a few phone calls and emails, Eric agreed to leave his day job and follow Peter into the wild world of entrepreneurship. 
+        p That fall, as Peter and Eric settled into planning for 2013, they were approached by a well-bearded programmer and teacher named Mason Stewart who wanted to use The Iron Yard’s space to run free coding classes for kids. At the time he was working as a lead front end engineer for a well funded San Franciso startup (several members of the product team worked at CoWork). Peter and Eric jumped at the opportunity to teach kids and helped get the programs running by both sponsoring and teaching classes. They also discovered that Mason was a truly brilliant educator. The first round of courses was so successful that the waiting list for future courses grew into the hundreds. 
+        p As 2012 drew to a close The Iron Yard had experienced it’s first taste of code education. 
+        p <strong>Code education for adults (early 2013)</strong>
+        p As the new year began and planning continued, Eric and Peter took some time to think about the long-term vision for what they were doing in Greenville and the tech industry in the Southeast. Their travel, research and discussions all pointed to the same conclusion: one major piece of the puzzle that the Southeast lacks is availability of programming talent. They knew that there were great tech companies and developers in the region, but they also acknowledged the reality that growing an engineering team from 2 to 20 quickly was difficult relative to other areas of the country. The result made sense: both startups and larger companies in growth mode tended to relocate to markets with more available talent. 
+        p They knew there wasn’t a quick fix, but looking for a solution was the seed of a simple idea: what if they trained the development talent that their startups needed to hire to grow? Some sort of school for developers wouldn’t only build up the accelerator, it would also support (and attract) larger, more established tech companies. 
+        p A few miles away from where Peter and Eric were dreaming and planning, Mason was talking with a friend over lunch about how he loved running kids classes and wished he teach full time. As fate would have it, that friend recommended Mason bring the idea up to The Iron Yard. 
+        p A few weeks later Mason had joined the team as a partner and began writing the first version of our Front End Engineering curriculum. By April they’d recruited 7 brave students who began their journey as The Iron Yard’s inaugural code school class. 
+        p In July, after a brutally intense 12 weeks heavy-duty learning, those 7 students graduated and met the real world head-on to see where their new skills would take them. The results were impressive to everyone: one of the students received a job offer at Demo Day, the others found work shortly after and one began working on a product for his own startup company. The first at-bat wasn’t perfect, but Professor Mason had proven the hypothesis that The Iron Yard could train job-ready programmers in three months. 
+        p After gathering feedback from both students and employers, Mason and Eric retooled a few elements of the program and decided that they could increase the class size a bit and still maintain the quality and intensity that had made the first course so successful. In August Mason began teaching their second round of students, who would go on to be just as successful as the first. 
+        p Two successes in a row meant The Iron Yard Academy started to attract attention. Press, companies looking to hire, and economic development teams from other cities in the Southeast began to inquire about hiring future graduates and the possibility of seeing something similar happen in their own towns. 
+        p By the close of the year, Peter, Eric and Mason started to think about what Iron Yard schools in other cities might look like. 
+        p <strong>The Accelerator charges on (mid 2013)</strong>
+        p While the Academy slowly grew and the seeds of expansion were being planted, the Accelerator graduated two cohorts—one from the Greenville open-tech program and one from the Spartanburg Digital Health program. 
+        p Companies from both programs went on fundraising trips to the Northeast and West coast, pitching on stages in front of thousands and raising rounds of capital from angels and venture firms. 
+        p <strong>The Academy becomes the largest code school in the country (2014)</strong>
+        p Interest from cities, a wide-open market and, most importantly, the desire to train up-and-coming software engineers the right way had set the stage for Academy expansion. But expansion created the need for extra hands on the leadership team—ideally someone who had experience scaling companies and a passion for education. 
+        p It just so happened that John Saddington, an Accelerator mentor, was a serial entrepreneur who had grown multiple organizations and had a masters degree in education. Fate rarely knocks twice, but John also happened to be in-between ventures. 
+        p After a few hours with Peter, Mason and Eric, the deal was done and The Iron Yard’s leadership team, four strong, began laying the groundwork for March campus launches in Charleston and Atlanta. 
+        p Over the next 8 months the crew added 4 new courses, grew the staff from 4 to over 30 team members and launched campuses in Raleigh-Durham, Houston, Orlando, Tampa-St.Petersburg, Columbia, Austin and Washington, D.C., making The Iron Yard the largest code school in the country. 
+        p <strong>Where is The Iron Yard headed?</strong> 
+        p While there is more expansion on the horizon, 2015 will be a year of focusing on quality—maintaining and improving what has already created as well as building additional learning tools, mentorship opportunities and career support programs for graduates. There will also be more time and attention spent on growing free classes for kids across all campuses. And, as always, there will intense focus on the personal and professional growth of the amazing team members who make The Iron Yard what it is. 
+
+
+
