@@ -15,21 +15,21 @@ block content
       {title: "Facts", url: "#facts"},
       {title: "Contact", url: "#contact"},
       {title: "News", url: "#news"},
-      {title: "Stories", url: "#stories"},
-      {title: "History", url: "#history"},
-      {title: "Press Kit", url: "#presskit"}
+      //- {title: "Stories", url: "#stories"},
+      {title: "History", url: "#history"}
+      //- {title: "Press Kit", url: "#presskit"}
     ]
   })
 
   .container
     .row
-      .col-md-8
+      .col-md-8#about
         h3 About The Iron Yard
-        p Lomo organic post-ironic, scenester literally before they sold out Bushwick. PBR&B bicycle rights fashion axe, put a bird on it drinking vinegar sriracha Cosby sweater letterpress vegan. Craft beer Banksy normcore four loko, Carles fixie irony locavore twee. Forage church-key aesthetic, Banksy 90's Blue Bottle crucifix fixie retro bicycle rights skateboard small batch freegan Wes Anderson raw denim. 
-        img.photo(src="/images/about/about-page-team.jpg" style="width: 300px; display: inline-block; margin: 10px")
-        img.photo(src="/images/about/about-page-collaborate.jpg" style="width: 300px; display: inline-block; margin: 10px;")
+        p The Iron Yard is the largest code school in the country. We teach intensive, three-month courses that mentor our students into professional junior-level programmers. Our classes goes far beyond tactical skill and teach people to think like software engineers. Programming is a lifelong study, and our process shows students how to learn on their own they remain highly valuable throughout their careers. We also help each graduate find work after the program through our career support program and ongoing education tracks. 
+        img.photo(src="/images/press/press-page-class.jpg" style="width: 300px; display: inline-block; margin: 10px")
+        img.photo(src="/images/press/press-atl-crew.jpg" style="width: 300px; display: inline-block; margin: 10px;")
         
-      .col-md-4
+      .col-md-4#facts
         h3 Facts
         ul 
           li Founded: <strong>2012</strong>
@@ -37,30 +37,34 @@ block content
           li Founders: <strong>Peter Barth, Eric Dodds, Mason Stewart, John Saddington</strong>
           li Iron Yard Team Members: <strong>35</strong>
           li Campuses: <strong>10</strong>
+          li Courses: <strong>Front End Engineering, Rails Engineering, Mobile Engineering, Python Engineering, Web Design</strong>
           li 2014 Graduates: <strong>280+</strong>
-      .col-md-12
-        hr
-        h3 Contact
-        p Lomo organic post-ironic, scenester literally before they sold out Bushwick. <a href="#">Eric Dodds</a>
-        hr
+      hr
   
   .container
     .row
-      .col-md-6
+      .col-md-12#contact
+        h3 Contact
+        p If you'd like to reach out about a story, ask more questions or learn more, feel free to reach out.
+        ul
+          li Send an email to <a href="mailto:press@theironyard.com">press@theironyard.com</a>
+          li You can also reach us by phone at <a href="tel:+8553992275">+1 (855) 399-2275</a>
+      .col-md-6#news
         h3 News
-        p Lomo organic post-ironic, scenester literally before they sold out Bushwick. PBR&B bicycle rights fashion axe, put a bird on it drinking vinegar sriracha Cosby sweater letterpress vegan.
+        p We keep track of our mentions in the press. You can see everything on our <a href="http://news.theironyard.com">News Blog</a> or click through to the latest few headlines below. 
         ul.no-style-type.recent1
       .col-md-6
         h3 Stories
         p Lomo organic post-ironic, scenester literally before they sold out Bushwick. PBR&B bicycle rights fashion axe, put a bird on it drinking vinegar sriracha Cosby sweater letterpress vegan. 
         ul.no-style-type.recent2
+
       .col-md-12
         hr
   .container
     .row
-      .col-md-8
+      .col-md-12#history
         h3 History
-        p This is an abbreviated history of The Iron Yard. You can head over to our About page for the full McCoy. 
+        p This is an abbreviated history of The Iron Yard. You can head over to our <a href="/about">About page</a> to read the long version. 
         h4 The NEXT Big Thing (2011)
         ul
           li Peter Barth helps launch the NEXT Innovation Center is born
@@ -96,15 +100,15 @@ block content
         ul
           li The Iron Yard will launch additional campuses in the future, but is currently focused on maintaining and enhancing the quality of current operations, improving on curriculum, tools, mentorship opportunities and career support programs.
 
-      .col-md-4
-        h3 Press Kit
-        ul 
-          li cool item
-          li cool item
-          li cool item
-          li cool item
-          li cool item
-          li cool item
+      //- .col-md-4
+      //-   h3 Press Kit
+      //-   ul 
+      //-     li cool item
+      //-     li cool item
+      //-     li cool item
+      //-     li cool item
+      //-     li cool item
+      //-     li cool item
 
 
 block scripts

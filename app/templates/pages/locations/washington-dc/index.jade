@@ -1,0 +1,131 @@
+extends /layouts/main
+
+block meta 
+  +meta({
+      title: "The Iron Yard | Washington, D.C. Code School",
+      description: "Learn to code, get a job. We teach Front End Engineering, Rails Engineering, and Mobile Engineering right here in the Washington, D.C. area."
+    })
+
+block content
+  +navigation({
+    title: 'Washington, D.C.',
+    color: 'green',
+    image: '/images/locations/washington-dc/washington-dc.jpg',
+    cutout: true, 
+    links: [
+      {title: "What We Offer", url: "#programs"},
+      {title: "Connect", url: "#connect"},
+    ]
+  })
+
+  .container-fluid(style="padding:0")
+    .main
+      .container
+        .row
+          .col-sm-8
+            h1 The Iron Yard in Washington, D.C.
+            p 
+              | We're proud to offer classes in our nation's capitol city. The D.C. area is home to great tech companies, accelerators and startups and we're happy to be training the talent they need to keep growing.
+            p
+              | We're working directly with <a href="http://http://disruption.vc/">Disruption Corporation</a> to bring tech education to the already-robust ecosystem they've built for startups. 
+
+          .col-sm-4.mobile-container
+            h3 Academy classes are open in Washington D.C. Apply now! 
+            hr
+            p
+              | Learn to code.<br> 
+              | Life's too short for the wrong career. 
+            p
+              a(href="/academy" class="btn") Enroll Now!
+            
+
+      .horizontal-section.gray-light-bg#programs
+        .container
+            .row
+              .col-md-6
+                img.photo(src="/images/locations/washington-dc/dc-academy.jpg")
+              .col-sm-6
+                h4 Academy
+                p We offer three intensive Academy courses in Washington, D.C. Our grads get jobs with amazing local companies as well as awesome shops around the country.
+                a(href="/academy" class="btn") Learn More
+            .row(style="margin-top: 30px;")
+              .col-md-4
+                h4(style="padding-bottom: 0px;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:24px"> <strong>Front End Engineering</strong>
+                p Learn Front End Engineering using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.
+              .col-md-4
+                h4(style="padding-bottom: 0px;"): a(href="/academy/rails-engineering").green-text <img src="/images/locations/icons/rails-icon.png" style="height:24px"> <strong>Rails Engineering</strong>
+                p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build fast, production-quality full-stack apps.
+              .col-md-4
+                h4(style="padding-bottom: 0px;"): a(href="/academy/mobile-engineering").green-text <img src="/images/locations/icons/mobile-icon.png" style="height:24px"> <strong>Mobile Engineering</strong>
+                p Learn to analyze and publish data using Python and machine learning. At the end of the class you’ll make magic happen with real-world data sets and you'll know how to build web apps to show off your wizardry. 
+
+      .horizontal-section    
+        .container
+          .row
+            .col-md-6
+              h4 Kids Classes
+              img.photo(src="/images/locations/spartanburg/spartanburg-kids-classes.jpg")
+              p 
+                | We’ll launch our free code classes for kids in early 2015 year. Sign up for the newsletter to be notified when things are ready.
+              a.btn(href="http://eepurl.com/50Nor", style="text-align:center") Newsletter 
+            .col-md-6(style="padding-left: 20px;")
+              h4#connect Connect
+              ul.no-style-type
+                li: a.green-text(href="/jobs") We're Hiring in Washington D.C.!
+                li: a.green-text(href="http://blog.theironyard.com") The Blog
+                li: a.green-text(href="mailto:dc@theironyard.com") dc@theironyard.com
+                li: a.green-text(href="http://eepurl.com/50PU1") Washington D.C. Newsletter
+                li: a.green-text(href="tel:+5717339744") (571) 733-9744
+              h4 Address
+              p(style="font-size:16px; margin-top:3px")
+                | 2231 Crystal Dr. <br>
+                | Arlington, VA 22202<br>
+                a.green-text(href="https://www.google.com/maps/place/2231+Crystal+Dr,+Crystal+City+Shops,+Arlington,+VA+22202/@38.853778,-77.048764,17z/data=!3m1!4b1!4m2!3m1!1s0x89b7b72f1d8f3025:0xa1a8df3d604b5816?hl=en") Directions 
+
+      //- .container  
+      //-   .row
+      //-     .col-sm-7.mobile-container
+      //-       h2 Meet Our Washington D.C. Team
+      //-       .row.left-column
+      //-         h2 Connect
+      //-         hr
+      //-         ul.no-style-type
+      //-           li: a.green-text(href="/jobs") We're Hiring in Washington D.C.!
+      //-           li: a.green-text(href="http://news.theironyard.com") The Washington D.C. Blog
+      //-           li: a.green-text(href="mailto:washingtondc@theironyard.com") washingtondc@theironyard.com
+      //-           li: a.green-text(href="http://eepurl.com/JoCJv") Washington D.C. Newsletter
+      //-           li: a.green-text(href="tel:+xxxxxxxxxxx") (xxx) xxx-xxxx
+      //-         h4 Address
+      //-         p(style="font-size:16px; margin-top:3px")
+      //-           | 1600 Pennsylvania Avenue NW <br>
+      //-           | Washington, DC 20500<br>
+      //-           a.green-text(href="https://www.google.com/maps/place/334+Blackwell+St+b017/@35.9929204,-78.9044132,17z/data=!3m1!4b1!4m2!3m1!1s0x89ace46ceeac0791:0xc08b0e1d16d7ec7f") Directions
+
+      //-     .col-sm-5.mobile-container#connect
+      //-       h2 Connect
+      //-       hr
+      //-       ul.no-style-type
+      //-         li: a.green-text(href="/jobs") We're Hiring in Washington D.C.!
+      //-         li: a.green-text(href="http://news.theironyard.com") The Washington D.C. Blog
+      //-         li: a.green-text(href="mailto:washingtondc@theironyard.com") washingtondc@theironyard.com
+      //-         li: a.green-text(href="http://eepurl.com/JoCJv") Washington D.C. Newsletter
+      //-         li: a.green-text(href="tel:+xxxxxxxxxxx") (xxx) xxx-xxxx
+      //-       h4 Address
+      //-       p(style="font-size:16px; margin-top:3px")
+      //-         | 1600 Pennsylvania Avenue NW <br>
+      //-         | Washington, DC 20500<br>
+      //-         a.green-text(href="https://www.google.com/maps/place/334+Blackwell+St+b017/@35.9929204,-78.9044132,17z/data=!3m1!4b1!4m2!3m1!1s0x89ace46ceeac0791:0xc08b0e1d16d7ec7f") Directions
+
+
+//-       .horizontal-section.gray-light-bg.last
+//-         .container
+//-           .row
+//-             .col-md-7
+//-               h3(style="margin-top:0") City Highlights
+//-               p Washington D.C. has lots and lots of places to get falafel. You can literally get falafel anywhere. We live in a beautiful world.
+//-             .col-md-5
+//-               h4 Recent posts from the blog
+//-               ul.no-style-type.recent
+
+//- block scripts
+//-   +blogFeed('blog')
