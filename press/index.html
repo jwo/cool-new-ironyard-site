@@ -50,6 +50,7 @@
                 <li><a href="#facts">Facts</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#news">News</a></li>
+                <li><a href="#stories">Stories</a></li>
                 <li><a href="#history">History</a></li>
               </ul>
               <div class="triangle gray-dark-triangle"></div>
@@ -74,7 +75,17 @@
             <li>Campuses: <strong>10</strong></li>
             <li>Courses: <strong>Front End Engineering, Rails Engineering, Mobile Engineering, Python Engineering, Web Design</strong></li>
             <li>2014 Graduates: <strong>280+</strong></li>
+            <li>Students starting January, 2015: <strong>400+</strong></li>
           </ul>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div id="contact" class="col-md-12">
+          <h3>Contact</h3>
+          <p>If you'd like to reach out about a story, ask more questions or learn more, feel free to reach out. Send an email to <a href="mailto:press@theironyard.com">press@theironyard.com</a>. You can also reach us by phone at <a href="tel:+8553992275">+1 (855) 399-2275</a>.</p>
         </div>
         <hr>
       </div>
@@ -84,20 +95,15 @@
         <div id="news" class="col-md-6">
           <h3>News</h3>
           <p>We keep track of our mentions in the press. You can see everything on our <a href="http://news.theironyard.com">News Blog</a> or click through to the latest few headlines below. </p>
-          <ul class="no-style-type recent"></ul>
+          <ul class="no-style-type recent1"></ul>
         </div>
-        <div id="contact" class="col-md-6">
-          <h3>Contact</h3>
-          <p>If you'd like to reach out about a story, ask more questions or learn more, feel free to reach out.</p>
-          <ul>
-            <li>Send an email to <a href="mailto:press@theironyard.com">press@theironyard.com</a></li>
-            <li>You can also reach us by phone at <a href="tel:+8553992275">+1 (855) 399-2275</a></li>
-          </ul>
-        </div>
-        <div class="col-md-12">
-          <hr>
+        <div id="stories" class="col-md-6">
+          <h3>Stories</h3>
+          <p>Many of our students write about their experiences at The Iron Yard. We also write about their amazing journies into the world of programming. You can see everything on our <a href="http://stories.theironyard.com">Stories Blog</a> or click through to the latest posts below. </p>
+          <ul class="no-style-type recent2"></ul>
         </div>
       </div>
+      <hr>
     </div>
     <div class="container">
       <div class="row">
@@ -221,7 +227,13 @@ if (city) {
     <script src="//static.getclicky.com/js"></script>
     <script type="text/javascript">try{ clicky.init(100714900); }catch(e){}</script>
     <script>$(function(){
-  wpFeed("http://news.theironyard.com/rss/", $(".recent"));
+  wpFeed("http://news.theironyard.com/rss/", $(".recent1"));
+})
+
+
+    </script>
+    <script>$(function(){
+  wpFeed("http://stories.theironyard.com/rss/", $(".recent2"));
 })
 
 
