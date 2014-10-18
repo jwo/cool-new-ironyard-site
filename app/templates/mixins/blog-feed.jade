@@ -5,6 +5,14 @@ mixin blogFeed (cityName)
         wpFeed("http://#{cityName}.theironyard.com/rss/", $(".recent"));
       })
 
+mixin multiBlogFeed (blogs)
+  each blog in blogs
+    script
+      :js
+        $(function(){
+          wpFeed("http://#{blog.name}.theironyard.com/rss/", $("#{blog.element}"));
+        })
+
 
 // this mixin is used on academy pages for the student stories section. it appends 3 blog titles/links instead of the 4 from wpFeed
 mixin storiesFeed (blog)
