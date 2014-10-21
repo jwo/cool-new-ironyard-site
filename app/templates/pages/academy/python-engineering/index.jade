@@ -1,4 +1,5 @@
 extends /layouts/main
+include /mixins/schema
 
 block meta
   +meta ({
@@ -80,13 +81,17 @@ block content
           h3(style="text-align:center").teal-text: em Class Schedule
           p(style="max-width:960px; margin:0 auto;") Our intensive Python Engineering courses run for 12 weeks. The schedule is set up like a typical five-day work week, with lecture in the morning and lab time in the afternoon. Friday is an open lab day where students can work with the instructor to catch up on projects or get a head start on the weekend’s homework.
     .container  
-      table.class-table(style="margin:10px auto; width:90%")
-        tr
-          td January 5th
-          td Durham, NC
-          td Mason Matthews
-          td: a.btn(href="https://theironyard.typeform.com/to/esEqgX") Apply
-
+      +schemaTable([
+        {
+          date: "January 12th",
+          isoDate: "2015-01-12",
+          location: "Durham, NC",
+          city: "Durham",
+          instructor: "Mason Matthews",
+          subject: "python-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/esEqgX"
+        }
+      ])
   .container
     .row(style="text-align:center")
       img(src="/images/academy/schedule.png" style="max-width:70%")
