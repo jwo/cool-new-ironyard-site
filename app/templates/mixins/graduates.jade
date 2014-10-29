@@ -1,18 +1,17 @@
-mixin graduates(course, people)
+mixin graduates(people)
   each graduate in people
-    if course == graduate.course
-      .bio.hide(class=graduate.location class=graduate.course)
-        .bio-left
-          img.photo-bio(src="/images/academy/graduates/#{graduate.photo}")
-          if graduate.email
-            a.btn.btn-contact(href="mailto:#{graduate.email}")
-              p Say hello
-        .bio-right
-          h2= graduate.name
-          if graduate.title
-            h4= graduate.title
-          p(style="font-size:16px")= graduate.description 
-          ul.links
-            each link in graduate.links
-              li 
-                a(href=link.url target="_blank")= link.title
+    .bio.hide(class=graduate.location)
+      .bio-left
+        img.photo-bio(src="/images/academy/graduates/#{graduate.photo}")
+        if graduate.email
+          a.btn.btn-contact(href="mailto:#{graduate.email}")
+            p Say hello
+      .bio-right
+        h2= graduate.name
+        if graduate.title
+          h4= graduate.title
+        p(style="font-size:16px")= graduate.description 
+        ul.links
+          each link in graduate.links
+            li 
+              a(href=link.url target="_blank")= link.title
