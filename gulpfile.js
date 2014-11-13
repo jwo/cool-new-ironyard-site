@@ -335,7 +335,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
     'app/*.html',
     '.tmp/styles/**/*.*',
     'app/scripts/**/*.js',
-    'app/images/**/*'
+    // 'app/images/**/*'
   ]).on('change', function (file) {
     server.changed(file.path);
   });
@@ -343,6 +343,6 @@ gulp.task('watch', ['connect', 'serve'], function () {
   gulp.watch('app/templates/**/*.jade', ['templates']);
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
-  gulp.watch('app/images/**/*', ['images']);
+  // gulp.watch('app/images/**/*', ['images']);
   gulp.watch('bower.json', ['wiredep']);
 });
