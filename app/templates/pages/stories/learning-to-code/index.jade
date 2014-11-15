@@ -1,0 +1,30 @@
+
+extends /layouts/main
+include /mixins/contact
+
+block meta
+  +meta({
+      title:"The Iron Yard | Stories",
+      description:"From green tech consumer apps to clean tech enterprise software and hardware, we’re helping startups build the future of clean technology."
+    })
+
+block content
+  +navigation({
+    title: 'How I Doubled My Salary Learning to Code', 
+    color: 'gray-dark',
+    font: '40px'
+  })
+
+  .container
+    .row(style="margin-top: 60px;")
+      .col-md-8.col-xs-12
+        p(style="font-style: italic;") Alison was working an entry-level job in journalism, and after studying with The Iron Yard Academy she found new role that doubled her salary. And since money isn’t everything; the most important part of this tale is that Alison truly loves her new career.  Here’s how she went from entry level editor to core front end team at one of the nation’s leading providers of benefits technology.
+        p Before taking classes at the Iron Yard, I was working at a news publication as the digital content editor. I had worked with content management systems and understood basic HTML and CSS, but that was about it. My coding skills were pretty limited, but I wanted to learn more.
+        p Taking classes at the Iron Yard was overwhelming at first. There were lots of long and stressful nights coding, and, of course, I definitely questioned my ability at times. But, as the program progressed, all of the pieces started falling together and there’s no better satisfaction than getting an application to work the way you intended.osciutto tail kielbasa brisket. Strip steak bacon turkey t-bone tongue leberkas.
+        p Once I had graduated and started applying for jobs,  I realized how much we had covered in such a short period of time. The Iron Yard did a great job preparing me. I even had experience with new programming tools that some of the companies I interviewed with were just starting to try out themselves.
+        p I ended up landing about 10 interviews and received three job offers within the first month after the program. I decided to accept a position with Benefitfocus, a cloud-based software provider for employee benefits. I’ll be joining the company’s UX engineering team. I am beyond excited about my new career. I get to work with a talented group of developers at a growing company.
+        p I really didn’t know what to expect when I decided to enroll in The Iron Yard Academy. I was taking a leap, both personally and financially, but it definitely paid off. Programming is challenging and continuously evolving. There’s always something new to learn or improve upon, which makes it exciting for me. 
+        p I feel like I have a great career path ahead of me, and I’m pretty confident I could not have done it without The Iron Yard.
+      .col-md-4
+        img.photo(src="/images/stories/alison-miller.jpg" styles="max-width: 310px")
+        +contact('stories-template')
