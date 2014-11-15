@@ -1,0 +1,113 @@
+extends /layouts/main
+
+block meta 
+  +meta({
+      title: "The Iron Yard | Thank You for Requesting More Info",
+      description: "Thanks for requesting more information from The Iron Yard. We'll be in touch soon!"
+    })
+
+block content
+  +navigation({
+    title: 'To infinity and beyond!',
+    color: 'green',
+    image: '/images/home/home-hero.jpg',
+    cutout: true,
+    //- links: [
+    //-   {title: "What We Offer", url: "#programs"}, 
+    //-   {title: "Connect", url: "#connect"},
+    //- ]
+  })
+  .container-fluid(style="padding:0")
+    .main
+      .container
+
+        .row(style="margin:20px 0")
+          .col-sm-8
+            h1 Thanks for Connecting With Us 
+            p 
+              | This could be the start of something great. Everyone on The Iron Yard's team is 110% committed to helping our students become successful. If you've been thinking about launching a career in technology, you're in good hands.  
+              | <br><br> Questions? Our staff will be in touch soon. If you'd like to connect with one of our graduates directly, <a href="mailto:academy@theironyard.com?subject=I'd like to talk to a graduate">send us an email</a>.
+          .col-sm-4
+            //- h3(style="margin-top: 20px; font-size: 27px;") Read our students' stories. 
+            img.photo(src="/images/thank-you-student.jpg")  
+            p 
+              | Read about Iron Yard students' experiences during our programs and after graduation.  
+            a(href="http://stories.theironyard.com" class="btn") 
+              | Read Stories          
+
+      .horizontal-section.gray-light-bg#programs
+        .container
+          .row
+            .col-md-8
+              h3 Connect with The Iron Yard
+              p We love meeting new people. Feel free to reach out to headquarters or any of our individual campuses. 
+              hr
+              h4#hq Headquarters
+              p Our headquarters are located in beautiful Greenville, SC. Here's how you can get in touch*: 
+              ul
+                li General inquiries: <a href="mailto:hello@theironyard.com?subject=I have a general question about The Iron Yard">hello@theironyard.com</a>
+                li Academy inquiries: <a href="mailto:academy@theironyard.com?subject=I have a general question about The Iron Yard Academy">academy@theironyard.com</a>
+                li Press inquiries: <a href="mailto:press@theironyard.com?subject=I want to talk about press with someone at The Iron Yard">press@theironyard.com</a>
+                li Give us a ring: <a href="tel:+8553992275">+1 (855) 399-2275</a>
+                li Stop by for a visit: <em>411 University, Suite 220 Greenville, SC 29601</em>
+              hr
+              h3#campuses Campuses
+              h4 Atlanta
+              ul
+                li Send an email: <a href="mailto:atlanta@theironyard.com?subject=I'd like to talk to someone from The Iron Yard's Atlanta Campus">atlanta@theironyard.com</a>
+                li Give us a call: <a href="tel:+7707518046">+1 (770) 751-8046</a>
+                li Stop by for a visit: <em>3423 Piedmont Road, NE Atlanta, GA 30305</em>
+              h4 Austin
+              ul
+                li Send an email: <a href="mailto:austin@theironyard.com?subject=I'd like to talk to someone from The Iron Yard's Austin Campus">austin@theironyard.com</a>
+                li Give us a call: <a href="tel:+5125962939">+1 (512) 596-2939</a>
+                li Stop by for a visit: <em>We'll announce our location soon!</em>
+              h4 Charleston
+              ul
+                li Send an email: <a href="mailto:charleston@theironyard.com?subject=I'd like to talk to someone from The Iron Yard's Charleston Campus">charleston@theironyard.com</a>
+                li Give us a call: <a href="tel:+8435012775">+1 (843) 501-2775</a>
+                li Stop by for a visit: <em>510 Mill Street Mount Pleasant, SC 29464</em>
+              h4 Columbia
+              ul
+                li Send an email: <a href="mailto:columbia@theironyard.com?subject=I'd like to talk to someone from The Iron Yard's Columbia Campus">columbia@theironyard.com</a>
+                li Give us a call: <a href="tel:+8038739299">+1 (803) 873-9299</a>
+                li Stop by for a visit: <em>823 Gervais Street Columbia, SC 29201</em>
+              h4 Greenville
+              ul
+                li Send an email: <a href="mailto:greenville@theironyard.com?subject=I'd like to talk to someone from The Iron Yard's Greenville Campus">greenville@theironyard.com</a>
+                li Give us a call: <a href="tel:+8649520099">+1 (864) 952-0099</a>
+                li Stop by for a visit: <em>411 University Ridge, Suite 220 Greenville, SC 29601</em>
+              h4 Houston
+              ul
+                li Send an email: <a href="mailto:houston@theironyard.com?subject=I'd like to talk to someone from The Iron Yard's Houston Campus">houston@theironyard.com</a>
+                li Give us a call: <a href="tel:+7134253797">+1 (713) 425-3797</a>
+                li Stop by for a visit: <em>1121 Delano St Houston, TX 77003</em>
+              h4 Orlando
+              ul
+                li Send an email: <a href="mailto:orlando@theironyard.com?subject=I'd like to talk to someone from The Iron Yard's Orlando Campus">orlando@theironyard.com</a>
+                li Give us a call: <a href="tel:+4073586683">+1 (407) 358-6683</a>
+                li Stop by for a visit: <em>101 S. Garland Ave, Suite 102 Orlando, FL 32801</em>
+              h4 Raleigh-Durham
+              ul
+                li Send an email: <a href="mailto:durham@theironyard.com?subject=I'd like to talk to someone from The Iron Yard's Raleigh-Durham Campus">durham@theironyard.com</a>
+                li Give us a call: <a href="tel:+9195616055">+1 (919) 561-6055</a>
+                li Stop by for a visit: <em>334 Blackwell Street, Suite B017 Durham NC 27701</em>
+              h4 Tampa-St. Petersburg
+              ul
+                li Send an email: <a href="mailto:tampabay@theironyard.com?subject=I'd like to talk to someone from The Iron Yard's Tampa-St. Pete Campus">tampabay@theironyard.com</a>
+                li Give us a call: <a href="tel:+9195616055">+1 (919) 561-6055</a>
+                li Stop by for a visit: <em>260 1st Ave S St. Petersburg, FL 33701</em>
+              h4 Washington, D.C.
+              ul
+                li Send an email: <a href="mailto:dc@theironyard.com?subject=I'd like to talk to someone from The Iron Yard's Washington, D.C. Campus">dc@theironyard.com</a>
+                li Give us a call: <a href="tel:+5717339744">+1 (571) 733-9744</a>
+                li Stop by for a visit: <em>2231 Crystal Dr. Arlington, VA 22202</em>
+            .col-md-4
+              h3 Elsewheres
+              ul 
+                li Follow us on <a href="http://twitter.com/theironyard">Twitter</a>
+                li Watch us on <a href="http://vimeo.com/theironyard">Vimeo</a>
+                li Read our <a href="http://blog.theironyard.com">blog</a>
+                li See us in the <a href="http://news.theironyard.com">news</a>
+                li Read our students' <a href="http://stories.theironyard.com">stories</a>
+
