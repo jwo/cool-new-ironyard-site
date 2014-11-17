@@ -45,22 +45,23 @@ mixin stories-contact (analytics)
           textarea#comment(name="comment" rows="1" cols="1")
           input#idstamp(type="hidden" name="idstamp" value="nIJ+Zg4MsQ7UxeyXswOJ+TtECS6ktGa3yVl8ya2Mfpo=")
   
-  script
-    :js
-      var m1obtgo70xwkv4q;
-      (function(d, t) {
-        var s = d.createElement(t), options = {
-        'userName':'ironyard',
-        'formHash':'m1obtgo70xwkv4q',
-        'autoResize':true,
-        'height':'460',
-        'async':true,
-        'host':'wufoo.com',
-        'header':'show',
-        'ssl':true};
-        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-        s.onload = s.onreadystatechange = function() {
-        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-        try { m1obtgo70xwkv4q = new WufooForm();m1obtgo70xwkv4q.initialize(options);m1obtgo70xwkv4q.display(); } catch (e) {}};
-      var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-      })(document, 'script');
+  block scripts
+    script
+      :js
+        var m1obtgo70xwkv4q;
+        (function(d, t) {
+          var s = d.createElement(t), options = {
+          'userName':'ironyard',
+          'formHash':'m1obtgo70xwkv4q',
+          'autoResize':true,
+          'height':'460',
+          'async':true,
+          'host':'wufoo.com',
+          'header':'show',
+          'ssl':true};
+          s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+          s.onload = s.onreadystatechange = function() {
+          var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+          try { m1obtgo70xwkv4q = new WufooForm();m1obtgo70xwkv4q.initialize(options);m1obtgo70xwkv4q.display(); } catch (e) {}};
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+        })(document, 'script');
