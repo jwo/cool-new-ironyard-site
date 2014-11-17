@@ -1,0 +1,52 @@
+extends /layouts/main
+
+block meta 
+  +meta({
+      title: "The Iron Yard | Thank You for Requesting More Info",
+      description: "Thanks for requesting more information from The Iron Yard. We'll be in touch soon!"
+    })
+
+block content
+  +navigation({
+    title: 'To infinity and beyond!',
+    color: 'gray-dark',
+    image: '/images/home/home-hero.jpg',
+    cutout: true,
+    //- links: [
+    //-   {title: "What We Offer", url: "#programs"}, 
+    //-   {title: "Connect", url: "#connect"},
+    //- ]
+  })
+  .container-fluid(style="padding:0")
+    .main
+      .container
+
+        .row(style="margin:20px 0")
+          .col-sm-8
+            h1 Thanks for Connecting With Us 
+            p 
+              | Someone from our team will be in touch as soon as possible. 
+            p
+              | This could be the start of something great. Everyone on The Iron Yard's team is 110% committed to helping our students become successful. If you've been thinking about launching a career in technology, you're in good hands. 
+            p 
+              | Be sure to check out more information about <a href="/academy">the Academy</a> and read <a href="http://theironyard.com/academy/faq/">our FAQs</a>. 
+            p
+              | Questions? Our staff will be in touch soon. If you'd like to connect with one of our graduates directly, <a href="mailto:academy@theironyard.com?subject=I'd like to talk to a graduate">send us an email</a>.
+          .col-sm-4
+            //- h3(style="margin-top: 20px; font-size: 27px;") Read our students' stories. 
+            img.photo(src="/images/thank-you-student.jpg")  
+            p 
+              | Read about Iron Yard students' experiences during our programs and after graduation.  
+            a(href="http://stories.theironyard.com" class="btn") 
+              | Read Stories          
+
+      .horizontal-section.gray-light-bg#programs
+        .container
+          .row
+            .col-md-12
+              .callout-box(style="margin-bottom:0; padding:30px 0; width:100%")
+                h2 Who We Are
+                hr
+                p(style="margin-bottom:0;") The Iron Yard exists to create exceptional value for people and their ideas through code education, startup accelerators and coworking spaces. Through our broad, deep and growing network of teachers, programmers, designers, entrepreneurs, investors, employers and coworking spaces we have developed a thriving community where serendipity happens en-masse.
+
+  
