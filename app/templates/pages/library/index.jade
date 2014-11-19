@@ -1,0 +1,59 @@
+extends /layouts/main
+
+block meta
+  +meta({
+    title:"The Iron Yard | Learn HMTL in an HOUR",
+    description:"We're partnering with the Houston Public Library System to start people on the journey of building websites."
+  })
+
+block content
+  +navigation({
+    title: 'Learn HTML in an HOUR',
+    color: 'gray-dark'
+    //- links: [
+    //-   {title: "About", url: "#about"},
+    //-   {title: "Facts", url: "#facts"},
+    //-   {title: "Contact", url: "#contact"},
+    //-   {title: "News", url: "#news"},
+    //-   {title: "Stories", url: "#stories"},
+    //-   {title: "History", url: "#history"}
+    //-   //- {title: "Press Kit", url: "#presskit"}
+    //- ]
+  })
+
+  .container
+    .row
+      .col-md-8#about
+        h3 Want to learn to code? Don’t know where to start? 
+        img.photo(src="/images/locations/houston/tiy-hpl.png") 
+        p Join the Houston Public Library and The Iron Yard for a <strong>free</strong>, one-hour class where you will begin your journey to creating websites. In this condensed class, you will learn the basic building blocks of any website. 
+        img.photo(src="/images/press/press-page-class.jpg" style="width: 300px; display: inline-block; margin: 10px")
+        img.photo(src="/images/press/press-atl-crew.jpg" style="width: 300px; display: inline-block; margin: 10px;")
+        
+      .col-md-4
+        h3 Join the mailing list! 
+        p Sign up for our mailing list to receive all of the event details. 
+        a(href="#").btn Sign up
+        h3 When and Where
+        ul 
+          li <strong>Days</strong>: December 8th, 9th and 10th
+          li <strong>Times</strong>: TBD - sign up for the mailing list to be notified!
+          li <strong>Location</strong>: Downtown Libary <br>500 McKinney St Houston, Texas 77002 
+        hr
+        h3 Contact us
+        ul
+          li <strong>Email</strong>: <a href="mailto:houston@theironyard.com?subject=I have a question about the HTML in an HOUR event at the Library">houston@theironyard.com</a>
+          li <strong>Phone</strong>: <a href="tel:+8553992275">(713) 425-3797</a> 
+
+
+  .horizontal-section.gray-light-bg#programs
+    .container
+      .row
+        .col-md-12
+          .callout-box(style="margin-bottom:0; padding:30px 0; width:100%")
+            h2 Learn to code. Life's too short for the wrong career.
+            hr
+            p(style="margin-bottom:0;") The Iron Yard Academy teaches intensive, three-month courses that mentor you into a professional junior-level programmer. Our program goes far beyond tactical skills and teaches you to think like a software engineer. Programming is a lifelong study, and our process shows you to learn how to learn so you remain highly valuable for the rest of your career.
+            p
+              a(href="/locations/houston").btn Learn more
+
