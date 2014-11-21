@@ -44,6 +44,19 @@ gulp.task('templates', function() {
   .pipe(gulp.dest('.tmp'));
 });
 
+// this rebuilds only the files that change,
+// but blows up the build process, so don't 
+// use it for build.
+gulp.task('smart-templates', function() {
+  return gulp.src('app/templates/pages/**/*.jade')
+  .pipe($.watch('app/templates/pages/**/*.jade'))
+  .pipe($.jade({
+    basedir: "app/templates",
+    pretty: true
+  }))
+  .pipe(gulp.dest('.tmp'));
+});
+
 
 //          __        __         
 //    _____/ /___  __/ /__  _____
@@ -340,7 +353,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
     server.changed(file.path);
   });
 
-  gulp.watch('app/templates/**/*.jade', ['templates']);
+  gulp.watch('app/templates/**/*.jade', ['smart-templates']);
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   // gulp.watch('app/images/**/*', ['images']);
