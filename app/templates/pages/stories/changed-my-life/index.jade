@@ -1,5 +1,5 @@
 extends /layouts/main
-include /mixins/contact
+include /mixins/stories-contact
 
 block meta
   +meta({
@@ -33,3 +33,6 @@ block content
           h4 Life's too short for the wrong career.
           p Our proven teachers and curriculum will take you from zero to hero and mentor you into a professional junior-level programmer.
           a.btn(href="http://theironyard.com/stories/academy/") Learn More
+      .col-md-4 
+        +stories-contact('Stories-Academy Landing')
+        
